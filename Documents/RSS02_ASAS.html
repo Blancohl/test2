@@ -1,0 +1,1399 @@
+<html>
+<head>
+<title>BOREAS -- ASAS Data Documentation (RSS-2)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+<A NAME="Top">The BOREAS Information System</A></B>
+<hr>
+<body>
+
+<center>
+<H3>Advanced Solid-state Array<br>
+Spectroradiometer (ASAS) Level 1b Data</H3>
+</center>
+<p>
+<H3>Summary</H3>
+<I>(An abstract about the data set)</I>
+<P>
+<br>
+<H3>Table of Contents</H3>
+<P>
+<OL>
+<B><LI></B><A HREF="#Section 1">Data Set Overview</A>
+<B><LI></B><A HREF="#Section 2">Investigator(s)</A>
+<B><LI></B><A HREF="#Section 3">Theory of Measurements</A>
+<B><LI></B><A HREF="#Section 4">Equipment</A>
+<B><LI></B><A HREF="#Section 5">Data Acquisition Methods</A>
+<B><LI></B><A HREF="#Section 6">Observations</A>
+<B><LI></B><A HREF="#Section 7">Data Description</A>
+<B><LI></B><A HREF="#Section 8">Data Organization</A>
+<B><LI></B><A HREF="#Section 9">Data Manipulations</A>
+<B><LI></B><A HREF="#Section 10">Errors</A>
+<B><LI></B><A HREF="#Section 11">Notes</A>
+<B><LI></B><A HREF="#Section 12">Application of the Data Set</A>
+<B><LI></B><A HREF="#Section 13">Future Modifications and Plans</A>
+<B><LI></B><A HREF="#Section 14">Software</A>
+<B><LI></B><A HREF="#Section 15">Data Access</A>
+<B><LI></B><A HREF="#Section 16">Output Products and Availability</A>
+<B><LI></B><A HREF="#Section 17">References</A>
+<B><LI></B><A HREF="#Section 18">Glossary of Terms</A>
+<B><LI></B><A HREF="#Section 19">List of Acronyms</A>
+<B><LI></B><A HREF="#Section 20">Document Information</A>
+</OL>
+<HR>
+<center>
+<H3><A NAME="Section 1">1. Data Set Overview</A></H3>
+</center>
+<P>
+<B>1.1 Data Set Identification</B><br>
+Advanced Solid-state Array Spectroradiometer (ASAS) Level 1b
+<P>
+<B>1.2 Data Set Introduction</B><br>
+<I>(fill in)</I>
+<p>
+<B>1.3 Objective/Purpose</B><br>
+Collect hyperspectral, multiangle data during several field campaigns for a
+variety of purposes -- FFC-T objectives:  develop capabilities to remotely
+monitor the state of the snowpack in the boreal forest; study the
+bidirectional reflectance properties of snow and boreal forest canopies with a
+snow background; obtain bidirectional reflectance data for early season, to
+contribute to phenology (along with datasets from IFCs 1-3).  IFC1-3
+objectives: study the bidirectional reflectanceproperties of boreal forest
+canopies, including phenological variations. Simulate MISR data by acquiring
+data at MISR view zenith angles.
+<P>
+<B>1.4 Summary of Parameters</B><br>
+ASAS measures at-sensor radiance of surfaces as a function of spectral
+wavelength, view geometry (combinations of view zenith angle, view azimuth
+angle, solar zenith angle, and solar azimuth angle), and altitude.
+<P>
+<B>1.5 Discussion</B><br>
+The main objectives of the Boreal Ecosystem Atmosphere Study (BOREAS)
+conducted in Canada throughout 1994 are to improve process models which
+describe the exchanges of energy, water, carbon, and trace constituents
+between the boreal forest and the atmosphere, and to develop methods for
+applying the process models over large spatial scales using remote sensing and
+other integrative modeling techniques.  The Remote Sensing Science Group, of
+which ASAS is a part, is responsible for developing linkages between optical
+and microwave remote sensing and boreal zone biophysical parameters at various
+scales (leaf, canopy, and regional) using measurements from field, aircraft
+and satellite sensors plus a range of radiative transfer models.<br>
+<IMG SRC="../gifs/indent.gif">The experiment strategy for ASAS was to image the Flux Tower sites during each
+of four field campaigns.  ASAS coordinated with PARABOLA on the ground and
+other remote sensing instruments (such as CASI, AVIRIS and MAS) when and where
+possible. For each site, three sets of multiangle data were collected by
+flying three flightlines in azimuths parallel, perpendicular, and oblique to
+the solar principal plane.View angles corresponding to MISR angles were
+obtained for a numberof datasets.
+<P>
+<B>1.6 Related Data Sets</B><br>
+<PRE>AVIRIS
+CASI
+MMR
+PARABOLA
+SE-590
+<P>
+</PRE>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 2">2. Investigator(s)</A></H3>
+</center>
+<P>
+<B>2.1 Investigator(s) Name and Title</B><br>
+James R. Irons<br>
+Code 923<br>
+NASA/GSFC<br>
+Greenbelt, MD 20771
+<P>
+<B>2.2 Title of Investigation</B><br>
+Terrestrial ecosystem studies of the boreal forest using bidirectional
+reflectances acquired by a hyperspectral, multiangle imaging spectroradiometer
+<P>
+<B>2.3 Contact Information</B><br>
+<PRE>Carol Russell
+Code 923
+NASA/GSFC
+Greenbelt, MD
+20771
+301-286-9416
+carol_russell@gsfc.nasa.gov
+<P>
+Michael Bur
+Code 923
+NASA/GSFC
+Greenbelt, MD
+20771
+301-286-8424
+bur@gyrfalcon.gsfc.nasa.gov
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 3">3. Theory of Measurements</A></H3>
+</center>
+<P>
+ASAS is an airborne imaging spectroradiometer that was modified to point off-
+nadir by NASA/GSFC for the purpose of remotely observing directional
+anisotropy of solar radiance reflected from terrestrial surfaces.  The
+instrument is capable of off-nadir pointing from approximately 70 degrees
+forward to 55 degrees aft along-track (in the direction of flight).  As the
+aircraft passes over the ground target, digital radiance measurements of the
+target are recorded for a discrete sequence of fore-to-aft view zenith angles
+within this range. The terms "tilt", "look", or "view" angles are used
+interchangeably when referring to the ASAS view zenith angles. For the BOREAS
+data collection flights, ASAS imaged most study sites at 8 different view
+zenith angles: +70, +60, +45, +26, nadir, -26, -45, -55 degrees.<br>
+<IMG SRC="../gifs/indent.gif">For the FFC-T datasets, two additional view angles at +15 and -15 degrees were
+also acquired.  Imaging of sites in the 70-degree off-nadir view angle is
+problematic, and this particular angle may or may not be available in every
+dataset. Data were acquired in 62 spectral bands ranging from 404 - 1023 nm
+with a spectral resolution of approximately 10 nm in each band.<br>
+<IMG SRC="../gifs/indent.gif">See sections below for further details.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 4">4. Equipment</A></H3>
+</center>
+<P>
+<B>4.1 Sensor/Instrument Description</B><br>
+The ASAS instrument employs a cooled 1024x1024 element silicon charge-coupled-
+device (CCD) detector array to generate multispectral digital image data in a
+pushbroom mode.  The first 324 rows of the CCD are masked.  The next 186 rows
+are exposed to the output from the spectrometer.  The final 516 rows are
+masked and used for readout of the array.  Two of the rows under the mask
+collect smear data which are used to remove smear effects and dark current
+from the data.<br>
+<IMG SRC="../gifs/indent.gif">During the BOREAS missions the operating method of the array was to bin every 3 rows into one spectral band, which resulted in 62 spectral channels.  In
+addition, every 2 detectors within each row were binned resulting in 512
+pixels (per row or line) in the output image data.<br>
+<IMG SRC="../gifs/indent.gif">In this configuration the spectral band centers, which range from 404 to 1023
+nm, are spaced at aproximately 10 nm. Each spectral band has a full-width-
+half-maximum of approximately 10 nm.
+<P>
+<B>4.1.1 Collection Environment</B><br>
+The ASAS instrument is mounted on the underside of the platform aircraft
+fuselage with the sensor optics either slightly protruding into the slipstream
+or retracted into the fuselage pressure box, depending on the view angle.  As
+the aircraft approaches the target site from a distance, the ASAS instrument
+is pointed forward-looking. A video camera bore-sighted with the ASAS optical
+head relays a picture to an onboard monitor screen at the ASAS operators'
+station.  This enables the operator to identify the site and continue tracking
+it through a sequence of view angles as the aircraft proceeds on a flight line
+over the site. When the site comes into view on the forward point, the
+operator begins the data acquisition. The sequence is timed such that the view
+is at nadir when the aircraft is directly over the site, and aft-looking views
+are taken after passing the site.  Determining which views are forwardscatter
+or backscatter requires examination of the aircraft heading and the solar
+azimuth angle, given in the ASAS ASCII header.<br>
+<IMG SRC="../gifs/indent.gif">During the 1994 BOREAS missions data were acquired as follows:  Flux Towers -
+view azimuths parallel, perpendicular and oblique to the solar principal
+plane; multiple view zenith angles. Transect or Modeling Sub-Area Mapping
+Grids - nadir view zenith angle.<br>
+<IMG SRC="../gifs/indent.gif">As the platform aircraft flies forward, each row of 512 detector bins is
+electronically scanned to generate 62 spectral channels of digital image data
+in a pushbroom mode. The signals generated by the CCD detectors are sampled at
+a rate of 38 frame lines per second to produce the along-track dimension of
+the imagery (image lines). The sampled signal from each detector is digitized
+to 12 bits and the digital data are stored on a high-density S-VHS format tape
+using a buffered VLDS data recorder.
+<P>
+<B>4.1.2 Source/Platform</B><br>
+NASA/Ames Research Center C-130 Earth Resources Aircraft.
+<P>
+<B>4.1.3 Source/Platform Mission Objectives</B><br>
+Collected hyperspectral, multiangle bidirectional reflectance data (acquired
+as at-sensor radiances) over flux tower sites for study of boreal forest
+canopies and simulation of MISR data by obtaining measurements at MISR view
+angles.  Nadir hyperspectral data were acquired over the modelling sub-areas
+in each study area and on transects between the Southern and Northern Study
+Areas.  Hyperspectral, multiangle data were also collected over a calibration
+target in the Southern Study Area.
+<P>
+<B>4.1.4 Key Variables</B><br>
+ASAS measures at-sensor spectral radiance in the visible and near-infrared
+portion of the spectrum as a function of view geometry.
+<P>
+<B>4.1.5 Principles of Operation</B><br>
+The ASAS optical head is mounted in an open port in the underside of the C-130B aircraft.  A complex pointing mechanism incorporating a gimbal enables
+the sensor to view off-nadir, facilitating movement in the horizontal,
+vertical, rotational fore and aft, and yaw directions.<br>
+<IMG SRC="../gifs/indent.gif">As the aircraft approaches the target site from a distance, the ASAS
+instrument is pointed forward-looking. A video camera mounted adjacent to the
+ASAS optical head relays a picture to an onboard monitor screen at the ASAS
+operator's station. This enables the operator to identify the site and
+continue tracking it through a sequence of view angles as the aircraft
+proceeds on a flight line over the site. When the site comes into view on the
+first forward angle, the operator initiates the data acquisition process. The
+sequence is timed such that the view is at nadir when the aircraft is directly
+over the site, and aft-looking views are taken after passing the site.<br>
+<IMG SRC="../gifs/indent.gif">Yaw compensation can be performed by the operator (if necessary) to prevent
+the site from drifting out of the field of view.<br>
+<IMG SRC="../gifs/indent.gif">As the platform aircraft flies forward, each row of 1024x186 array elements
+are electronically scanned to generate 62 spectral channels of digital image
+data in a pushbroom mode.  The signals generated by the CCD detectors are
+sampled at a rate of 38 frame lines per second to produce the along-track
+dimension of the imagery (image lines).  The sampled signal from each detector
+is digitized to 12 bits and the digital data are stored on a high-density S-
+VHS format tape using a buffered VLDS data recorder.
+<P>
+<B>4.1.6 Sensor/Instrument Measurement Geometry</B><br>
+Radiation incident on the ASAS aperture is focused onto an entrance slit by an
+f/1.4 objective lens with a 57.2 mm focal length.  The entrance slit is 50 um
+wide across-track, and 23 um wide along-track.  The lens focuses incoming
+energy through the entrance slit into a 1:1 relay with an effective
+focallength of 76.3 mm in each half. In each half of the relay, a 90-degree
+mirror prism folds the optical path to create a compact optical head.  A
+transmission grating ruled at 75 lines per mm and blazed at 530 nm is located
+between the two prisms to disperse the radiant energy into its wavelength
+spectrum, which is in turn directed by the second prism onto the 186 rows of
+the array in the focal plane, where the CCD was mounted.<br>
+<IMG SRC="../gifs/indent.gif">The instantaneous field-of-view (IFOV) of an ASAS pixel is a function of
+optics, detector dimensions, tilt angle (view angle), and aircraft altitude
+and attitude (pitch and roll). The optical system includes an f/1.4 objective
+lens with a 57.2 mm focal length, providing an 0.33 rad (19.3-degree) total
+angular across-track field-of-view. The individual angular resolution of the
+center detectors is 0.66 mrad across-track.  The along-track field-of-view is 0.44 mrad.<br>
+<IMG SRC="../gifs/indent.gif">Each detector has dimensions of 19.0 micrometers spatially (across-track) and 19.0 micrometers spectrally, however with a binning factor of 2 in the spatial
+dimension and 3 in the spectral dimension, the resulting array pixel size is 38.0 micrometers in the spatial dimension and 57 micrometers in the spectral
+dimension.<br>
+<IMG SRC="../gifs/indent.gif">See Section 6.2.2 for spatial resolution.
+<P>
+<B>4.1.7 Manufacturer of Sensor/Instrument</B><br>
+The ASAS instrument evolved over a number of years.  The original optics,
+built by TRW, were part of the Scanning Imaging Spectroradiometer (SIS)
+constructed in the early 1970s for NASA's Johnson Space Center. ASAS was
+created in 1981 when a charge-injection-device (CID) silicon  detector array,
+made by GE, was incorporated with the optical system for a joint program
+involving NASA/JSC and the Naval Ocean Systems Center.  In 1984, the sensor
+was transferred to NASA/GSFC, where the aircraft mounting bracket was modified
+for off-nadir pointing.<br>
+<IMG SRC="../gifs/indent.gif">In late 1991, the pointing mechanism was upgraded by NASA/GSFC to allow view
+angles of 70 degrees forward to 55 degrees aft, and to enable operator-
+controlled aircraft yaw compensation.  In 1992, the CID was replaced with a
+Thomson CSF Model TH7896A (high speed version) charge-coupled-device (CCD)
+silicon detector array. BOREAS data were acquired with this CCD array.
+<P>
+<B>4.2 Calibration</B><br>
+<B>Radiometric Calibration</B><br>
+Radiometric calibration data for the BOREAS experiment were acquired from two
+primary calibration sources: 1) a 1.2 m diameter integrating hemisphere in the
+NASA/GSFC calibration laboratory, and  2) a 30-inch (.76 m) diameter portable
+hemisphere that is owned and operated by GSFC.  The latter source was used for
+in-situ calibration data acquisition since it could be positioned directly
+under the aircraft-mounted instrument. The integrating hemisphere is operated
+and maintained by the Sensor Development and Characterization Branch at
+NASA/GSFC.  Up to 12 levels of radiance can be provided for calibration by
+turning the internal tungsten filament lamps on or off. The hemisphere is
+calibrated on an absolute scale by comparison to the output from a National
+Institute of Standards and Technology traceable calibration lamp using a
+laboratory-based transfer spectroradiometer. In a calibration run, ASAS is
+exposed to a 12-level sequence of spectral radiance levels from the
+hemisphere.  Dark current (the response of the instrument under conditions of
+no incident radiation) is also acquired.<br>
+<IMG SRC="../gifs/indent.gif">The portable hemisphere can provide up to six different radiance levels in
+addition to dark current, however during the BOREAS field campaigns of 1994
+only three levels were operating: that provided by three 30-Watt tungsten
+lamps.  For calibration of the portablehemisphere, contact Brian Markham or
+John Schafer of NASA/GSFC.<br>
+<IMG SRC="../gifs/indent.gif">The digitized response of each detector was recorded for each calibration
+source intensity level by selectively controlling the number of lamps turned
+on. When possible, data were acquired with the instrument or the portable
+hemisphere positioned at two different orientations, opposed by 180 degrees,
+to account for any non-uniformities in the reflective surface of the
+hemisphere. In some instances, four different orientations, opposed by 90
+degrees, were used.  Calibration data were acquired for each optical filter
+combination (at least 4) used by ASAS during the BOREAS field campaigns.<br>
+<IMG SRC="../gifs/indent.gif">To derive calibration coefficients, first the data acquired at each
+instrument-hemisphere orientation are averaged together. Next, a weighted
+average of two channels of smear data are subtracted from each raw digital
+number to remove dark current and "contamination" signal generated during
+readout of the detector array. This weighting is based on the proximity of
+each channel of data to the smear channels which occur in the first and last
+channel. Lastly, for eachof the 31744 detectors, a least-squares regression is
+performed between the smear-corrected ASAS calibration data and the known
+radiance values from the calibration source. This results in a linear
+radiometric response function which is inverted to obtain a gain factor.<br>
+<IMG SRC="../gifs/indent.gif">A radiometric resolution factor is computed for each spectral band by
+inverting the mean gain per band. The radiometric resolution factors are
+provided in each ASAS data file's ASCII header. Dividing each pixel value by
+its associated channel-dependent radiometric resolution factor will give an
+absolute at-sensor spectral radiance value in units of mW cm-2 sr-1 um-1.<br>
+<IMG SRC="../gifs/indent.gif">Signal-to-noise ratios are also measured from the radiometric calibration
+data.  Equations are derived that provide the signal-to-noise ratio as a
+function of digital count.  These equations are basically second-order
+polynomials that characterize progressively higher signal-to-noise ratios with
+increasing digital count (until a maximum level is reached).  A maximum
+signal-to-noise ratio of approximately 600 was obtained from the calibration
+data acquired for the BOREAS project.<br>
+<IMG SRC="../gifs/indent.gif">The appropriate signal-to-noise equation is stored in the ASCII header of each
+ASAS image. The header also contains information on how to apply the equation
+to either the digital counts (before the radiometric resolution factors are
+applied) or to the radiances (after the factors are applied) in each channel.
+The signal-to-noise ratios did not vary greatly over the course of the BOREAS
+field seasons. Some example signal-to-noise equations applicable to ASAS
+BOREAS data can be seen in the SAMPLE header given in Section 8.4.
+<P>
+<B>Spectral Calibration</B><br>
+A McPherson Model 285 0.5 m double monochrometer serves as the spectral
+reference source for ASAS. Light from the monochrometer is collimated by a
+paraboloid mirror and directed to the ASAS optics. Instrument output is
+sampled every 0.5 nm.  The band centers have been computed by determining the
+centroid of the area under the response curve for each band. Full-width-at-
+half-maximums (FWHM) were measured directly from the response curves.
+<P>
+<B>4.2.1 Specifications</B><br>
+ASAS spectral band centers and FWHM's applicable to 1994 BOREAS datasets are
+as follows:
+<PRE>Band  Center  FWHM
+----  ------  ----
+  1   404.3   9.5
+  2   413.7   9.5
+  3   423.2   9.5
+  4   432.4  10.0
+  5   441.7  10.0
+  6   451.4  10.0
+  7   460.9  10.0
+  8   470.5  10.0
+  9   480.3  10.5
+ 10   490.2  10.5
+ 11   500.0  10.0
+ 12   509.7  10.5
+ 13   519.6  10.0
+ 14   529.7  10.5
+ 15   539.9  10.5
+ 16   549.8  10.5
+ 17   559.6  10.0
+ 18   569.4  10.5
+ 19   579.4  10.5
+ 20   589.7  11.0
+ 21   600.0  10.5
+ 22   610.2  11.0
+ 23   620.3  10.5
+ 24   630.4  10.5
+ 25   640.7  11.0
+ 26   650.9  10.5
+ 27   661.1  11.0
+ 28   671.4  10.5
+ 29   681.5  11.0
+ 30   691.6  11.0
+ 31   701.7  11.0
+ 32   711.9  11.0
+ 33   722.1  11.0
+ 34   732.3  11.0
+ 35   742.6  11.0
+ 36   752.9  11.0
+ 37   763.2  11.0
+ 38   773.5  11.0
+ 39   783.8  11.5
+ 40   794.1  11.0
+ 41   804.5  11.0
+ 42   814.9  11.0
+ 43   825.3  11.5
+ 44   835.7  11.0
+ 45   846.0  11.0
+ 46   856.4  11.0
+ 47   866.8  11.0
+ 48   877.2  11.5
+ 49   887.6  11.5
+ 50   897.9  11.0
+ 51   908.3  11.0
+ 52   918.7  11.0
+ 53   929.0  11.0
+ 54   939.5  10.5
+ 55   949.9  11.0
+ 56   960.3  11.0
+ 57   970.7  11.0
+ 58   981.1  11.0
+ 59   991.5  10.5
+ 60  1001.9  10.5
+ 61  1012.2  10.5
+ 62  1022.7  10.5
+</PRE>
+<P>
+<br>
+<B>4.2.1.1 Tolerance</B><br>
+Individual radiometric resolution factors for each spectral band were adopted
+in 1989 to account for the variation of silicon detector response as a
+function of wavelength.  With every detector bin individually calibrated, each
+has its own gain, and as a result, its own specific resolution. A mean
+resolution (the radiometric resolution factor) is determined for each channel,
+to which all 512 detector bins within each channel are scaled. This results in
+very slight over-resolution of pixels furthest away from the center, while
+pixels proximal to the center are slightly underresolved.<br>
+<IMG SRC="../gifs/indent.gif">Periodic horizontal striping of low brightness is apparent in some of the ASAS
+imagery acquired for BOREAS. This artifact was caused by an internal array
+timing problem that resulted in shortened integration times (and lower signal
+levels) for some data frames. Efforts have been made to identify and correct
+these "low energy" frames but striping may occasionally be visible in some
+images, usually at a frequency of every 6-7 lines. For datasets collected over
+the Southern Study Area during the FFC-Thaw, the frequency is approximately 29-30 lines.
+<P>
+<B>4.2.2 Frequency of Calibration</B><br>
+In general, ASAS acquires radiometric calibration data at least twice for each
+mission, with one calibration set acquired prior to the mission, followed by a
+post-mission calibration after the instrument arrives back at GSFC.
+Radiometric calibration data were also acquired during each BOREAS field
+campaign using the portable integrating hemisphere described elsewhere in this
+document. After several months of quality control and related analyses, it was
+determined that calibration data acquired on the following dates would be used
+to generate the gains for calibration of data acquired during the listed field
+campaigns:
+<PRE>Acquisition Date  Applicable BOREAS Field Data
+----------------  ----------------------------
+01-JUN-94         FFC-Thaw, IFC-1 data
+02-AUG-94         IFC-2 data
+17-SEP-94         IFC-3 data
+</PRE>
+<p>
+Laboratory spectral calibrations of ASAS were performed both before and after
+the 1994 BOREAS field season. The spectral stability was also checked once in
+the middle of the field season using a portable helium neon laser. It has been
+determined that the spectral calibration results from October 13, 1994 are
+most appropriate for all 1994 BOREAS data sets.
+<P>
+<br>
+<B>4.2.3 Other Calibration Information</B><br>
+None.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 5">5. Data Acquisition Methods</A></H3>
+</center>
+<P>
+The ASAS instrument is mounted on the underside of the platform aircraft
+fuselage with the sensor optics either slightly protruding into the slipstream
+or retracted into the fuselage pressure box, depending on the view angle.  As
+the aircraft approaches the target site from a distance, the ASAS instrument
+is pointed forward-looking. A video camera bore-sighted with the ASAS optical
+head relays a picture to an onboard monitor screen at the ASAS operators'
+station.  This enables the operator to identify the site and continue tracking
+it through a sequence of view angles as the aircraft proceeds on a flight line
+over the site. When the site comes into view on the forward point, the
+operator begins the data acquisition. The sequence is timed such that the view
+is at nadir when the aircraft is directly over the site, and aft-looking views
+are taken after passing the site.  Determining which views are forwardscatter
+or backscatter requires examination of the aircraft heading and the solar
+azimuth angle, given in the ASAS ASCII header.<br>
+<IMG SRC="../gifs/indent.gif">During the 1994 BOREAS missions data were acquired as follows:  Flux Towers -
+view azimuths parallel, perpendicular and oblique to the solar principal
+plane; multiple view zenith angles. Transect or Modeling Sub-Area Mapping
+Grids - nadir view zenith angle.<br>
+<IMG SRC="../gifs/indent.gif">As the platform aircraft flies forward, each row of 512 detector bins is
+electronically scanned to generate 62 spectral channels of digital image data
+in a pushbroom mode. The signals generated by the CCD detectors are sampled at
+a rate of 38 frame lines per second to produce the along-track dimension of
+the imagery (image lines). The sampled signal from each detector is digitized
+to 12 bits and the digital data are stored on a high-density S-VHS format tape
+using a buffered VLDS data recorder.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 6">6. Observations</A></H3>
+</center>
+<p>
+<B>6.1 Data Notes</B><br>
+<p>
+<B>6.2 Field Notes</B><br>
+The ASAS operators do not make extensive notes about field conditions during
+missions.  ASAS usually is not flown if atmospheric conditions are not
+sufficiently clear. If sky conditions are satisfied, it is up to Principal
+Investigators to decide if field conditions are appropriate for data
+acquisition. Any observations noted by ASAS operators are made at altitude,
+and if considered pertinent to the data, are included in the ASAS header
+COMMENTS field.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 7">7. Data Description</A></H3>
+</center>
+<P>
+<B>7.1 Spatial Characteristics</B><br>
+The 1994 BOREAS sites acquired by ASAS consisted of 6 Flux Tower sites in the
+Southern Study Area (SSA) and 5 Flux Tower sites in the Northern Study Area
+(NSA).  In addition, data were acquired over a calibration target, and Candle
+Lake in the SSA.  ASAS BOREAS images of the Flux Tower sites (at a NADIR view)
+are typically about 1.5-2.0 km wide and up to several km long.<br>
+<IMG SRC="../gifs/indent.gif">Nadir data over auxiliary sites may be available in the Modeling Sub-Area
+Mapping Grid and Transect Nadir datasets.  Routine processing of the Modeling
+Sub-Area Grid and Transect datasets is not planned at this time.  After Flux
+Tower datasets have been provided to BORIS, the Sub-Area and Transect data may
+be processed if there are requests from the user community for these data.
+<P>
+<B>7.1.1 Spatial Coverage</B><br>
+<PRE><B>FFC-T</B>
+Date     Study Area_Site  No. Flight_lines
+----     ---------------  ----------------
+4/19/94  SSA_OBS                 3
+         SSA_OA                  3
+         SSA_OJP                 3
+4/20/94  NSA_OBS                 3
+         NSA_OJP                 3
+         NSA_YJP                 3
+         NSA_FEN                 3
+<P>
+<B>IFC-1</B>
+Date    Study Area_Site  No. Flight_lines
+----    ---------------  ----------------
+5/26/94  SSA_AVIRIS_CAL          1
+5/31/94  SSA_OBS                 3
+         SSA_OA                  3
+         SSA_OJP                 3
+         SSA_CANDLE_LAKE         1
+6/01/94  SSA_OBS                 3
+         SSA_OJP                 3
+         SSA_YJP                 3
+6/04/94  SSA_OJP                 3
+         SSA_FEN                 3
+6/06/94  SSA_OBS                 3
+         SSA_FEN                 3
+6/07/94  NSA_OBS                 3
+         NSA_OJP                 3
+         NSA_YJP                 3
+         NSA_FEN                 3
+6/08/94  NSA_OA                  3
+<P>
+<B>IFC-2</B>
+Date     Study Area_Site  No. Flight_lines
+----     ---------------  ----------------
+7/21/94  SSA_OBS                 3
+         SSA_OA                  3
+         SSA_OJP                 3
+         SSA_YJP                 3
+         SSA_FEN                 3
+7/23/94  SSA_YA                  1
+         SSA_AVIRIS_CAL          1
+7/24/94  SSA_OJP                 3
+         SSA_FEN                 3
+         SSA_YA                  3
+8/04/94  NSA_OBS                 3 (smoke)
+         NSA_OJP                 3 (smoke)
+<P>
+<B>IFC-3</B>
+Date     Study Area_Site  No. Flight_lines
+----     ---------------  ----------------
+9/06/94  NSA_OBS                 1
+         NSA_OA                  2
+9/13/94  SSA_OBS                 3
+         SSA_OJP                 3
+         SSA_YJP                 3
+         SSA_FEN                 3
+9/16/94  SSA_OA                  3
+         SSA_AVIRIS_CAL          2
+         SSA_CANDLE_LAKE         1
+9/17/94  NSA_OBS                 3
+         NSA_OA                  3
+         NSA_OJP                 3
+         NSA_YJP                 3
+         NSA_FEN                 3
+</PRE>
+<P><br>
+<B>7.1.2 Spatial Coverage Map</B><br>
+<p>
+<B>7.1.3 Spatial Resolution</B><br>
+<B>Across-track direction:</B><br>
+ASAS spatial resolution in the x-direction is a function of the across-track
+field of view, view angle, and the altitude of the platform aircraft. The
+across-track pixel size (in meters) is given in the header of each ASAS image.
+Across-track pixels do not overlap.
+<P>
+<B>Some examples of across-track spatial resolutions:</B><br>
+At a nadir view angle and an altitude of 5000 m AGL (above ground level), the
+full-scene acoss-track field of view is 1.7 km, and the individual pixel size
+(across-track) is 3.3 m.  At a 60-degree off-nadir view angle and an altitude
+of 5000 m AGL (above ground level), the full-scene across-track field of view
+is 3.4 km, and the individual pixel size (across-track) is 6.6 m.
+<P>
+<B>Along-track direction:</B><br>
+The along-track spatial resolution of an ASAS image pixel is more complicated. Two aspects are involved:
+1) the ground footprint size, and
+2) the distance over which the footprint is "smeared" as the aircraft
+advances.<br>
+<IMG SRC="../gifs/indent.gif">The ground footprint is determined by the along-track instantaneous field of
+view (IFOV) in conjunction with the view angle and aircraft altitude and
+attitude (mainly pitch). The IFOV is described in section 5.1.5.<br>
+<IMG SRC="../gifs/indent.gif">The radiance measurement recorded for a given pixel is representative of the
+ground area observed as the pixel footprint moves forward by the ground
+distance of one frame (ASAS is a pushbroom scanner). The ground footprint will
+be larger for an off-nadir view angle than for a nadir view. For example, at
+an altitude of 5000 meters, the footprint in the along-track direction is
+approximately 8 meters at a view angle of 60 degrees versus 2 meters for
+nadir.<br>
+<IMG SRC="../gifs/indent.gif">Regardless of how large or small the footprint is, the ground distance over
+which a pixel is "smeared" is determined by the data collection rate, i.e.,
+aircraft speed divided by the frame rate. Given a fixed frame rate during the
+BOREAS data missions of 38 frames per second and a typical aircraft ground
+speed of 220 knots, the spacing or smear distance between adjacent frames is
+approximately 3 meters. Thus, an along-track footprint of 2 meters at nadir
+(using the example above) would be smeared over a distance of 3 meters.  This
+results in a2-meter overlap and a center-to-center distance of 3 meters
+between pixels of adjacent frames. The effective resolution is therefore
+limited by the smearing.<br>
+<IMG SRC="../gifs/indent.gif">All ASAS datasets are oversampled in the along-track direction. This means
+that each image line somewhat overlaps the previous line, making the images
+appear more elongated than in reality. Images are not over-sampled in the
+across-track direction.  This frame or line overlap is not corrected for
+during operational ground processing.<br>
+<IMG SRC="../gifs/indent.gif">An along-track (y-direction) pixel size in meters is given in the header of
+each ASAS image file.  This number is the aircraft speed divided by the frame
+rate which equals the smear distance or non-overlap portion of each pixel in
+the y-direction. The y-direction pixel size times the number of lines is
+approximately equal to the total ground distance imaged by ASAS for a given
+view angle.<br>
+<IMG SRC="../gifs/indent.gif">Some example along-track pixel sizes during BOREAS:<br>
+<IMG SRC="../gifs/indent.gif">3.1 m (groundspeed = 230 knots)<br>
+<IMG SRC="../gifs/indent.gif">3.2 m (groundspeed = 235 knots)
+<P>
+NOTE:  BOREAS ASAS data were acquired at altitudes of approximately 4600-5800
+m above ground for multiangle flux tower data, and 7000-8000 m above ground
+for nadir transect data.
+<P>
+<br>
+<B>7.1.4 Projection</B><br>
+<p>
+<B>7.1.5 Grid Description</B><br>
+<p>
+<B>7.2 Temporal Characteristics</B><br>
+<P>
+<B>7.2.1 Temporal Coverage</B><br>
+ASAS data were collected during April, May-June, July-August, and September, 1994.  See Section 6.2.1 for specific dates.
+<P>
+<B>7.2.2 Temporal Coverage Map</B><br>
+<P>
+<B>7.2.3 Temporal Resolution</B><br>
+ASAS site passes may vary slightly in time duration, depending on the length
+of the flight line and the aircraft speed. Typically one multi-angle pass over
+a site has a time duration of about 5 minutes.
+<P>
+<B>7.3 Data Characteristics</B><br>
+<p>
+<B>7.3.1 Parameter/Variable</B><br>
+Not Applicable.
+<P>
+<B>7.3.2 Variable Description/Definition</B><br>
+Not Applicable.
+<P>
+<B>7.3.3 Unit of Measurement</B><br>
+Not Applicable.
+<P>
+<B>7.3.4 Data Source</B><br>
+Not Applicable.
+<P>
+<B>7.3.5 Data Range</B><br>
+Not Applicable.
+<P>
+<B>7.4 Sample Data Record</B><br>
+Not Applicable.  See section 8.1.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 8">8. Data Organization</A></H3>
+</center>
+<P>
+<P>
+<B>8.1 Data Granularity</B><br>
+(BORIS and ORNL DAAC to fill in)
+<p>
+<B>8.2 Data Format(s)</B><br>
+<B>UNCOMPRESSED DATA</B><br>
+The logical organizational entity for archived ASAS digital imagery is  the
+site pass, which in the case of the 1994 BOREAS missions consists  of 5-11
+separate view angle images per site for multiangle data (Flux Towers); or
+strips of nadir images (Modeling Sub-Area Mapping Grid or  Transect Runs).<br>
+<IMG SRC="../gifs/indent.gif">Each image file consists of a series of logical records that are 8192  bytes
+in length.<br>
+<IMG SRC="../gifs/indent.gif">The first record contains ASCII header information in a format described
+below.  Within the header record the logical header components end with a new
+line character, enabling easy recognition of the end of each header record
+component.<br>
+<IMG SRC="../gifs/indent.gif">Subsequent records contain calibrated integer*2 data ordered band-
+sequentially; that is, all lines for band 1, followed by all lines for band 2,
+and so forth for all 62 bands.  Each tape record of 8192 bytes contains 8
+image records of 1024 bytes.  Each of the image records contains 512 pixels
+represented by two-byte binary integers ordered in the Sun/UNIX convention
+where the highest-order byte comes first.<br>
+<IMG SRC="../gifs/indent.gif">Each image record of 512 pixels is one image line, and the number of lines per
+view angle may vary. The total number of records per file equals the number of
+lines in the image times the number of bands (62) plus NUM_HDR_BYTES listed in
+the header. There are no end-of-record or other special characters between
+logical records.
+<PRE>
+A complete ASAS ASCII header delivered with BOREAS project data is as follows:
+<P>
+EXAMPLE BOREAS ASAS IMAGE HEADER FORMAT (with some explanations added)
+<P>
+ASAS2_HDR_VERSION: 2.83
+NUM_HDR_BYTES:8192
+FILE_NAME: tilt_+26.cal (see ** below)
+TYPE_OF_DATA: IN-FLIGHT
+#
+#DATE INFORMATION
+#
+LOCAL_DATE: 26MAY94
+START_DATE_GMT: 26MAY94 17:26:55
+STOP_DATE_GMT: 26MAY94 17:27:08
+SOLAR_AZIMUTH(deg):  143.7
+SOLAR_ZENITH(deg):   38.3
+#
+#IMAGE SIZE INFORMATION
+#
+NUM_LINES:  512 - can vary
+NUM_PIXELS:  512
+NUM_BANDS:  62
+DATA_TYPE: UNSIGNED INTEGER*2
+DATA_ORDERING: SUN UNIX - Based on SunOs 4.1.3
+FORMAT: BAND_SEQUENTIAL
+STARTING_LINE: 31268- From beginning of Level 0 product
+STARTING_PIXEL:1- From beginning of Level 0 product
+ACROSS_TRACK_PIXEL_SIZE(m): 4.1 - Based on nadir IFOV, altitude
+ALONG_TRACK_PIXEL_SIZE(m): 3.2  - Non-overlap portion, based on
+IMAGE_DESCRIPTION:   ground speed, frame rate
+#
+#GEOGRAPHIC LOCATION INFORMATION
+#
+GLOBAL_REGION: North America
+COUNTRY: Canada
+POLITICAL_SUBDIVISION: Saskatchewan
+GEOGRAPHICAL_REGION: Boreal forest
+LAT_CENTER:  53.24000 - refers to target site, not image center
+LON_CENTER: -105.69000- refers to target site, not image center
+RADIUS(km):  1.346
+#
+#MISSION INFORMATION
+#
+PROJECT: BOREAS
+FLIGHT_PROJ_NUM: 43002
+MISSION_NUM: 406
+FLIGHT_NUM: 02
+LINE_NUM: 601
+RUN_NUM:  2
+SITE_NUM:   6 - C130 site designation only
+SITE: SSA AVCAL
+SITE_DESCRIPTOR: AVIRIS CAL SITE
+INVESTIGATOR: Dr. J. Irons
+#
+#COMMENTS
+#
+Perpendicular - relation to solar principal plane
+#
+#INSTRUMENT INFORMATION
+#
+TILT_ANGLE: 26- view zenith angle, in degrees
+FRAME_RATE: 38
+#
+#AIRCRAFT INFORMATION
+#
+FLIGHT_FACILITY: NASA/AMES
+PLATFORM: NASA C-130
+ALTITUDE_AGL(m):  5608.3  - AGL = above ground level
+GROUND_SPEED(knots):  240
+HEADING(deg): 322
+#
+#PROCESSING INFORMATION
+#
+PROCESSING_DATE: 26JUN95
+PROCESSING_FACILITY: NASA/GSFC
+PROCESSING_LEVEL: 1B  - EOS designation
+PROCESSING_HISTORY: dd swapcomp decom borcal energizer hdrstats
+# - processing programs
+#CALIBRATION INFORMATION
+#
+SPECTRAL_CAL_DATE: 13OCT94
+RAD_CAL_DATE: 01JUN94
+RAD_CAL_SOURCE: MOBIL_HEMISP
+SOURCE_CAL_DATE: 31MAY94
+S/N_FORMULA_ORDER: 2 - See Section 5.2 A for discussion
+S/N_FORMULA_COEFFICIENTS   of Signal to Noise ratios
+C0  -1.876e-01   - Coefficients can vary
+C1   2.761e-01
+C2  -1.719e-05
+<P>
+S/N_DESCRIPTION: S/N = C0 + C1*DN + C2*DN^2  (using coefficients above) or S/N
+= C0 + C1*Radiance + C2*Radiance^2 where C0, C1, and C2 are given in the table
+below.
+<P>
+UNITS: DN/RAD_RES_FACT = mW cm-2 sr-1 um-1
+BAND CENTER FWHM RAD_RES_  RAD_MEAN S/N_MEAN  S/N(C0)S/N(C1)S/N(C2)
+   FACT
+ 1   404.3   9.521   0.72   4   -1.876e-01  5.798e+00  -7.581e-03
+ 2   413.7   9.532   1.14  10   -1.876e-01  8.835e+00  -1.760e-02
+ 3   423.2   9.543   1.81  21   -1.876e-01  1.187e+01  -3.178e-02
+ 4   432.4  10.055   2.35  35   -1.876e-01  1.519e+01  -5.200e-02
+ 5   441.7  10.064   3.10  54   -1.876e-01  1.767e+01  -7.041e-02
+ 6   451.4  10.077   3.83  80   -1.876e-01  2.126e+01  -1.019e-01
+ 7   460.9  10.096   4.25 110   -1.876e-01  2.651e+01  -1.584e-01
+ .
+ . (channels 8 through 58 will be here; S/N ratios highest in middle channels)
+ .
+59   991.5  10.514   4.15  16   -1.876e-01  3.865e+00  -3.369e-03
+60  1001.9  10.510   4.04  11   -1.876e-01  2.761e+00  -1.719e-03
+61  1012.2  10.5 7   3.96   7   -1.876e-01  1.933e+00  -8.423e-04
+62  1022.7  10.5 3   3.88   3   -1.876e-01  8.283e-01  -1.547e-04
+#
+#END_HDR - Marks end of header text
+<P>
+<P>
+**  File names are included in the header so we may store them generically
+on tape if necessary.  The naming convention is:
+tilt_+70.cal- sensor pointed 70 deg forward
+tilt_+60.cal- sensor pointed 60 deg forward
+tilt_+45.cal- sensor pointed 45 deg forward
+tilt_+26.cal- sensor pointed 26 deg forward
+tilt__00.cal- sensor pointed straight down (nadir)
+tilt_-26.cal- sensor pointed 26 deg aft
+tilt_-45.cal- sensor pointed 45 deg aft
+tilt_-55.cal- sensor pointed 55 deg aft
+</PRE>
+<p>
+To determine forward scatter and backward scatter, compare aircraft heading to
+solar azimuth angle.  If the plane was heading into the sun, forward
+(positive) points are forward scatter and aft (negative) points are
+backscatter.  If the plane was heading away from the sun, forward points are
+backscatter and aft points are forward scatter.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 9">9. Data Manipulations</A></H3>
+</center>
+<P>
+<B>9.1 Formulae</B><br>
+Not applicable.
+<P>
+<B>9.1.1 Derivation Techniques and Algorithms</B><br>
+Not applicable.
+<P>
+<B>9.2 Data Processing Sequence</B><br>
+<p>
+<B>9.2.1 Processing Steps</B><br>
+There are six primary steps performed for operational processing of the ASAS
+data acquired for the BOREAS 1994 field season. The names of the programs used
+are listed below and they are also included in the ASCII header of each ASAS
+data set:   dd swapcomp decom borcal energizer hdrstats<br>
+<IMG SRC="../gifs/indent.gif">ASAS measurements are stored on high-density S-VHS format tape using a Metrum
+buffered VLDS data recorder. The raw data are transferred to magnetic disk and 8mm tape using a VLDS unit interfaced to a Unix workstation. These data
+consist of continual streams of frames in which each frame contains the
+combined image data for all 62 input channels and 2 smear data channels plus
+header and navigational information (if available) for a single image line.
+The data transfer process involves the Unix "dd" utility for reading the raw
+data and a program called "swapcomp" for swapping and complementing the bytes
+of each 16-bit pixel.<br>
+<IMG SRC="../gifs/indent.gif">A quicklook image for each sitepass is created by decommutating a single band
+of data encompassing all view angles.  Line coordinates of each view angle
+subset are manually selected, omitting areas of instrument "slew" and non-
+coverage of the site.<br>
+<IMG SRC="../gifs/indent.gif">Next, all bands of each view angle subset in the sitepass are decommutated.
+Each line of data is extracted and written to disk in band-sequential format.
+Each view angle subset is stored in a separate file with an ASCII header
+automatically populated with entries retrieved from an online database
+containing information about the specific project and sites.<br>
+<IMG SRC="../gifs/indent.gif">These image files now consist of a series of logical records 1024 bytes in
+length. The first several records store the header information.  Subsequent
+records contain band-sequential integer*2 data. Each record represents 512
+pixels.<br>
+<IMG SRC="../gifs/indent.gif">Radiometric calibration is performed next using the program "borcal". It
+applies the calibration gains derived from the integrating hemisphere lamp
+data to each pixel.  The output format is identical to the input format except
+that the 2 smear bands are removed. The calibration procedure is described in Section 4.2.<br>
+<IMG SRC="../gifs/indent.gif">The next processing step for ASAS BOREAS data is correction of low energy
+frames that resulted from an instrument array signal readout problem. Section 4.2.1 discusses this problem. The program "energizer" attempts to correct the
+affected frames. It begins by parsing the data four separate times to
+determine which frames fit the criteria for reduced energy or signal levels
+caused by the timing problem. The first pass involves the profiling of total
+energy versus frame, smoothing the profile to remove high and low frequency
+noise, and flagging of suspect frames using a mean value threshold. Subsequent
+passes attempt to refine the list of suspect frames based on the expected beat
+frequency. For most of the BOREAS data, the beat frequency is every 6-7
+frames. After the suspect frames are identified, they are multiplied by a
+corrective weighting factor determined from the calibration data.<br>
+<IMG SRC="../gifs/indent.gif">The last operational processing step is calculation of the mean scene radiance
+levels for all bands of each view angle image in a site pass. The
+"hdrstats"program computes the mean radiances and stores them in the ASCII
+header of each image.
+<P>
+<B>9.2.2 Processing Changes</B><br>
+For the most part, the processing steps outlined in Section 9.2.1 apply to all 1994 BOREAS data sets. However, there are some inter-IFC differences in the
+data characteristics:<br>
+<IMG SRC="../gifs/indent.gif">The data acquired for each IFC will have a specific set of calibration gains,
+radiometric resolution factors, and signal to noise ratios.<br>
+<IMG SRC="../gifs/indent.gif">The frequency of occurrence for the low energy frame striping was every 6-7
+lines for all IFC's except for Southern Study Area FFC-Thaw data where the
+frequency was approximately 29-30 lines.<br>
+<IMG SRC="../gifs/indent.gif">For IFC-1, IFC-2, and IFC-3, data were acquired at the following eight view
+angles: +70, +60, +45, +26, nadir, -26, -45, -55. For FFC-Thaw, two additional
+angles were used: +15, and -15.  These angles describe the view angles which
+were attempted but not necessarily achieved in all cases.
+<P>
+<br>
+<B>9.3 Calculations</B><br>
+<P>
+<B>9.3.1 Special Corrections/Adjustments</B><br>
+<p>
+<B>9.3.2 Calculated Variables</B><br>
+<p>
+<B>9.4 Graphs and Plots</B><br>
+Not applicable.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 10">10. Errors</A></H3>
+</center>
+<P>
+<B>10.1 Sources of Error</B><br>
+Potential sources of uncertainty associated with ASAS spectral radiance
+include the following factors: spectral radiance from the integrating
+hemisphere; spectral radiance from the portable hemisphere; transfer of
+spectral radiance to ASAS detector elements; and spectral calibration of the
+ASAS detector elements.  Other factors such as polarization sensitivity,
+signal cross-talk between detectors, and stray light may contribute to the
+uncertainty, but these factors have not been evaluated.
+<P>
+<B>10.2 Quality Assessment</B><br>
+<P>
+<B>10.2.1 Data Validation by Source</B><br>
+During processing, frequency histograms of selected channels for each view
+angle are plotted and examined manually for anomalies. Images are also
+displayed and visually analyzed for target coverage, data dropouts, saturation
+and other potential problems.
+<P>
+<B>10.2.2 Confidence Level/Accuracy Judgement</B><br>
+The uncertainty associated with ASAS spectral radiance values is approximately 6%.  This number is the root-sum-square of the uncertainties contributed by
+the following factors: spectral radiance from the integrating hemisphere (5%
+uncertainty); transfer of spectral radiance to ASAS detector elements (2%
+uncertainty); and spectralcalibration of the ASAS detector elements (1%
+uncertainty).  The uncertainty associated with the radiance of the portable
+hemisphere has not been determined, however it is probably similar to that of
+theintegrating hemisphere.  Other factors such as polarization sensitivity,
+signal cross-talk between detectors, and stray light may contribute to the
+uncertainty, but these factors have not been evaluated.
+<P>
+<B>10.2.3 Measurement Error for Parameters</B><br>
+<P>
+<B>10.2.4 Additional Quality Assessments</B><br>
+Spectral response curves for selected training areas are plotted and examined
+for known atmospheric absorption features.  These plots are also compared to
+similar measurements made by other instruments, if data are available.
+<P>
+<B>10.2.5 Data Verification by Data Center </B><br>
+(For BORIS and ORNL DAAC Use)
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 11">11. Notes</A></H3>
+</center>
+<p>
+<B>11.1 Limitations of the Data</B><br>
+<p>
+<B>11.2 Known Problems with the Data</B><br>
+Image Data:
+<OL>
+<LI>Several of the 31744 detectors in the ASAS array are inoperable; these
+will produce vertical striping in the spectral channel in which they occur.
+<LI>The correction for low-energy frames due to the array timing problem may
+not be successful in all datasets and some frames may exhibit non-bright
+horizontal striping.
+<LI>ASAS data acquired over the SSA calibration target (a soil field) was
+atmospherically corrected and compared to ground measurements.  The results
+show ASAS to agree very well with the ground observations between 490 and 870
+nm. Below 490 nm and above 870 nm, the ASAS response falls below the expected
+level.
+<LI>Though a specific sequence of view angles from +70 to -55 degrees was
+attempted for each flightline over the Flux Tower sites, not all look angles
+were achieved every time.  Often the 70-degree off-nadir view missed the site
+or contained too much distortion for inclusion in the dataset.
+</OL>
+<p>
+Header Information:
+<OL>
+<LI>The altitude, heading, and groundspeed parameters in the image headers
+originated from operator flight logs and therefore may not be completely
+accurate. If such parameters are very important to the user, they should be
+independently corroborated by navigation data (taken by the C-130 crew) which
+is available from NASA/ARC.
+</OL>
+<P>
+<br>
+<B>11.3 Usage Guidance</B><br>
+At present, the provided ASAS data are not geo-rectified or geo-located, nor
+are they corrected for atmospheric effects.  Accurate accounting of
+atmospheric effects on the at-sensor radiance measurements is very important,
+since ASAS data acquisition involves observations through varying path
+lengths.<br>
+<IMG SRC="../gifs/indent.gif">Users should view ASAS images thoroughly in all spectral bands of interest and
+select study areas carefully.  Check the ASAS ASCII header for each dataset's
+appropriate spectral radiometric resolution factors and S/N ratios.  Use
+special caution working with channels below 490 nm or above 870 nm (See
+Section 11.1).
+<P>
+<B>11.4 Other Relevant Information</B><br>
+None.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 12">12. Application of the Data Set</A></H3>
+</center>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 13">13. Future Modifications and Plans</A></H3>
+</center>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 14">14. Software</A></H3>
+</center>
+<p>
+<B>14.1 Software Description</B><br>
+<p>
+<B>14.2 Software Access</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 15">15. Data Access</A></H3>
+</center>
+<p>
+<B>15.1 Contact Information</B><br>
+<p>
+<B>15.2 Data Center Identification</B><br>
+<p>
+<B>15.3 Procedures for Obtaining Data</B><br>
+<p>
+<B>15.4 Data Center Status/Plans</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 16">16. Output Products and Availability</A></H3>
+</center>
+<p>
+<B>16.1 Tape Products</B><br>
+<p>
+<B>16.2 Film Products</B><br>
+<p>
+<B>16.3 Other Products</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 17">17. References</A></H3>
+</center>
+<P>
+<B>17.1 Platform/Sensor/Instrument/Data Processing Documentation</B><br>
+Kovalick, W. and Graham, D., 1991, ASAS Programmer's Manual, Hughes STX, Code
+923, NASA/GSFC, Greenbelt, MD.  (In-house document)
+<P>
+<B>17.2 Journal Articles and Study Reports</B><br>
+Many of the following articles describe data from the first generation CID
+array (prior to 1991). Radiometric resolution factors and spectral band
+centers differ among the various ASAS datasets.
+<P>
+Abuelgasim, A. A. and A. Strahler (1994), Modeling bidirectional radiance
+measurements collected by the Advanced Solid-state Array   Spectroradiometer
+(ASAS) over Oregon Transect conifer forests, Remote Sens. Environ. 47:261-275.
+<P>
+Abuelgasim, A. A., S. Gopal, J. R. Irons, and A. H. Strahler (in   press), An
+artificial neural network for the classification of ASAS   directional
+measurements, Remote Sens. Environ.
+<P>
+Brown de Colstoun, E.C., C.L. Walthall, C.A. Russell, and J.R. Irons (in
+press), Estimating the fraction of absorbed photosynthetically   active
+radiation (fAPAR) at FIFE with airborne bidirectional   spectral reflectance
+data, J. Geophys. Res..
+<P>
+Deering, D. W., E. M. Middleton, J. R. Irons, B. L. Blad, E. A.   Walter-Shea,
+C. J. Hays, C. L. Walthall, T. F. Eck,  S. P. Ahmad,   and B. P. Banerjee
+(1992), Prairie grassland bidirectional   reflectances measured by different
+instruments at the FIFE site,   J. Geophys. Res. 97:18887-18903.
+<P>
+Guinness, E.A., R.A. Arvidson, J.R. Irons, and D.J. Harding (1991), Surface
+scattering properties estimated from modeling airborne   multiple emission
+angle reflectance data, Geophys. Res. Letters   18(11):2051-2054.
+<P>
+Hall, D.K., J.L. Foster, J.R. Irons, and P.W. Dabney (1993), Airborne
+bidirectional radiances of snow covered surfaces in Montana, USA, Annals of
+Glaciology 17:35-40.
+<P>
+Irons, J.R., K.J. Ranson, D.L. Williams, R.R. Irish, and F.G. Huegel (1991),
+An off-nadir pointing imaging spectroradiometer for   terrestrial ecosystem
+studies, IEEE Trans. on Geoscience and Remote   Sensing 29(1):66-74.
+<P>
+Lawrence, W. T., D. L. Williams, K. J. Ranson, J. R. Irons, and   C. L.
+Walthall (1994), Comparative analysis of data acquired by   three narrow-band
+airborne spectroradiometers over subboreal  vegetation, Remote Sens. Environ.
+47:204-215.
+<P>
+Qi, J., M. S. Moran, F. Cabot, and G. Dedieu (in press), Normalization   of
+sun/view angle effects on vegetation indices with bidirectional   reflectance
+function models, Remote Sens. Env.
+<P>
+Johnson, L. F. (1994), Multiple view zenith angle observations of
+reflectance from ponderosa pine stands, Int. J. Remote Sens. 15:  3859-3865.
+<P>
+Moran, M. S., R. D. Jackson, T. R. Clarke, J. Qi, F. Cabot, K. J.   Thome, and
+P. N. Slater (in  press), Reflectance factor retrieval   from Landsat TM and
+SPOT HRV data for bright and dark targets,   Remote Sens. Env.
+<P>
+Ranson, K. J., J. R. Irons, and D. L. Williams (1994), Multispectral
+bidirectional reflectance of northern forest canopies with the  Advanced
+Solid-state Array Spectroradiometer (ASAS), Remote Sens.  Env. 47:276-289.
+<P>
+Russell, C. A., C. L. Walthall, J. R. Irons, and E. C. Brown de  Colstoun (in
+press), Comparison of airborne and surface spectral  bidirectional reflectance
+factors, spectral hemispherical   reflectance and spectral vegetation indices,
+J. Geophys. Res.
+<P>
+Schaaf, C. B., and A. H. Strahler (1994), Validation of bidirectional  and
+hemispherical reflectances from a geometric-optical model using  ASAS imagery
+and pyranometer measurements of a spruce forest,   Remote Sens. Env. 49:138-
+144.
+<P>
+Shepard, M.K., R.E. Arvidson, and E.A. Guinness  (1993), Specular   scattering
+on a terrestrial playa and implications for planetary  surface studies, J.
+Geophys. Res. 98(E10):18,707-18,718.
+<P>
+van Leeuwen, W. J. D., A. R. Huete, C. L. Walthall, S. D. Prince,   N. P.
+Hanan, A. Begue, and R. J. Roujean (in review), Deconvolution  of remotely
+sensed spectral mixtures for retrieval of LAI, fAPAR   and soil brightness,
+submitted to J. Hydrology, HAPEX special issue. UNREFEREED CONFERENCE
+PROCEEDINGS, TALKS, SYMPOSIUMS
+<P>
+Abuelgasim, A. and S. Gopal (1994), Classification of multiangle and
+multispectral ASAS data using a hybrid neural network model,  IGARSS'94
+Digest, 3: 1670-1672.
+<P>
+Allison, D., and Muller, J.-P. (1992), An automated system for  sub-pixel
+correction and geocoding of multi-spectral and multi-look   aerial imagery,
+Proc. XVII Congress, Int. Soc. Photogramm. and Rem.   Sens., Washington D.C.,
+Aug.2-14, 29(B2) pp. 275-285.
+<p>
+Allison, D., M. J. Barnsley, P. Lewis, N. Dyble and J.-P. Muller   (1994),
+Precise geometric registration of ASAS airborne data for   land surface BRDF
+studies, IGARSS'94 Digest, 3:1655-1657.
+Birk, R. J., and T. B. McCord (1994), Airborne hyperspectral sensor   systems,
+47th National Aerospace and Electronics Conf., Dayton, OH,   May 23-27.
+<P>
+Brown de Colstoun, E. C., C. L. Walthall, C. A. Russell, and J. R.   Irons
+(1994), Estimating the fraction of absorbed photosynthetically   active
+radiation (fAPAR) from off-nadir airborne measurements,   IGARSS'94 Digest, 3:
+1823-1825.
+<P>
+Cabot, F., J. Qi, M. S. Moran, and G. Dedieu (1994), Test of surface
+bidirectional reflectance models with surface measurements: results   and
+consequences for the use of remotely sensed data, Sixth   International
+Symposium on Physical Measurements and Signatures in   Remote Sensing, Jan 17-
+21, Val d'Isere, France.
+<P>
+Chong-guang, Z., W. Jun, and A. H. Strahler (1994), A new registration
+algorithm for ASAS multi-angle images, IGARSS'94 Digest, 3:1658-  1660.
+<P>
+Dabney, P. W., J. R. Irons, J. W. Travis, M. S. Kasten, and S.   Bhardwaj
+(1994), Impact of recent enhancements and upgrades of the   Advanced Solid-
+state Array Spectroradiometer (ASAS), IGARSS'94   Digest, 3:1649-1651.
+<P>
+Diner, D. J., S. R. Paradise, and J. Martonchik (1994), Development of   an
+aerosol opacity retrieval algorithm for use with multi-angle land   surface
+images, IGARSS'94 Digest, 3:1664-1666.
+<P>
+Gatlin, J. A., E. M. Middleton,  J. R. Irons, and J. W. Robinson  (1991), The
+application of high spectral resolution and spatial  resolution imaging
+spectrometers for locating downed aircraft,  Proceedings of the International
+Geoscience and Remote Sensing  Symposium, Espoo, Finland, v. 3: 1363-1366.
+<P>
+Harding, D. J., and J. R. Irons (1990), Bidirectional radiance of   playa and
+volcanic surfaces: Advanced Solidstate Array  Spectroradiometer (ASAS)
+measurements of Lunar Crater volcanic   field, Nevada, Proc. of the IGARSS'90
+Symposium, Univ. of Maryland,  College Park, MD, v.2:1361-1363.
+<P>
+Huete, A. R., H. Y. Liu, and H. Q. Liu (1994), Directional vegetation   index
+interactions in ASAS imagery, IGARSS'94 Digest, 3:1813-1814.
+<P>
+Irons, J. R. and R. R. Irish (1988), Sensor calibration for multiple
+direction reflectance observations, SPIE Proceedings Vol. 924,   Recent
+Advances in Sensors, Radiometry, and Data Processing for  Remote Sensing, p.
+109-119.
+<P>
+Irons, J. R., F. G. Huegel, and R. R. Irish (1989), Prairie grass
+hemispherical reflectances from airborne multi-directional   observations,
+Proc. of 19th Conf. on Agriculture and Forest   Meteorology and the Ninth
+Conf. on Biometeorology and Aerobiology,   March 7-10, 1989, Charleston, SC,
+published by American Meteological   Society, Boston, MA.
+<P>
+Irons, J. R., K. J. Ranson, D. L. Williams,  and R. R. Irish (1989),   Forest
+and grassland ecosystem studies using the Advanced Solidstate   Array
+Spectroradiometer, Proceedings of the International Geoscience   and Remote
+Sensing Symposium, Vancouver, Canada, v. 3: 1761-1764.
+<P>
+Irons, J. R., P. W. Dabney, J. Paddon, R. R. Irish, and C. A. Russell
+(1990), Advanced Solidstate Array Spectroradiometer (ASAS) support   of 1989
+field experiments, SPIE Proceedings Vol. 1298, Imaging   Spectroscopy of the
+Terrestrial Environment, April 16-17, 1990,   Orlando, FL.
+<P>
+Irons, J.R., B.W. Meeson, P.W. Dabney, W.M. Kovalick, D.W. Graham,   and D.S.
+Hahn (1992), A data base of ASAS digital image data, Proc.   12th Annual
+International Geoscience & Remote Sens. Symp.,   IGARSS'92, Vol. I, Houston,
+TX, 26-29 May, 1992:517-519.
+<P>
+Johnson, L. F., and D. L. Peterson (1994), Estimation of forest canopy   leaf
+area index using directional ASAS measurements, IGARSS'94  Digest, 3:1819-
+1822.
+<P>
+Kovalick, W. M., D. W. Graham, and M. Bur (1994), Data processing and
+calibration of the Advanced Solid-state Array Spectroradiometer,   IGARSS'94
+Digest, 3:1652-1654.
+<P>
+Lewis, P., M. J. Barnsley, M. Sutherland, and J. P. Muller (1995),
+Estimating land surface albedo in the HAPEX-Sahel experiment:    Model-based
+inversions using ASAS data, IGARSS'95 Digest,   Florence, Italy, July 10-14,
+1995:2221-2223.
+<P>
+Liang, S., and A.H. Strahler (1993), BRDF retrieval from multiangle   remotely
+sensed data, SPIE Proceedings Vol. 1938, Recent Advances in   Sensors,
+Radiometric Calibration, and Processing of Remotely Sensed   Data, April 14-
+16, 1993, Orlando, FL.
+<P>
+Markham, B. L.,  J. R. Irons, D. W. Deering, R. N. Halthore, R. R.   Irish, R.
+D. Jackson, M. S. Moran, S. F. Biggar, D. I. Gellman,   B. G. Grant, J. M.
+Palmer, and P. N. Slater (1990), Radiometeric   calibration of aircraft and
+satellite sensors at White Sands, NM,   Proceedings of the International
+Geoscience and Remote Sensing   Symposium, College Park, MD, v. 1:515-518.
+<P>
+Martonchik, J. V. and J. E. Conel (1994), Retrieval of surface   reflectance
+and atmospheric properties using ASAS imagery,   IGARSS'94 Digest, 3:1661-
+1663.
+<P>
+Qi, J., F. Cabot, M. S. Moran, G. Dedieu, and K. J. Thome (1994),
+Biophysical parameter retrievals using bidirectional measurements,   IGARSS'94
+Digest, 3:1816-1818, 1994.  Schaaf, C. B., X. Li, and A. H. Strahler (1994),
+Validation of canopy   bidirectional reflectance models with ASAS imagery of a
+spruce   forest in Maine, IGARSS'94 Digest, 3:1832-1834.
+<P>
+Staenz, K., R.P. Gauthier, and P.M. Telliet (1993), Bidirectional-
+reflectance effects derived from ASAS imagery of a pecan orchard,  SPIE
+Proceedings Vol. 1937, Imaging Spectrometry of the Terrestrial   Environment,
+April 14-16, 1993, Orlando, FL.
+<P>
+Teillet, P. M. and J. R. Irons (1990), Spectral variability effects   on the
+atmospheric correction of imaging spectrometer data for   surface reflectance
+retrieval, Proc. of the ISPRS Commission VII   Mid-Term Symposium: Global and
+Environmental Monitoring Techniques   and Impacts, Victoria, BC, Canada:579-
+583.
+<P>
+van Leeuwen, W. J. D., A. R. Huete, and C. L. Walthall (1994),   Biophysical
+interpretation of a spectral mixture model based on a   radiative transfer
+model and observational data, IGARSS'94 Digest,   3:1458-1460.
+<P>
+<B>CDROM COLLECTIONS</B><br>
+Angelici, G.L., J.W. Skiles, and L.Z. Popovici (1992), OTTER: Oregon
+Transect Ecosytem Research Project, Collected Data, Volume 1,   Version 1,
+Satellite, aircraft and ground measurements, CD-ROM   USA_NASA_PLDS_OT_0001,
+NASA/ARC.
+<P>
+Arvidson, R.E., Dale-Bannister, M.A., Guinness, E.A., Slavney, S.H.,   and
+Stein, T.C., 1991. Archive of Geologic Remote Sensing Field   Experiment,
+Data-Release 1.0, CD-ROM Volume USA_NASA_PDS_GR_001,   NASA Planetary Data
+System, JPL, Pasadena, CA.
+<P>
+Strebel, D.E., D.R. Landis, J.A. Newcomer, B.W. Meeson, P.A. Agbu,  and J.M.P.
+McManus (1992), Collected Data of the First ISLSCP  Field Experiment, Volume
+4: ASAS & PBMR Imagery 1987 & 1989,   CD-ROM USA_NASA_PLDS_FIFE_0004,
+NASA/GSFC.
+<P>
+<br>
+<B>17.3 Archive/DBMS Usage Documentation</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 18">18. Glossary of Terms</A></H3>
+</center>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 19">19. List of Acronyms</A></H3>
+</center>
+<PRE>
+AGL     - Above Ground Level
+ASAS    - Advanced Solid-state Array Spectroradiometer
+BOREAS  - BOReal Ecosystem-Atmosphere Study
+BORIS   - BOREAS Information System
+DAAC    - Distributed Active Archive Center
+EOS     - Earth Observing System
+EOSDIS  - EOS Data and Information System
+FFC-T   - Focused Field Campaign - Thaw
+FWHM    - Full Width Half Maximum
+GSFC    - Goddard Space Flight Center
+HDR     - Header
+IFC     - Intensive Field Campaign
+IFOV    - Instantaneous Field-of-View
+NASA    - National Aeronautics and Space Administration
+ORNL    - Oak Ridge National Laboratory
+SSP     - Solar Principal Plane
+URL     - Uniform Resource Locator
+<P>
+</PRE>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 20">20. Document Information</A></H3>
+</center>
+<P>
+<B>20.1 Document Revision Date</B><br>
+Aug-1995
+<P>
+<B>20.2 Document Review Date(s)</B><br>
+BORIS Review:<br>
+Science Review:
+<p>
+<B>20.3 Document ID</B><br>
+(For BORIS and ORNL DAAC Use)
+<p>
+<B>20.4 Citation</B><br>
+Acknowledge James R. Irons and Philip W. Dabney for providing ASAS data.  Cite
+relevant ASAS publications (see Section 12.2).
+<P>
+<B>20.5 Document Curator</B><br>
+ (For BORIS and ORNL DAAC Use)
+<p>
+<B>20.6 Document URL</B><br>
+ (For BORIS and ORNL DAAC Use)
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+</body>
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> July 22, 1997
+</html>

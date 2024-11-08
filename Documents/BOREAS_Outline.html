@@ -1,0 +1,831 @@
+<html>
+<head>
+<title>BOREAS -- Standard Data Set Documentation Outline</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+<A NAME="Top">The BOREAS Information System</A></B>
+<hr>
+<script language="JavaScript">
+<!--
+function sampleDoc (form,section) {
+  Item=form.list.selectedIndex;
+  if (Item==1) { docName='GOES7_L1.html#Section '; }
+	else if (Item==2) { docName='GOES7_L1A.html#Section '; }
+  else if (Item==3) { docName='HYD09_stream_gauge.html#Section '; }
+  else if (Item==4) { docName='RSS02_ASAS.html#Section '; }
+  else if (Item==5) { docName='TE09_nphotosy.html#Section '; }
+  else if (Item==6) { docName='TE09_parnprof.html#Section '; }
+  else if (Item==7) { docName='TGB09_nmhc_obs.html#Section '; }
+  docName=docName+section;
+  if (Item>0) { window.open(docName,'docWin','width=500,height=300'); }
+  form.list.selectedIndex=0;
+}
+//-->
+</script>
+<body>
+
+<center>
+<H3>BOREAS Data Set Documentation Outline</H3>
+</center>
+<p>
+This is a guide on how to write data set documentation for BOREAS. For general style guidelines and access to sample BOREAS documents, <A HREF="Documentation.html">click here</A>.
+<p>
+<B>Note:</B> The text surrounded by square brackets ([..]) is an expanded instruction, or set of instructions, for the outline item which appears directly above it.  The text contained in the brackets should be removed from the final data set documents.
+<p>
+<hr>
+
+<center>
+<H3>"Data Set Document Title"</H3>
+[The above text is intended as a place holder for the actual data set<br>
+title and should be replaced by that title in actual documents.]
+</center>
+<P>
+<H3>Summary</H3>
+[Provide an abstract about the data set.  This should be aimed towards helping someone to decide if he/she could use these data for a research project.  You should include a general description the types of data collected, major parameters included, general sites and times, major instrument used, and basic format information (ASCII files, raster image files, binary image files, etc). ]
+<P>
+<br>
+<H3>Table of Contents</H3>
+<OL>
+<B><LI></B><A HREF="#Section 1">Data Set Overview</A>
+<B><LI></B><A HREF="#Section 2">Investigator(s)</A>
+<B><LI></B><A HREF="#Section 3">Theory of Measurements</A>
+<B><LI></B><A HREF="#Section 4">Equipment</A>
+<B><LI></B><A HREF="#Section 5">Data Acquisition Methods</A>
+<B><LI></B><A HREF="#Section 6">Observations</A>
+<B><LI></B><A HREF="#Section 7">Data Description</A>
+<B><LI></B><A HREF="#Section 8">Data Organization</A>
+<B><LI></B><A HREF="#Section 9">Data Manipulations</A>
+<B><LI></B><A HREF="#Section 10">Errors</A>
+<B><LI></B><A HREF="#Section 11">Notes</A>
+<B><LI></B><A HREF="#Section 12">Application of the Data Set</A>
+<B><LI></B><A HREF="#Section 13">Future Modifications and Plans</A>
+<B><LI></B><A HREF="#Section 14">Software</A>
+<B><LI></B><A HREF="#Section 15">Data Access</A>
+<B><LI></B><A HREF="#Section 16">Output Products and Availability</A>
+<B><LI></B><A HREF="#Section 17">References</A>
+<B><LI></B><A HREF="#Section 18">Glossary of Terms</A>
+<B><LI></B><A HREF="#Section 19">List of Acronyms</A>
+<B><LI></B><A HREF="#Section 20">Document Information</A>
+</OL>
+<P>
+
+<HR>
+<center>
+<H3><A NAME="Section 1">1. Data Set Overview</A></H3>
+</center>
+[This section is aimed toward the person searching for a data set. Descriptions should be short and clear, acronyms should be spelled out.]
+<P>
+<B>1.1 Data Set Identification</B><br>
+[Title or name for the data set, generally a short descriptive phrase, e.g. "BOREAS Level-3a Landsat TM Imagery: Digital Counts in Band Sequential Format With Georeferencing Information", or "BOREAS Tower Flux Data From the Northern Study Area Old Black Spruce Site", or "BOREAS Photosynthetic Response to CO<sub>2</sub> Concentrations"]
+<P>
+<B>1.2 Data Set Introduction</B><br>
+[A more detailed description of the data set than section 1.1.  Should be up to a few sentences describing the data and instruments.]
+<P>
+<B>1.3 Objective/Purpose</B><br>
+[A few paragraphs on why the study was undertaken, and what the Principal Investigator hoped to achieve by conducting it.  Be as specific as possible here in relating how this data set will help or provide information to the BOREAS effort.]
+<P>
+<B>1.4 Summary of Parameters and Variables</B><br>
+[A summary of the phenomena which are being studied, and their parameters. A full description will be given in section 7.]
+<P>
+<B>1.5 Discussion</B><br>
+[A few introductory paragraphs which briefly describe the experiment, the nature of the data, the quality of the data, instruments used, etc.]
+<P>
+<B>1.6 Related Data Sets</B><br>
+[Note any similar or related data collected by the investigator, other investigators, or other data centers.  Something like five or six related data sets is a good number to provide.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 2">2. Investigator(s)</A></H3>
+</center>
+<P>
+<B>2.1 Investigator(s) Name and Title</B><br>
+[Identify the Principal Investigator for this data set, including general affiliation, if applicable]
+<P>
+<B>2.2 Title of Investigation</B><br>
+[Official name of group taken from the BOREAS Experiment Plan.]
+<P>
+<B>2.3 Contact Information</B><br>
+[Identify those persons most knowledgeable about the actual collection and processing of the data sets. In many cases this will be a person (or persons), other than the Principal Investigator, who prepared the data for submission to BOREAS and is sufficiently knowledgeable about the data to answer technical questions about it.  When the Principal Investigator is a primary contact, full address information should also be given here.   The BORIS Team Representative should be included as the last point of contact. Include name(s), address, telephone number, FAX number, E-mail address as  a series of grouped lines  as shown below and not in a tabular form.]
+<PRE>Contact 1
+-------------
+Dr. Unknown
+Address line 1
+Address line 2
+Telephone:
+Fax:
+Email:
+
+Contact 2
+----------------
+Dr. Unknown
+Address line 1
+Address line 2
+Telephone:
+Fax:
+Email:
+
+Contact 3
+-------------
+BORIS Team Representative
+Address line 1
+Address line 2
+Telephone:
+Fax:
+Email:
+</PRE>
+<p>
+<br>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'2')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 3">3. Theory of Measurements</A></H3>
+</center>
+[Theoretical basis for the way in which the measurements were made (e.g. special procedures, characteristics of the instrument, etc.).  This should not simply be a list of references.  It should be around a page in length]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'3')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 4">4. Equipment</A></H3>
+</center>
+<P>
+<B>4.1 Sensor/Instrument Description</B><br>
+[This section provides a listing of the instrumentation and the characteristics of the instrumentation.]
+<P>
+<B>4.1.1 Collection Environment</B><br>
+[Under what environmental conditions were the data collected and the instrumentation operated.  This includes descriptions of the types of sites visited and factors which may effect the measurements such as temperature range experienced during data collection.]
+<P>
+<B>4.1.2 Source/Platform</B><br>
+[What the instrument is mounted on, e.g. tower, aircraft, hand held]
+<P>
+<B>4.1.3 Source/Platform Mission Objectives</B><br>
+[The reason why the mission was undertaken. (Mission here refers, to the general purpose of operational or research satellites and aircraft, e.g. the mission objective for a flux tower might be to measure surface fluxes at the NSA-OJP site. The particular study objectives are in item 1.3.)]
+<P>
+<B>4.1.4 Key Variables</B><br>
+[The primary quantities being measured (e.g. surface radiance).]
+<P>
+<B>4.1.5 Principles of Operation</B><br>
+[Fundamental scientific basis for the way the instrument operates.  This is a summary; where a full development is required, it should be placed in section 3.0]
+<P>
+<B>4.1.6 Sensor/Instrument Measurement Geometry</B><br>
+[Describe the sensor location, orientation, and any other parameters which affect the collection or analysis of data, e.g. field of view, optical characteristics, height, etc.]
+<P>
+<B>4.1.7 Manufacturer of Sensor/Instrument</B><br>
+[Name, address, and telephone number of the company which produced the instrument.  If the measuring device was built by the investigator, or specially customized, please specify.]
+<P>
+<br>
+<B>4.2 Calibration</B><br>
+[Describe how the measurements made by the device(s) are calibrated with known standards.  Specific details should be given in the subsections below.]
+<p>
+<B>4.2.1 Specifications</B><br>
+[Record any specifications which affect the calibration of the device, its operations, or the analysis of the data collected with it.]
+<P>
+<B>4.2.1.1 Tolerance</B><br>
+[Describe the acceptable range of inputs and the precision of the output values.]
+<P>
+<B>4.2.2 Frequency of Calibration</B><br>
+[Indicate how often the instrument is measured against  a standard.  Also indicate any other routine procedures required to maintain calibration or detect miscalibrations. Describe also the actual practice with this device.]
+<P>
+<B>4.2.3 Other Calibration Information</B><br>
+[Give factory calibration coefficients, information about independent calibrations, history of modifications, etc.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'4')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 5">5. Data Acquisition Methods</A></H3>
+</center>
+[Describe the procedures for acquiring this data in sufficient detail so that someone else with similar equipment could duplicate your measurements.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'5')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 6">6. Observations</A></H3>
+</center>
+[Use this section to record observations made during actual data collection, which could bear on the analysis of the data, e.g. condition of site, peculiar procedures or operations, the presence of U.F.O.'s or bears, oddities in equipment functioning, etc.]
+<P>
+<B>6.1 Data Notes</B><br>
+<p>
+<B>6.2 Field Notes</B><br>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'6')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 7">7. Data Description</A></H3>
+</center>
+[This section describes the data in the data set: what the data are, units, format, data characteristics, and where and when the data were collected.]
+<P>
+<B>7.1 Spatial Characteristics</B><br>
+[This subsection describes the actual spatial resolution and coverage of the data collected for BOREAS.]
+<P>
+<B>7.1.1 Spatial Coverage</B><br>
+[Indicate the total area covered by each measurement or set of measurements.  Give enough information to locate the geographic position of the measurement with suitable precision.  This may be a list of sites visited.]
+<P>
+<B>7.1.2 Spatial Coverage Map</B><br>
+[If applicable, include a geographic map or schematic showing the area over which the data were collected.]
+<P>
+<B>7.1.3 Spatial Resolution</B><br>
+[The degree to which the terrain may be resolved into constituent or elementary parts (e.g. The dimensions of each image pixel, or the area observed by an instrument.).]
+<P>
+<B>7.1.4 Projection</B><br>
+[If applicable, describe the geographic coordinate system or map projection in which the data are referenced/stored. This is used mostly for satellite, aircraft, or large-scale modeling data.]
+<P>
+<B>7.1.5 Grid Description</B><br>
+[If applicable, describe the grid system in which the data are referenced/stored. This is used mostly for satellite, aircraft, or large-scale modeling data.]
+<P>
+<br>
+<B>7.2 Temporal Characteristics</B><br>
+[This subsection describes the actual temporal resolution and coverage of the data collected.]
+<P>
+<B>7.2.1 Temporal Coverage</B><br>
+[The period(s) of time during which data was collected more or less continuously (e.g. for an Intensive Field Campaign provide the start and end dates).]
+<P>
+<B>7.2.2 Temporal Coverage Map</B><br>
+[List the dates when data were collected at the various locations.  This might be in the form of a table of dates and the sites visited on each date.]
+<P>
+<B>7.2.3 Temporal Resolution</B><br>
+[Describe the optimum and typical intervals between measurements during the  periods in 7.2.1 (e.g. hourly, daily, 30 minute average). Also, indicate the length of time it takes to make a measurement (e.g. measurements took 5 minutes to make and were collected every hour.).]
+<P>
+<br>
+<B>7.3 Data Characteristics</B><br>
+[Describe the data submitted, with items 7.3.1 through 7.3.5 (below) being represented as columns in a table. 
+<p>
+<B>Example:</B>
+<PRE>Parameter    Description                    Units       Source      Range
+---------    -----------                    -----       ------      -----
+OBS_DATE     The date the data was taken.   Julian Day  na          1 to 366
+OBS_SITE     The location the data was      na          na          NSA-OJP
+             taken (BOREAS site).
+SOIL_TEMP    Soil temperature               Degrees C   Soil Temp   -40 to 25
+                                                        Probe
+</PRE>
+It is very important to fill in as much of this information as possible. If you need extra space for an item, use footnotes at the end of the table.]
+<P>
+<br>
+<B>7.3.1 Parameter/Variable</B><br>
+<p>
+<B>7.3.2 Variable Description/Definition</B><br>
+<p>
+<B>7.3.3 Unit of Measurement</B><br>
+<p>
+<B>7.3.4 Data Source</B><br>
+<p>
+<B>7.3.5 Data Range</B><br>
+<p>
+<B>7.4 Sample Data Record</B><br>
+[One or more sample records from a data file]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'7')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 8">8. Data Organization</A></H3>
+</center>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<B>8.1 Data Granularity</B><br>
+[Specify for this data set, the smallest unit of orderable data. For the point source data sets this will generally be the data collected at a particular site on a given day. For image data, the smallest unit is generally a particular image or flight line.]
+<P>
+<B>8.2 Data Format(s)</B><br>
+[Describe in detail the format for this data set. For multi-file data products, start with an overall description of the number and types of files, and proceed to then further describe each file in detail. For encoded or mixed ASCII and binary data, please describe the codes used. For multi-byte binary values, please be sure to describe the order of the bytes.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'8')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 9">9. Data Manipulations</A></H3>
+</center>
+[This section describes the steps by which the data were processed to their final form.]
+<P>
+<B>9.1 Formulae</B><br>
+[List and briefly describe any formulae required in processing the data. Include units.]
+<P>
+<B>9.1.1 Derivation Techniques and Algorithms</B><br>
+[Describe any special techniques or algorithms used.]
+<P>
+<br>
+<B>9.2 Data Processing Sequence</B><br>
+<p>
+<B>9.2.1 Processing Steps</B><br>
+[Indicate the sequence of processing steps.]
+<P>
+<B>9.2.2 Processing Changes</B><br>
+[For long term, repetitive, or revised data sets; give a history of changes in the processing sequence.]
+<P>
+<br>
+<B>9.3 Calculations</B><br>
+<p>
+<B>9.3.1 Special Corrections/Adjustments</B><br>
+[List any 'special' corrections/adjustments made to portions but not all of the data to make it compatible with the data set as a whole.]
+<P>
+<B>9.3.2 Calculated Variables</B><br>
+[Describe how any specially calculated variables or parameters were derived.]
+<P>
+<br>
+<B>9.4 Graphs and Plots</B><br>
+[Include as separate files. GIF format is preferable. Make sure to put all comments on these graphs and plots here, with a reference to the GIF file name.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'9')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 10">10. Errors</A></H3>
+</center>
+[This section describes an error analysis for the data.]
+<P>
+<B>10.1 Sources of Error</B><br>
+[Describe what factors of the instrument or environment may introduce errors in the observations.]
+<P>
+<B>10.2 Quality Assessment</B><br>
+<p>
+<B>10.2.1 Data Validation by Source</B><br>
+[Describe all efforts to validate the data by the submitter, e.g. comparisons with data from other investigators.]
+<P>
+<B>10.2.2 Confidence Level/Accuracy Judgment</B><br>
+[Subjective discussion of data quality.]
+<P>
+<B>10.2.3 Measurement Error for Parameters</B><br>
+[Quantitative error estimates.]
+<P>
+<B>10.2.4 Additional Quality Assessments</B><br>
+[May include visual review of plots, etc.]
+<P>
+<B>10.2.5 Data Verification by Data Center</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'10')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 11">11. Notes</A></H3>
+</center>
+<P>
+<B>11.1 Limitations of the Data</B><br>
+[Provide warnings on the use of the data, e.g. data were collected under drought conditions relations between variables may be different when things are wet.]
+<P>
+<B>11.2 Known Problems with the Data</B><br>
+[List known problems and discrepancies in the data set.]
+<P>
+<B>11.3 Usage Guidance</B><br>
+[Place any "Truth in Analysis" warnings here.]
+<P>
+<B>11.4 Other Relevant Information</B><br>
+[Use this section for any other information about the study (such as  humorous anecdotes, lame excuses, abject apologies, miracles, etc.).]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'11')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 12">12. Application of the Data Set</A></H3>
+</center>
+[Suggest some types of analysis in which the data may be useful.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'12')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 13">13. Future Modifications and Plans</A></H3>
+</center>
+[Describe any planned modifications to the processing or data.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'13')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 14">14. Software</A></H3>
+</center>
+<P>
+<B>14.1 Software Description</B><br>
+[Describe all software that was used to process the data.]
+<p>
+<B>14.2 Software Access</B><br>
+[Describe any software that may be available for use by someone who may want to perform further processing of the data. Also describe where a user can get it -- commercial source, Web site, FTP archive, e-mail to author, etc.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'14')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 15">15. Data Access</A></H3>
+</center>
+[The information shown in the following subsections is what should appear here. BORIS or ORNL will change as necessary.]
+<P>
+<B>15.1 Contact Information</B><br>
+<PRE>Ms. Beth McCowan
+BOREAS Data Manager
+Bldg. 22. Room G87
+Code 923
+NASA GSFC
+Greenbelt, MD 20771
+(301) 286-4005
+(301) 286-0239 (fax)
+beth@ltpmail.gsfc.nasa.gov
+</PRE>
+<P>
+<br>
+<B>15.2 Data Center Identification</B><br>
+See section 15.1.
+<P>
+<B>15.3 Procedures for Obtaining Data</B><br>
+Users may place requests by letter, telephone, electronic mail, FAX, or personal visit.
+<P>
+<B>15.4 Data Center Status/Plans</B><br>
+As the BOREAS data are processed and sufficiently quality checked, they will be available from the EOSDIS ORNL DAAC (Earth Observing System Data and Information System) (Oak Ridge National Laboratory) (Distributed Active Archive Center). The BOREAS contact at ORNL is: 
+<P>
+<PRE>Merilyn Gentry
+User Services/Data Coordinator
+Oak Ridge National Laboratory DAAC
+P.O. Box 2008
+Bldg. 1507, MS-6407
+Oak Ridge, TN 37830-6407
+(423) 241-3952
+ornldaac@ornl.gov
+</PRE>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'15')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 16">16. Output Products and Availability</A></H3>
+</center>
+[Describe the various data and related products that may be available.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'16')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 17">17. References</A></H3>
+</center>
+<P>
+<B>17.1 Platform/Sensor/Instrument/Data Processing Documentation</B><br>
+[List any published documentation relevant to the data collected, such as  manufacturer's instruction manuals, government technical manuals, user's  guides, etc.]
+<P>
+<br>
+<B>17.2 Journal Articles and Study Reports</B><br>
+[List technical reports and scientific publications which concern the methods, instruments, or data described in this document. Publications by the Principal Investigator or investigating group which would help a reader understand or analyze the data are particularly important.  Be sure to include the standard BOREAS project description articles (listed below).]
+<p>
+Sellers, P., F. Hall. 1994. Boreal Ecosystem-Atmosphere Study: Experiment Plan. Version 1994-3.0, NASA BOREAS Report (EXPLAN 94).
+<p>
+Sellers, P., F. Hall. 1996. Boreal Ecosystem-Atmosphere Study: Experiment Plan. Version 1996-2.0, NASA BOREAS Report (EXPLAN 96).
+<p>
+Sellers, P., F. Hall, K.F. Huemmrich. 1996. Boreal Ecosystem-Atmosphere Study: 1994 Operations. NASA BOREAS Report (OPS DOC 94).
+<p>
+Sellers, P., F. Hall, K.F. Huemmrich. 1997. Boreal Ecosystem-Atmosphere Study: 1996 Operations. NASA BOREAS Report (OPS DOC 96).
+<p>
+Sellers, P., F. Hall, H. Margolis, B. Kelly, D. Baldocchi, G. den Hartog, J.
+Cihlar, M.G. Ryan, B. Goodison, P. Crill, K.J. Ranson, D. Lettenmaier, and
+D.E. Wickland. 1995. The boreal ecosystem-atmosphere study (BOREAS): an
+overview and early results from the 1994 field year. Bulletin of the American
+Meteorological Society. 76(9):1549-1577.
+<p>
+Sellers, P., F. Hall. 1997. BOREAS Overview Paper. JGR Special Issue (in press).
+<P>
+<br>
+<B>17.3 Archive/DBMS Usage Documentation</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'17')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 18">18. Glossary of Terms</A></H3>
+</center>
+[Think of this as a place to define discipline related jargon and the wealth of scientific notations/symbols that may be used in the text.]
+<P>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'18')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 19">19. List of Acronyms</A></H3>
+</center>
+[Include a list of any acronyms used in the text. The following list should be included.]
+<PRE>
+BOREAS  - BOReal Ecosystem-Atmosphere Study
+BORIS   - BOREAS Information System
+DAAC    - Distributed Active Archive Center
+EOS     - Earth Observing System
+EOSDIS  - EOS Data and Information System
+GSFC    - Goddard Space Flight Center
+NASA    - National Aeronautics and Space Administration
+NSA     - Northern Study Area (BOREAS)
+ORNL    - Oak Ridge National Laboratory
+PANP    - Prince Albert National Park
+SSA     - Southern Study Area (BOREAS)
+URL     - Uniform Resource Locator (a World Wide Web address)
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'19')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 20">20. Document Information</A></H3>
+</center>
+<P>
+<B>20.1 Document Revision Date</B><br>
+[Use dd-mon-yyyy format]
+<P>
+<B>20.2 Document Review Date(s)</B><br>
+[Use dd-mon-yyyy format]<br>
+BORIS Review:<br>
+Science Review:
+<P>
+<B>20.3 Document</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<B>20.4 Citation</B><br>
+[How the Principal Investigator would like to be acknowledged when this data set is referenced or used by another investigator.  This may be a paper to cite or a list of persons to acknowledge.]
+<P>
+<B>20.5 Document Curator</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<B>20.6 Document URL</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<B>Keywords</B><br>
+[Include a list of appropriate key words to assist in searching for
+information.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'20')">
+<Option Selected>Select a Sample Document to View
+<Option>GOES-7 Level 1 Image Data
+<Option>GOES-7 Level 1a Image Data
+<Option>HYD-9 Stream Gauge Data
+<Option>RSS-2 ASAS Aircraft Data
+<Option>TE-9 Nitrogen and Photosynthesis Data
+<Option>TE-9 PAR & Nitrogen Profile Data
+<Option>TGB-9 Non-Methane Hydrocarbon Data
+</Select>
+</Form>
+
+</body>
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> September 9, 1997
+</html>

@@ -1,0 +1,617 @@
+<html>
+<head>
+<title>BOREAS -- Stream Gauge Data Documentation (HYD-9)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+<A NAME="Top">The BOREAS Information System</A></B>
+<hr>
+<body>
+
+<H3 align=center>HYD-9 Stream Gauge Data</H3>
+<P>
+<br>
+<H3>Summary</H3>
+This stream gauge data was collected by the HYD-9 science team to support their research into meltwater supply to the soil during the spring melt period.  This data was also collected for their research into the evolution of soil moisture, evaporation, and runoff from the end of the snowmelt period through freeze up.
+<P>
+<br>
+<H3>Table of Contents</H3>
+<OL>
+<B><LI></B><A HREF="#Section 1">Data Set Overview</A>
+<B><LI></B><A HREF="#Section 2">Investigator(s)</A>
+<B><LI></B><A HREF="#Section 3">Theory of Measurements</A>
+<B><LI></B><A HREF="#Section 4">Equipment</A>
+<B><LI></B><A HREF="#Section 5">Data Acquisition Methods</A>
+<B><LI></B><A HREF="#Section 6">Observations</A>
+<B><LI></B><A HREF="#Section 7">Data Description</A>
+<B><LI></B><A HREF="#Section 8">Data Organization</A>
+<B><LI></B><A HREF="#Section 9">Data Manipulations</A>
+<B><LI></B><A HREF="#Section 10">Errors</A>
+<B><LI></B><A HREF="#Section 11">Notes</A>
+<B><LI></B><A HREF="#Section 12">Application of the Data Set</A>
+<B><LI></B><A HREF="#Section 13">Future Modifications and Plans</A>
+<B><LI></B><A HREF="#Section 14">Software</A>
+<B><LI></B><A HREF="#Section 15">Data Access</A>
+<B><LI></B><A HREF="#Section 16">Output Products and Availability</A>
+<B><LI></B><A HREF="#Section 17">References</A>
+<B><LI></B><A HREF="#Section 18">Glossary of Terms</A>
+<B><LI></B><A HREF="#Section 19">List of Acronyms</A>
+<B><LI></B><A HREF="#Section 20">Document Information</A>
+</OL>
+
+<HR>
+<center>
+<H3><A NAME="Section 1">1. Data Set Overview</A></H3>
+</center>
+<p>
+<B>1.1 Data Set Identification</B><br>
+Stream Discharge Rates Measured Hourly.
+<p>
+<B>1.2 Data Set Introduction</B><br>
+<p>
+<B>1.3 Objective/Purpose</B><br>
+This project will seek to identify, through field  measurements and computer modeling, the space-time distribution  of meltwater supply to the soil during the spring melt period,  and the evolution of soil moisture, evaporation, and runoff from  the end of the snowmelt period through freeze up.  The snow  modeling activity will consist of two components: The first will  make use of existing "off the-shelf" models, to forecast the  onset and spatial extent of snowmelt and meltwater supply to the  soil column prior to the 1994 IFCs.  The second phase will  extend, implement, and verify a physically based energy balance  snowmelt model of the two sites and will evaluate approaches to  aggregating detailed snowmelt predictions and measurements based  on the model to larger scales, up to the size of a rectangle of  several hundred km containing the northern and southern sites.  The soil moisture modeling is based on a grouped response unit  method which will allow characterization of soil moisture,  evaporation, and runoff for the entire northern and southern  sites.
+<p>
+<B>1.4 Summary of Parameters</B><br>
+The following phenomena and their parameters are being
+reported in this data set:<br>
+<B>Discharge Rate of Streams</B>
+<p>
+<B>1.5 Discussion</B><br>
+The locations for 12 tipping bucket measuring devices, 10  belfort gauges and 5 stream sites were selected within the two  BOREAS study sites (NSA and SSA). These instruments were  installed during the FFC-T (Focused Field Campaign-Thaw) 1994 in  the last week of April 1994.  They were in operation until October 1994 when they were removed from service.  The gauges were reinstalled and collected data from April 1995 to October 1995.  The tipping buckets and  belfort gauges provided an approximate measure of the  precipitation in the study areas.  The discharge rates of streams  provide a measurement of water leaving the study area.  When used  together these two sets of data provide a balance of the water  cycle.
+<p>
+<B>1.6 Related Data Sets</B><br>
+Precipitation data measured with belfort gauges and tipping buckets are also available.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 2">2. Investigator(s)</A></H3>
+</center>
+<p>
+<B>2.1 Investigator(s) Name and Title</B><br>
+<PRE>Prof. Ric Soulis
+University of Waterloo
+Department of Civil Engineering
+Waterloo, Ontario
+N2L 3G1
+Canada
+Phone: (519) 885-1211  x2175
+FAX:   (519) 888-6197
+E-Mail: ric@sunburn.uwaterloo.ca
+
+</PRE>
+<p>
+<B>2.2 Title of Investigation</B><br>
+From Micro-Scale to Meso-Scale Snowmelt, Soil Moisture and Evapotranspiration from Distributed Hydrologic Models
+<p>
+<B>2.3 Contact Information</B><br>
+<PRE>
+Contact 1
+---------
+Dr. Nicholas Kouwen
+Univ. of Waterloo
+Dept. of Civil Engineering
+Waterloo, Ontario
+N2L 3G1
+Tel: (519) 885-1211 x3309
+FAX: (519) 888-6197
+Email: kouwen@sunburn.uwaterloo.ca
+
+Contact 2
+---------
+Dr. Ric Soulis
+Univ. of Waterloo
+Dept. of Civil Engineering
+Waterloo, Ontario
+N2L 3G1
+Tel: (519) 885-1211  x2175
+FAX: (519) 888-6197
+Email: ric@sunburn.uwaterloo.ca
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 3">3. Theory of Measurements</A></H3>
+</center>
+<P>
+To continuously measure the discharge rate of a stream as a  function of depth it is first necessary to construct a stage-discharge rating curve.  To find the discharge rate at a specific  stage, the cross section of the stream must be divided into  subsections.  No one sub-section should account for more than  ten percent of the total stream flow.  In the center of each  subsection a current meter is lowered into the water at various  depths to measure velocity.  Two types of current meters were  used in this study, a propeller meter, and an electromagnetic  meter.  A propeller meter measures the rate of flow by relating  it to the rotation of its propeller while an electromagnetic  meter measures the voltage produced when water passes through a  magnetic field produced by the meter.  Two different types of  meters were used to reduce the error associated with each  individual device.<br>
+<IMG SRC="../gifs/indent.gif">When the velocities have been determined the total discharge  of the stream can be calculated.  This, along with the level of the  stream at that time, can be used to compare the rate of flow at  that time with other times.  The discharge rate must be found at  several different stream levels so that a relationship can be  established between the height of the stream and its discharge.  This relationship is represented graphically as a rating curve.<br>
+<IMG SRC="../gifs/indent.gif">Once a rating curve is established the discharge can be  found at any time if the height of the stream is known.  To  constantly monitor the stream height a float tube and a data  logger were used.  The stream height was manually checked at  periodic times using a staff gauge.  From this a detailed  description of the stream's water level over several months was  possible.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 4">4. Equipment</A></H3>
+</center>
+<p>
+<B>4.1 Sensor/Instrument Description</B><br>
+<P>
+<B>Propeller Meter</B><br>
+The Swoffer 2100 STDX current velocity meter consists of a  propeller that rotates about an axis parallel to the flow of the  stream.  An onboard computer calculates the speed and displays it  in the desired units.  The computer averages the velocity over a  given time (ie. 90 sec).  The propeller meter was used to  determine the rating curve for the stream.
+<P>
+<B>Electromagnetic Meter</B><br>
+The MMI model 2000 flo-mate portable water flowmeter  measures the velocity of a liquid using an electromagnetic  method.  When a fluid, which has conductive properties, passes  through a magnetic field at a right angle, the magnetic field  induces an electromotive force in the fluid at right angles to  both the magnetic field and the velocity of the fluid.  The  voltage produced by the movement of the water through the meter  is measured by electrodes and is proportional to the average  velocity of the fluid.  A built in computer uses this information  to calculate and display the velocity.  The electromagnetic meter  was used to determine the rating curve for the stream.
+<P>
+<B>Float Tube</B><br>
+A float tube consists of a hollow perforated plastic tube  mounted perpendicular to the water's surface near the stream bank  where it is accessible to observers.  A float inside the tube  reacts to different water heights that the data logger  electronically records every 15 minutes.  It is used to monitor  the height of water over small intervals of time (ie. 15 minutes)  for long periods of time.
+<P>
+<B>Data Logger</B><br>
+The chart pac CP-X data logger was connected to the float  tube so that it could record stream levels every 15 minutes.  The  data was stored in the logger's memory until it was retrieved.
+<P>
+<br>
+<B>4.1.1 Collection Environment</B><br>
+<p>
+<B>4.1.2 Source/Platform</B><br>
+Propeller Meter - mounted on a pole that was lowered manually into a stream.<br>
+Electromagnetic Meter - mounted on a pole that was lowered manually into a stream.<br>
+Float Tube - mounted in a stream near the bank where observers can reach it easily.<br>
+Data Logger - mounted inside the float tube
+<p>
+<B>4.1.3 Source/Platform Mission Objectives</B><br>
+A measurement of the stream discharge rate was necessary so  that a precise estimate of the total amount of water leaving the  watershed due to surface and subsurface flows could be made.  The data logger stored the information until it was retrieved.
+<p>
+<B>4.1.4 Key Variables</B><br>
+Propeller Meter - Water Velocity<br>
+Electromagnetic Meter - Water Velocity<br>
+Float Tube - Stream Height<br>
+Data Logger - Voltage
+<p>
+<B>4.1.5 Principles of Operation</B><br>
+A propeller meter and an electromagnetic meter are manually  operated devices that measure the velocity of water.  The  propeller meter counts the number of propeller revolutions over a  given time period.  The computer compares this to a calibration  coefficient and then displays the resulting velocity.  The  electromagnetic meter measures the voltage prvduced by water  moving through a magnetic field, which is proportional the  water's velocity.  The float tube and the data logger are self-contained devices that automatically record the height of water  every hour over an indefinite time period.
+<p>
+<B>4.1.6 Sensor/Instrument Measurement Geometry</B><br>
+The propeller meter and the electromagnetic meter are  mounted on a pole and lowered to various depths in a stream.  The  tester must repeat this for each subsection of the stream so that  the average velocity can be calculated.<br>
+<IMG SRC="../gifs/indent.gif">The float tube is mounted near the stream bank so that the  tube is perpendicular to the surface of the water.  The tube must  be in an area that is accessible for data retrieval and can  measure high and low water levels.  The data logger is attached to  the float tube.
+<p>
+<B>4.1.7 Manufacturer of Sensor/Instrument</B><br>
+<PRE>Propeller Meter - Swoffer Instruments Inc.
+1048 Industry Drive
+Seattle, Washington
+98188 U.S.A.
+(206) 575-0160
+Fax (206) 575-1329
+
+Electromagnetic Meter - Marsh-McBirney Inc.
+4539 Metropolitan Court
+Frederick, Maryland
+21701, U.S.A.
+(301) 874-5599
+Fax (301) 874-2172
+
+Float Tube -  Lakewood Systems
+9258-34A Avenue
+Edmonton, Alberta, Canada
+T6E 5P4
+
+Data Logger - Lakewood Systems
+Edmonton, Alberta, Canada
+</PRE>
+<p>
+<br>
+<B>4.2 Calibration</B><br>
+The propeller meter and the electromagnetic meter were  calibrated by dragging them through a still body of water (a long  tank, or a lake) at a known velocity and then adjusting the  instrument as needed.<br>
+<IMG SRC="../gifs/indent.gif">The float tube was calibrated by measuring the height of the  water directly with a staff gauge and comparing that to the  reading that the float gauge had determined.
+<P>
+<B>4.2.1 Specifications</B><br>
+<B>Propeller Meter</B><br>
+temperature range: -10 degrees Celsius to 49 degrees Celsius
+<P>
+<B>Electromagnetic Meter</B><br>
+analog display: 0.1v per 1 m/sec<br>
+material: polyurethane shell<br>
+temperature range: 0 degree Celsius to 50 degrees Celsius
+<P>
+<B>Float Tube</B><br>
+range: 0 to 4.6m (0 to 15 feet)<br>
+accuracy: +/- 1cm. (0.4 inches)<br>
+operating temperatures: -66 degrees Fahrenheit to 140 degrees Fahrenheit
+<P>
+<B>4.2.1.1 Tolerance</B><br>
+The propeller meter can measure velocities from 0.1 to  25 feet per second.<br>
+<IMG SRC="../gifs/indent.gif">The electromagnetic meter can measure velocities from -  0.5 to 19.99 ft/sec (-0.15 to 6 m/sec).  The meter measures the  velocity to within 2% of the reading +/- 0.05 ft/sec.<br>
+<IMG SRC="../gifs/indent.gif">The float tube can measure a stream heights from 0 to  4.6 meters.<br>
+<IMG SRC="../gifs/indent.gif">The data logger can record voltage from 0 to 2.5 volts  D.C.  It can store 64 thousand samples with an accuracy of  1/4095.
+<p>
+<B>4.2.2 Frequency of Calibration</B><br>
+The propeller meter and the electromagnetic meter were  calibrated once before the readings were made and then once afterwards.<br>
+<IMG SRC="../gifs/indent.gif">The float tube was calibrated during the beginning of the  study period.  The staff gauge readings were compared to that of the float tubes.
+<p>
+<B>4.2.3 Other Calibration Information</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 5">5. Data Acquisition Methods</A></H3>
+</center>
+Stream discharge measurements were made on 5 streams within  the two study areas.  Measurements were made on the stream to  determine its rating curve so that stream height could be related  to the rate of discharge.  A float tube was set up to  electronically monitor the height of the stream and record the  information on a data logger.  The data logger was connected to a  notebook computer on site where the logger's stored information  was transferred to the notebook.  The data was then used with the  rating curve to determine the rate of discharge every hour and  checked for quality assurance.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 6">6. Observations</A></H3>
+</center>
+<p>
+<B>6.1 Data Notes</B><br>
+<p>
+<B>6.2 Field Notes</B><br>
+Several computer programs are required to develop the rating curves and the stream discharge rates.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 7">7. Data Description</A></H3>
+</center>
+<p>
+<B>7.1 Spatial Characteristics</B><br>
+The five stream sites were located so that they would give  an overall view of water movement throughout the basin.  In the  large study areas (NSA and SSA), smaller basins were chosen so  that a more detailed study could be performed.  Two basins were  chosen in the NSA and one in the SSA.  In each basin the stream  sites were chosen so that the flow contributions from a number of  land cover types could be determined.<br>
+<IMG SRC="../gifs/indent.gif">The stream sites were also chosen for other characteristics.  They must be accessible during all water levels.  The location  must be suitable to measure the water height at high and low  water levels.  The river bed must be uniform in shape and of a  material that resists erosion so that the rating curve will not  change significantly over the period of observation.  Areas that  didn't overflow their banks and were away from human traffic were  also desired.<br>
+<IMG SRC="../gifs/indent.gif">The stream gauge at SW1 was chosen by HYD-9 Canada before  the BOREAS project.  During the project, the Environment Canada  Water Survey operated the NW1 gauge. 
+<P>
+<B>7.1.1 Spatial Coverage</B><br>
+The five stream gauges measure the discharges throughout the 2 areas.  The NSA basins were both 27 km^2 while the SSA basin was 574 km^2.  Two additional stream gauges SW1 and NW1 were operated by the water survey.
+<PRE>The stream gauges were located at the following coordinates:
+
+SITE_ID               LONGITUDE   LATITUDE
+-------------------- ---------- ----------
+NSA-NW1-HYD09-STGAN1  -98.49168   55.90877
+NSA-NW2-HYD09-STGAN2  -98.52746   55.91528
+NSA-NW3-HYD09-STGAN3  -98.37563   55.91683
+SSA-SW1-HYD09-STGAS1 -104.61986   53.86453
+SSA-SW2-HYD09-STGAS2 -104.68167     53.895
+SSA-SW3-HYD09-STGAS3 -104.79116   55.92669
+SSA-SW4-HYD09-STGAS4 -104.82028   53.92639
+
+</PRE>
+<p>
+<B>7.1.2 Spatial Coverage Map</B><br>
+<P>
+<B>7.1.3 Spatial Resolution</B><br>
+The stream discharge rates reported in this data set represent the discharge rate at a point in the stream in which they were located.<br>
+<IMG SRC="../gifs/indent.gif">The collected data is designed to provide a reasonable estimate  of the total surface and subsurface runoff from the White Gull Creek and Sapochi River watersheds during the study period.
+<p>
+<B>7.1.4 Projection</B><br>
+<p>
+<B>7.1.5 Grid Description</B><br>
+<p>
+<B>7.2 Temporal Characteristics</B><br>
+<P>
+<B>7.2.1 Temporal Coverage</B><br>
+The data was collected from the end of April until October in 1994, 1995 and 1996.  Gauges SW1 and NW1 were operated all year.
+<p>
+<B>7.2.2 Temporal Coverage Map</B><br>
+<p>
+<B>7.2.3 Temporal Resolution</B><br>
+The data was collected at fifteen minute intervals over the study period.  The data was then converted to hourly flow during the processing phase.
+<p>
+<B>7.3 Data Characteristics</B><br>
+<p>
+<B>7.3.1 Parameter/Variable</B><br>
+<p>
+<B>7.3.2 Variable Description/Definition</B><br>
+<p>
+<B>7.3.3 Unit of Measurement</B><br>
+<p>
+<B>7.3.4 Data Source</B><br>
+<p>
+<B>7.3.5 Data Range</B><br>
+Observation Date:  The date and time (GMT) when the measurement was made.<br>
+Discharge Rate:  The discharge rate that the gauge measured. (cubic meters per
+<p>
+<B>7.4 Sample Data Record</B><br>
+<PRE>DATA_UNIT_ID                   OBS_DATE  DISCHARGE_RATE GAUGE CRTFCN_ REVISION_
+-------------------------------------------------------------------------------
+HYD09_STGA_NW002_26APR94       26-APR-94           .162 NW002 CPI     23-MAY-95
+
+TIMEC    PARM_VALUE_FLAGS
+----------------------------
+15:15
+</PRE>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 8">8. Data Organization</A></H3>
+</center>
+<p>
+<B>8.1 Data Granularity</B><br>
+[BORIS and ORNL DAAC to fill in]
+<p>
+<B>8.2 Data Format(s)</B><br>
+The CD-ROM data format consists of a text field to identify the data followed by several numeric fields to store the data for that day.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 9">9. Data Manipulations</A></H3>
+</center>
+<p>
+<B>9.1 Formulae</B><br>
+To find the average velocity in a subsection:
+Velocity = the average of the velocity measured at 0.8 of the depth and at 0.2 of the depth:<br>
+<IMG SRC="../gifs/indent.gif">u = (u(0.8D)+u(0.2D))/2
+<P>
+To find the flow in a subsection:<br>
+<IMG SRC="../gifs/indent.gif">Flow = Average velocity in subsection * area of subsection<br>
+<IMG SRC="../gifs/indent.gif">Q = u * A
+<P>
+To find total discharge from velocity readings:<br>
+<IMG SRC="../gifs/indent.gif">Flow = the sum of the flows in all of the subsections<br>
+<IMG SRC="../gifs/indent.gif">Q = (sum from i=1 to i=N) of (u to the ith power) * A
+<P>
+To find the flow at a particular stream height:<br>
+<IMG SRC="../gifs/indent.gif">Q = a2(volts-a1) + a3(volts-a1)^2 + a4(volts-a1)^3 + a5(volts-a1)^4 + a6(volts-a1)^5<br>
+<IMG SRC="../gifs/indent.gif">where  q = flow<br>
+<IMG SRC="../gifs/indent.gif">a1 to a6 = coefficients of the rating<br>
+<IMG SRC="../gifs/indent.gif">curve volts = the voltage recorded by the float tube for a specific height
+<P>
+To find the height of the stream from the data logger information:<br>
+<IMG SRC="../gifs/indent.gif">height of stream = voltage output * calibration coefficient
+<P>
+<br>
+<B>9.1.1 Derivation Techniques and Algorithms</B><br>
+At frequent intervals during the monitoring period the flow  of the stream (using the propeller and electromagnetic metering  devices), the voltage produced by the float tube, and the true  height of the stream measured from a staff gauge were recorded.  This data showed a relationship between the level of the stream  (staff and voltage gauges) and the rate of flow.  The voltage  produced by the float tube was converted to stream height using a calibration coefficient.<br>
+<IMG SRC="../gifs/indent.gif">The information was entered into a computer program called  'Fitflow' that calculated the coefficients for the rating curve  of a stream (a1 to a6).  After this was done it was a simple  matter to find the rate of flow using the equation.
+<p>
+<B>9.2 Data Processing Sequence</B><br>
+<P>
+<B>9.2.1 Processing Steps</B><br>
+<OL>
+<LI>set up necessary equipment
+<LI>measure the information necessary to develop rating curve.
+<LI>measure the stream height over the desired period of time
+<LI>perform the necessary data manipulations
+<LI>calculate the stream flow rates using the rating curve
+<LI>enter the flow rates into ASCII files with the appropriate identifying information noted beside each row (location, year, day, month)
+<LI>add the necessary column headings
+<LI>transfer the information to the database
+</OL>
+<P>
+<B>9.2.2 Processing Changes</B><br>
+<p>
+<B>9.3 Calculations</B><br>
+<P>
+<B>9.3.1 Special Corrections/Adjustments</B><br>
+<p>
+<B>9.3.2 Calculated Variables</B><br>
+<p>
+<B>9.4 Graphs and Plots</B><br>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 10">10. Errors</A></H3>
+</center>
+<p>
+<B>10.1 Sources of Error</B><br>
+Most error will occur in the actual measuring of the initial  data.  Turbulent water flow will effect the velocity readings by  causing the meter to measure a larger or smaller velocity than  actual.  The stream site must be of uniform shape where the  velocity measurements are taken to reduce variations in flow.  If  an instrument is allowed to get dirty it may become clogged and  produce faulty readings.  The propeller meter suffers from  rotational friction that becomes more apparent at low velocities.  Careful cleaning and calibration will prevent this though.  As  the temperature of water changes, its volume will also change.<br>
+<IMG SRC="../gifs/indent.gif">Some of the gauges experienced shifting during the  observation period.  This movement made the development of rating  curves more difficult.
+<p>
+<B>10.2 Quality Assessment</B><br>
+<P>
+<B>10.2.1 Data Validation by Source</B><br>
+The electronic readings of the float gauge were routinely  checked with the staff gauge readings taken directly from the  stream.  To account for the movement of the float tube, shifting  of the streambed or the growth of vegetation, the rating curves  were broken up into different time periods.  For example there  were different rating curves for the spring thaw than for the  fall freezing period.<br>
+<IMG SRC="../gifs/indent.gif">After the information had been collected it was run through  an algorithm to detect any data that was abnormal, when compared  to the rest of the data.
+<p>
+<B>10.2.2 Confidence Level/Accuracy Judgement</B><br>
+The confidence level of the data varies with the particular stream and the level of the stream at the time of measurement.
+<p>
+<B>10.2.3 Measurement Error for Parameters</B><br>
+<p>
+<B>10.2.4 Additional Quality Assessments</B><br>
+<p>
+<B>10.2.5 Data Verification by Data Center</B><br>
+[For BORIS and ORNL DAAC Use]
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 11">11. Notes</A></H3>
+</center>
+<p>
+<B>11.1 Limitations of the Data</B><br>
+<p>
+<B>11.2 Known Problems with the Data</B><br>
+For short periods of time some of the monitoring stations  were inoperative.  The data lost during this time made the final  results less accurate.
+<p>
+<UL>
+<LI>In April 1994 there was ice in the streams.  This changed the  cross section of the stream thereby affecting the rating curves  that relate stage to discharge.
+<LI>The gauge at NW2 had weed growth cleaned out on August 4,  August 12,  and September 4 1994.
+<LI>At NW3 there were several very low flows that occurred in  September 1994 when the gauge was unattended.  These flows were  outside the range of the rating curve and are therefore  unreliable.  On June 21 1994 a culvert was removed in the head waters resulting in the drainage of a swamp.  This caused a sharp peak in the flows that was not caused by rainfall.
+<LI>On May 23 and August 25 storms washed out a beaver dams near  the SW2 culvert.  The alteration of the flow control resulted in  different stage vs. discharge relationships.
+<LI>A beaver dam was built by SW3 in September 1994 that affected the  rating curve.  Data from this gauge after September 7 1994 cannot be used.
+<LI>Between June 21 and July 13 1994 the gauge at SW4 had been  tampered with.  The gauge was unserviceable.  On July 19 a different cross section flow was metered due to excessive water levels at the original location.
+</UL>
+<p>
+<br>
+<B>11.3 Usage Guidance</B><br>
+The float tubes and data loggers were switched to double precision in May 1994.  This effected the resolution of the reported data.
+<p>
+<B>11.4 Other Relevant Information</B><br>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 12">12. Application of the Data Set</A></H3>
+</center>
+The discharge rates of streams  provide a measurement of water leaving the study area.  When used together with precipitation data, these two sets of data provide a balance of the water  cycle.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 13">13. Future Modifications and Plans</A></H3>
+</center>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 14">14. Software</A></H3>
+</center>
+<p>
+<B>14.1 Software Description</B><br>
+<p>
+<B>14.2 Software Access</B><br>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 15">15. Data Access</A></H3>
+</center>
+<p>
+<B>15.1 Contact Information</B><br>
+<P>
+Primary contact:
+<PRE>Ms. Beth McCowan
+BOREAS Information System
+Bldg. 22, Room G87
+Code 923
+NASA Goddard Space Flight Center
+Greenbelt, Maryland 20771
+(301) 286-4005
+(301) 286-0239
+beth@ltpmail.gsfc.nasa.gov
+
+</PRE>
+<p>
+<B>15.2 Data Center Identification</B><br>
+<PRE>BOREAS Project Office
+Code 935, Goddard Space Center
+Greenbelt, Maryland 20771
+
+</PRE>
+<p>
+<B>15.3 Procedures for Obtaining Data</B><br>
+Anyone wanting information may place requests by letter, telephone, FAX, electronic mail, or in person.
+<p>
+<B>15.4 Data Center Status/Plans</B><br>
+As the BOREAS data are processed and sufficiently quality checked, they will be available from the EOSDIS ORNL DAAC (Earth Observing System Data and Information System) (Oak Ridge National Laboratory) (Distributed Active Archive Center). The BOREAS contact at ORNL is:
+<PRE>Merilyn Gentry, User Services/Data Coordinator
+Oak Ridge National Laboratory DAAC
+P.O. Box 2008
+Bldg. 1507, MS-6407
+Oak Ridge, TN   37830-6407
+(615) 241-5926
+(615) 574-4665
+mjg@walden.rmt.utk.edu
+</PRE>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 16">16. Output Products and Availability</A></H3>
+</center>
+<p>
+<B>16.1 Tape Products</B><br>
+Contact BORIS Staff
+<p>
+<B>16.2 Film Products</B><br>
+Contact BORIS Staff
+<p>
+<B>16.3 Other Products</B><br>
+Contact BORIS Staff
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 17">17. References</A></H3>
+</center>
+<P>
+<p>
+<B>17.1 Platform/Sensor/Instrument/Data Processing Documentation</B><br>
+<P>
+Hoskin Scientific Limited.  1992.  Chart pac Cp-X (price and specification sheet).
+<P>
+Lakewood Systems Ltd.: float sensor fs-15: data sheet
+<P>
+Marsh-McBirney, Inc.  Flo-Mate Model 2000 Portable Water Flowmeter Instruction Manual.  1990.
+<P>
+Swoffer Model 2100 Indicator Operation Manual
+<P>
+<br>
+<B>17.2 Journal Articles and Study Reports</B><br>
+<p>
+<B>17.3 Archive/DBMS Usage Documentation</B><br>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 18">18. Glossary of Terms</A></H3>
+</center>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 19">19. List of Acronyms</A></H3>
+</center>
+<PRE>
+AES     - Atmospheric Environment Service of Canada
+BOREAS  - BOReal Ecosystem-Atmosphere Study
+BORIS   - BOREAS Information System
+CD-ROM  - Compact Disk (optical), Read-Only Memory
+DAAC    - Distributed Active Archive Center
+EOS     - Earth Observing System
+EOSDIS  - EOS Data and Information System
+FFC-T   - Focused Field Campaign - Thaw
+GMT     - Greenwich Mean Time
+GSFC    - Goddard Space Flight Center
+IFC     - Intense Field Campaign
+NASA    - National Aeronautics and Space Administration
+NSA     - Northern Study Area
+ORNL    - Oak Ridge National Laboratory
+SSA     - Southern Study Area
+URL     - Uniform Resource Locator
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 20">20. Document Information</A></H3>
+</center>
+<p>
+<B>20.1 Document Revision Date</B><br>
+20-NOV-1996
+<p>
+<B>20.2 Document Review Date(s)</B><br>
+BORIS Review:<br>
+Science Review: 
+<p>
+<B>20.3 Document ID</B><br>
+[For BORIS and ORNL DAAC Use]
+<p>
+<B>20.4 Citation</B><br>
+Ric Soulis, University of Waterloo<br>
+Nick Kouwen, University of Waterloo
+<p>
+<B>20.5 Document Curator</B><br>
+[For BORIS and ORNL DAAC Use]
+<p>
+<B>20.6 Document URL</B><br>
+[For BORIS and ORNL DAAC Use]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+</body>
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> July 22, 1997
+</html>

@@ -1,0 +1,1017 @@
+<html>
+<head>
+<title>BOREAS -- Biome-BGC Model Document (RSS-8)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+<A NAME="Top">The BOREAS Information System</A></B>
+<HR>
+<body>
+
+<center>
+<H3>BIOME-BGC Simulations of Stand Hydrology, Productivity, Surface-Atmosphere Carbon and Water Exchange at Selected BOREAS Tower Flux Sites for 1994</H3>
+</center>
+<P>
+<br>
+<H3>Summary</H3>
+BIOME-BGC is a general ecosystem process model designed to simulate
+biogeochemical and hydrologic processes across multiple scales (Running and
+Hunt 1993). In this investigation we used BIOME-BGC to estimate daily water
+and carbon budgets for the boreas tower flux sites for 1994. Carbon variables
+estimated by the model include gross primary production (i.e. net
+photosynthesis), maintenance and heterotrophic respiration, net primary
+production and net ecosystem C exchange. Hydrologic variables estimated by the
+model include snowcover, evaporation, transpiration, evapotranspiration, soil
+moisture and outflow.
+<P>
+<br>
+<H3>Table of Contents</H3>
+<OL>
+<B><LI></B><A HREF="#Section 1">Model Overview</A>
+<B><LI></B><A HREF="#Section 2">Investigator(s)</A>
+<B><LI></B><A HREF="#Section 3">Model Theory</A>
+<B><LI></B><A HREF="#Section 4">Equipment</A>
+<B><LI></B><A HREF="#Section 5">Data Acquisition Methods</A>
+<B><LI></B><A HREF="#Section 6">Observations</A>
+<B><LI></B><A HREF="#Section 7">Data Description</A>
+<B><LI></B><A HREF="#Section 8">Data Organization</A>
+<B><LI></B><A HREF="#Section 9">Data Manipulations</A>
+<B><LI></B><A HREF="#Section 10">Errors</A>
+<B><LI></B><A HREF="#Section 11">Notes</A>
+<B><LI></B><A HREF="#Section 12">Application of the Model</A>
+<B><LI></B><A HREF="#Section 13">Future Modifications and Plans</A>
+<B><LI></B><A HREF="#Section 14">Software</A>
+<B><LI></B><A HREF="#Section 15">Data Access</A>
+<B><LI></B><A HREF="#Section 16">Output Products and Availability</A>
+<B><LI></B><A HREF="#Section 17">References</A>
+<B><LI></B><A HREF="#Section 18">Glossary of Terms</A>
+<B><LI></B><A HREF="#Section 19">List of Acronyms</A>
+<B><LI></B><A HREF="#Section 20">Document Information</A>
+</OL>
+<P>
+
+<HR>
+<center>
+<H3><A NAME="Section 1">1. Model Overview</A></H3>
+</center>
+<p>
+<B>1.1 Model  Identification</B><br>
+BIOME-BGC (BioGeoChemical cycles)
+<p>
+<B>1.2 Model Introduction</B><br>
+BIOME-BGC simulates biogeochemical and hydrologic processes across
+multiple biomes based on the logic that differences in process rates between
+biomes are primarily a function of climate and general life-form
+characteristics.  The carbon balance portion of BIOME-BGC utilizes daily
+meteorological data in conjunction with general stand and soil information to
+predict net photosynthesis, growth, maintenance and heterotrophic respiration
+at a daily time-step.  BIOME-BGC is general in the sense that the surface is
+represented by singular, homogeneous canopy and soil layers.  Detailed
+descriptions of BIOME-BGC logic are given by Running and Coughlan (1988) and
+Running and Hunt (1993).  A description of the components of the model
+relating to the prediction of hydrologic characteristics within different
+boreal forest stands is given by Kimball and Running (submitted).  A summary
+of the important components of BIOME-BGC relating to the prediction of daily
+carbon allocation and exchange is given below.
+<p>
+<B>1.3 Objective/Purpose</B><br>
+In this investigation we used BIOME-BGC to estimate daily and annual
+hydrologic and carbon budgets for different boreal forest stands associated
+with the boreas tower flux sites and compared net carbon flux estimates with
+results derived from tower flux and biomass measurement data. These results
+were used to assess the important climate and stand characteristics that
+control stand hydrologic characteristics, estimated productivity respiration
+and surface-atmosphere carbon exchange. These results are intended to provide
+a framework for evaluating the sensitivity of the boreal forest regional
+carbon balance to global warming.
+<P>
+<br>
+<B>1.4 Summary of Parameters</B><br>
+<p>
+<B>Model daily input requirements:</B><br>
+Maximum and minimum daily air temperature (C), precipitation (cm), total daily
+solar radiation (kJ) and daylength (s).
+<br><IMG SRC="../gifs/indent.gif">There is also a site initialization file that describes stand morphology
+and soil characteristics. Parameters included in this file are discussed in
+section 1.5. Site initialization files that were used to generate model
+results for the sites in this investigation are included in this data
+directory.
+<P>
+<B>Model daily carbon outputs:</B><br>
+Net photosynthesis (GPP); maintenance (Rm), growth (Rg), heterotrophic (Rh)
+and total respiration (Rtot); net ecosystem C exchange (NEE). Rm represents
+the daily sum of estimated maintenance respiration rates from coarse and fine
+root, sapwood and foliar carbon pools. foliar respiration is computed as the
+sum of estimated day and night foliar respiration rates. GPP is computed as
+the difference between gross photosynthesis and day leaf respiration. NPP is
+determined as the difference between GPP and Rm. Rg was estimated as 32% of
+the daily estimated NPP. Rh is estimated as a proportion of prescribed soil
+and litter carbon pools; this proportion is regulated by estimated soil water
+potential and soil temperature conditions. Rtot is estimated as the sum of Rm,
+Rg, and Rh. NEE is estimated as the difference between GPP and Rtot.
+<P>
+<B>Model daily hydrologic outputs:</B><br>
+Evaporation, transpiration, evapotranspiration, soil moisture, snow water
+equivalent.
+<P>
+<br>
+<B>1.5 Discussion</B><br>
+BIOME-BGC simulates biogeochemical and hydrologic processes across
+multiple biomes based on the logic that differences in process rates between
+biomes are primarily a function of climate and general life-form
+characteristics.  The carbon balance portion of BIOME-BGC utilizes daily
+meteorological data in conjunction with general stand and soil information to
+predict net photosynthesis, growth, maintenance and heterotrophic respiration
+at a daily time-step.  BIOME-BGC is general in the sense that the surface is
+represented by singular, homogeneous canopy and soil layers.  Detailed
+descriptions of BIOME-BGC logic are given by Running and Coughlan (1988) and
+Running and Hunt (1993).  A description of the components of the model
+relating to the prediction of hydrologic characteristics within different
+boreal forest stands is given by Kimball and Running (submitted).  A summary
+of the important components of BIOME-BGC relating to the prediction of daily
+carbon allocation and exchange is given below.
+<br><IMG SRC="../gifs/indent.gif">The sole input to the carbon budget in BIOME-BGC is the photosynthetic
+fixation of CO<sub>2</sub> by the vegetation canopy.  Outputs are all in the form of
+respired CO<sub>2</sub>, coming either from plant tissues due to growth or maintenance
+respiration, or from the litter and soil carbon pools as the result of
+heterotrophic respiration.
+<br><IMG SRC="../gifs/indent.gif">Gross primary production (GPP) represents the total gain of carbon to the
+system by net photosynthesis and is defined as the daily sum of gross
+photosynthesis and daily foliar respiration.  The current representation of
+photosynthesis differs significantly from previously published descriptions of
+the BGC family of models (Running and Hunt 1993, Hunt and Running 1992,
+Running and Coughlan 1988).  The original FOREST-BGC representation of
+photosynthesis relies primarily on the parameterization of a mesophyll
+conductance to CO<sub>2</sub>, estimating the rate of fixation as a diffusion process,
+driven by a prescribed internal CO<sub>2</sub> concentration.  FOREST-BGC also does not
+implement an explicit treatment of the photosynthetic biochemical pathways.
+The original version of BIOME-BGC presents a more detailed representation of
+photosynthesis, relying on explicit models of photosynthetic biochemistry
+(Leuning 1990, Farquhar et al. 1980).  The original BIOME-BGC also includes an
+iterative calculation of intracellular CO<sub>2</sub> concentration (Ci), as well as an
+explicit calculation of the CO<sub>2</sub> compensation point.  The current
+implementation of photosynthetic biochemistry is closely related to the
+original BIOME-BGC logic in that it is based on the Farquhar biochemical
+model, but the resulting set of equations is somewhat different due to
+differences in the logical constraints applied: we solve a quadratic system of
+equations by elimination of Ci, instead of specifying a value as an initial
+condition.  Other differences include a more detailed dependence of the
+kinetic parameters on temperature (Woodrow and Berry 1988), and a simplifying
+assumption that empirically relates the maximum rate of electron transport to
+the maximum carboxylation velocity (Wullschleger 1993).
+<br><IMG SRC="../gifs/indent.gif">Photosynthesis is regulated by the canopy conductance to CO<sub>2</sub> (gc), leaf
+maintenance respiration and daily meteorological conditions including air
+pressure, air temperature and photosynthetically active photon flux density
+(PPFD).  The maximum canopy conductance to CO<sub>2</sub> (gc,max) defines the upper
+boundary of the photosynthetic rate and is determined by LAI and prescribed
+leaf-scale boundary layer, cuticular and maximum stomatal conductances; gc is
+reduced when air temperature, vapor pressure deficit, PPFD, or soil water
+potential deviate from prescribed optimal conditions (Leuning 1990, Running
+and Coughlan 1988, Jarvis and Morison 1981).  BIOME-BGC represents the canopy
+as a "big leaf" in that all units of leaf area in the canopy are represented
+using a single, canopy averaged conductance.  This assumption is generally not
+valid at sub-daily (e.g. hourly) time-steps since the reduction of irradiance
+at lower vertical layers of the canopy reduces conductances at the bottom of
+the canopy.  The big leaf assumption is strengthened, however, by the
+integrative effects of a daily time-step, and by the implicit assumption that
+the allocation of leaf nitrogen between light harvesting and carbon fixing
+enzymes over depth in the canopy varies in response to the canopy light
+environment, allowing an optimized use of intercepted radiation (Evans 1989).
+<br><IMG SRC="../gifs/indent.gif">Total respiration from the system (Rtot) is estimated on a daily basis as
+the sum of the maintenance (Rm), heterotrophic (Rh) and growth (Rg)
+respiration components.  Rm represents the total loss of carbon due to day and
+night leaf respiration (Rdl + Rnl), sapwood (Rsw), coarse root (Rcr) and fine
+root (Rfr) respiration.  Respiration is estimated as a daily proportion of
+carbon in living tissue that is released as the result of cellular metabolic
+processes, excluding any growth processes.  Rm is calculated from mean daily
+air temperatures and prescribed leaf, root and sapwood carbon pools using an
+exponentially increasing function of respiration with temperature following
+Amthor (1986).  The magnitude of the respiration response to temperature is
+governed by a prescribed rate defined at a reference temperature (i.e. 15 C)
+and a proportional change in rate for a 10 C change in temperature (Q10).  In
+all cases except leaf maintenance respiration the daily average temperature is
+used, and a single value is calculated for the mass lost to maintenance
+respiration for the day.  In the case of leaves, however, Rdl and Rnl rates
+are calculated from estimated day and night air temperatures, respectively,
+since Rdl is required to determine GPP.  Daily growth respiration was not
+determined explicitly by the model in this investigation; instead Rg was
+computed as a proportion (32%) of the daily estimated total net primary
+productivity, NPP (Penning de Vries et al. 1974).
+<br><IMG SRC="../gifs/indent.gif">The heterotrophic respiration term in BIOME-BGC represents the loss of
+carbon from the system resulting from soil microbial respiration.  Daily Rh is
+estimated as a proportion of prescribed soil and litter carbon pools.  The
+proportion of litter carbon being respired on a daily basis is regulated by
+soil water potential and soil temperature conditions following Orchard and
+Cook (1983), Andren and Paustian (1987), and Running and Coughlan (1988).  The
+proportion of soil carbon respired on a daily basis was estimated as 1% of the
+proportion of litter carbon respired based on data for boreal coniferous and
+deciduous stands (Fox and Van Cleve 1983, Cole and Rapp 1981).
+<br><IMG SRC="../gifs/indent.gif">NPP represents the net accumulation of carbon by the stand and is
+determined as the difference between GPP and the sum of Rm and Rg.  The net
+ecosystem exchange of carbon (NEE) represents the net accumulation or loss of
+carbon by the entire soil-stand system and is determined as the difference
+between GPP and Rtot.  Positive fluxes in this investigation denote a net
+uptake of carbon by the system while negative fluxes denote a net loss.
+Standards for denoting positive and negative fluxes generally vary between
+different disciplines, however, and net carbon uptake is often denoted as a
+negative flux in the literature.
+<br><IMG SRC="../gifs/indent.gif">BIOME-BGC uses daily maximum and minimum air temperatures, humidity,
+incident solar radiation and precipitation to determine daily carbon and water
+fluxes.  Average daily incident shortwave radiation (Qi) was simulated using
+MT-CLIM logic described by Running et al. (1987).  Average daily net solar
+radiation (Qn) was estimated using a prescribed, constant albedo for
+vegetation.  Qn was attenuated through the vegetation canopy using Beer's
+formulation and a prescribed extinction coefficient modulated by LAI to derive
+the amount of solar radiation transmitted through the canopy (Qt).  The amount
+of solar radiation absorbed by the canopy (Qa) was estimated as the difference
+between Qi and Qt.  PPFD was estimated based on the assumption that
+photosynthetically active radiation represents approximately 50% of Qa
+(Running and Coughlan 1988).
+<br><IMG SRC="../gifs/indent.gif">Mean daily air temperature (Ta) was estimated as the average of the
+measured daily maximum and minimum air temperatures.  Minimum daily air
+temperature was assumed equal to the mean daily dew point and was used to
+estimate the mean daily vapor pressure deficit (VPD).  Daily soil temperatures
+at a 30 cm soil depth (Tsoil) were estimated using an 11 day running average
+of Ta (Zheng et al. 1993).  Soil water potential (PSI) was estimated from soil
+water content, soil depth and texture information following Cosby et al.
+(1984).  Ta, VPD, PPFD and PSI were used to estimate gc and GPP following
+Jarvis and Morison (1981) and Farquhar and von Caemmerer (1982), respectively.
+<br><IMG SRC="../gifs/indent.gif">Ta and Tsoil were used to estimate Rm while Tsoil and PSI were used to
+estimate Rh (Running and Coughlan 1988).
+<p>
+<B>1.6 Related Models</B><br>
+These results represent site specific model runs using BIOME-BGC.
+BIOME-BGC will also be used within the context of a regional hydro-ecological
+simulation system (RHESSys) to generate landscape level estimates of 1994
+daily hydrologic and carbon fluxes within the 1x10^6 km^2 boreas study region.
+A detailed description of the RHESSys model is given by Band et al. (1991
+a,b, 1993)
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 2">2. Investigator(s)</A></H3>
+</center>
+<p>
+<B>2.1 Investigator(s) Name and Title</B><br>
+Steven W. Running and John S. Kimball (TE-21 and RSS-8)<br>
+NTSG School of Forestry, University of Montana<br>
+Missoula, MT 59812
+<p>
+<B>2.2 Title of Investigation</B><br>
+BIOME-BGC simulations of stand hydrology, productivity, surface-atmosphere
+carbon and water exchange at selected boreas tower flux sites for 1994
+<p>
+<B>2.3 Contact Information</B><br>
+<PRE>John S. Kimball
+NTSG School of Forestry, University of Montana
+Missoula, MT 59812
+Tel: (406)243-5616
+FAX: (406)243-4510
+Email: johnk@ntsg.umt.edu
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 3">3. Model Theory</A></H3>
+</center>
+See Section 1.5
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 4">4. Equipment</A></H3>
+</center>
+BIOME-BGC is written in C with no specific hardware requirements.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 5">5. Data Acquisition Methods</A></H3>
+</center>
+The model requires a daily meteorological data file. This file consists
+of 6 columns that are space delimited with each row of the file representing a
+specific day of the year. Column 1 represents the day of year (Julian day
+format, 1-365), coelum 2 represents precipitation (cm), column 3 represents
+maximum 24 hr daily air temperature (C), column 4 represents minimum 24 hr
+daily air temperature (C), column 5 represents total daily solar radiation
+(direct+diffuse, kJ), column 6 represents the daylength (s).  A second file is
+also required which defines site initialization parameters such as soil,
+litter, leaf and sapwood carbon pools, soil type and condition. A detailed
+discussion of the development of the tower site initialization parameter files
+is presented below.
+<br><IMG SRC="../gifs/indent.gif">BIOME-BGC requires general information about stand morphology and soil
+characteristics in order to simulate the water and carbon balance at a site.
+Information required by the model to define initial hydrologic characteristics
+of the study sites is given by Kimball et al. (submitted).  A list of critical
+parameters used to define soil and stand carbon characteristics at the 8 study
+sites are presented in Table 1.  These parameters were held constant
+throughout the model runs.  Soil parameters were derived from measurements
+collected at the sites during 1994 by Cuenca et al. (submitted) and values
+reported in the literature for representative soil types (Hillel 1980).  The
+soil depth was set at 0.5 m and assumed homogeneous in regard to soil
+mineralized carbon, structure and soil moisture characteristics.  Mean daily
+stand solar albedos for snow-free conditions were estimated from site
+observations (Sellers et al. 1995).
+<br><IMG SRC="../gifs/indent.gif">Estimates of average annual leaf area index (LAI) were derived from
+effective LAI measurements conducted over approximately 3 periods during the
+1994 growing season at each study site by Chen (submitted).  Effective LAI was
+measured using LI-COR LAI-2000 plant canopy analyzer and adjusted for foliage
+clumping.  Specific leaf area  (SLA) and leaf nitrogen levels were determined
+from plucked needle and leaf measurements at the spruce, jack pine and aspen
+sites by Margolis et al. (1996 unpublished data).  The amounts of leaf
+nitrogen in RuBisCO were estimated from the literature for representative
+cover types (Field and Mooney 1986).  Leaf carbon was derived from LAI and SLA
+information.  Sapwood carbon was estimated from sapwood biomass measurements
+collected by Gower et al. (1996 unpublished data) at the black spruce, aspen
+and jack pine sites, and estimates of the relative proportions of sapwood live
+cells (Waring and Schlesinger 1985).  Coarse root carbon was estimated to be
+approximately 25% of sapwood carbon (e.g. Grier et al. 1981, Grier and Logan
+1977).
+<br><IMG SRC="../gifs/indent.gif">The amount of carbon attributed to fine root biomass is highly variable
+depending on species type, stand age and nutrient availability.  Processes
+governing the partitioning of carbon between root and foliar biomass are
+generally poorly understood and not well quantified in the literature.
+Observations have shown, however, that fine root biomass is generally greater
+than foliar biomass in nutrient limited systems which often occur in boreal
+and cold temperate forests and may represent an adaptation to maximize
+nutrient uptake (Nadelhoffer et al. 1985, Keyes and Grier 1981, Tetrealt et
+al. 1978).  Soil carbon attributed to fine roots was estimated from 1.5 (SOAS)
+to 3.5 (SOJP) times the estimated leaf carbon based on observations from
+boreal and cold temperate coniferous and deciduous stands on nutrient poor
+sites (Gower et al. 1992, Comeau and Kimmins 1989, Nadelhoffer et al. 1985,
+Linder and Axelson 1982, Perala and Alban 1982, Keyes and Grier 1981).  Soil
+litter and mineralized organic carbon pools within the prescribed 0.5 m soil
+depths were estimated from soil layer depth, bulk density and percent organic
+carbon measurements conducted at each of the study sites by Anderson et al.
+(1995 unpublished data).
+<br><IMG SRC="../gifs/indent.gif">Leaf, stem, coarse and fine root maintenance respiration coefficients
+were estimated from measured rates for coniferous and deciduous cover types
+(Sprugel et al. 1995).  All other ecophysiological parameters were obtained
+from the literature for general cover types (e.g. Sprugel et al. 1995, Nobel
+1991, Waring and Schlesinger 1985).
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 6">6. Observations</A></H3>
+</center>
+<p>
+<B>6.1 Data Notes</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 7">7. Data Description</A></H3>
+</center>
+Air temperature, solar radiation and precipitation were measured at
+approximate 15 minute intervals at each of the study sites during 1994.  These
+data were obtained from BOREAS principle investigators at each study site and
+the Saskatchewan Research Council's AMS mesonet database (BOREAS Science Team
+1995).  The 1994, meteorological records for each study site were incomplete
+due to periods of instrument malfunction, calibration and measurement
+inactivity.  Continuous meteorological records for 1994 were obtained for each
+study site by temporally interpolating missing data or substituting data from
+adjacent sites.  Daily maximum and minimum air temperatures, precipitation and
+solar radiation were then derived from the continuous data records for each
+site and used to generate model results.
+<br><IMG SRC="../gifs/indent.gif">BIOME-BGC was run over a 2 year period at each study site.  The model was
+initialized using 1989 AMS mesonet station meteorological data from the
+Thompson airport (55.8 *N, 97.9 *W) for study sites in the NSA, and Prince
+Albert airport (53.2 *N, 105.7 *W) and Waskesiu Lake (53.9 *N, 106.1 *W) for
+study sites in the SSA (Shewchuk submitted).  All analyses of model results
+were done for the second year using the 1994 meteorological database described
+above.
+<p>
+<B>7.1 Spatial Characteristics</B><br>
+<p>
+<B>7.1.1 Spatial Coverage</B><br>
+These results constitute point simulations of the BOREAS NSA Old Black
+Spruce (NSA-OBS), Young Jack Pine (NSA-YJP), SSA Old Aspen (SSA-OA), Old Black Spruce (SSA-OBS), and Old Jack Pine (SSA-OJP) tower flux sites.
+<p>
+<B>7.1.2 Spatial Coverage Map</B><br>
+Not Applicable
+<p>
+<B>7.1.3 Spatial Resolution</B><br>
+Not Applicable
+<p>
+<B>7.1.4 Projection</B><br>
+Not Applicable
+<p>
+<B>7.1.5 Grid Description</B><br>
+Not Applicable
+<p>
+<B>7.2 Temporal Characteristics</B><br>
+The model generated daily results for 2 years. Results for the first year
+were generated using 1989 meteorological data which were used to initialize
+the model, while all analyses were done for the second year (1994).
+<P>
+<B>7.2.1 Temporal Coverage</B><br>
+01-01-1994 to 12-31-1994
+<p>
+<B>7.2.2 Temporal Coverage Map NA</B><br>
+Not Applicable
+<p>
+<B>7.2.3 Temporal Resolution</B><br>
+daily
+<p>
+<B>7.3 Data Characteristics</B><br>
+BIOME-BGC requires an input daily meteorological data file and an
+initialization file to generate daily estimates of site hydrologic and carbon
+balance characteristics. The meteorological data file variables are described
+below. The initialization file provides site specific information about stand
+morphology, soil type and condition. The initialization files used to generate
+results for 1994 at the tower flux sites are included in this directory and
+are described in section 5.
+<p>
+<B>7.3.1 Input Parameter/Variables</B><br>
+Meteorological data input file: <TT>DOY PCP TMAX TMIN SOLIN DAYLEN</TT>
+<p>
+<B>7.3.2 Variable Description/Definition</B><br>
+<PRE>DOY    = Julian day (1-365)
+PCP    = daily precipitation (cm)
+TMAX   = maximum 24-hour air temperature (C)
+TMIN   = minimum 24-hour air temperature (C)
+SOLIN  = total daily solar radiation (kJ)
+DAYLEN = daylength (s)
+</PRE>
+<p>
+<B>7.3.3 Unit of Measurement</B><br>
+See 7.3.2
+<p>
+<B>7.3.4 Data Source</B><br>
+Daily meteorological data were derived from approximate 15 minute measurements
+obtained from AMS mesonet and flux tower sites for 1994 (BOREAS Science Team
+1995; Shewchuk submitted). The initialization data files were created using
+information  obtained from measurements by other boreas investigators and the
+literature for similar stand types (See section 5).
+<p>
+<B>7.3.5 Data Range</B><br>
+Not Applicable
+<p>
+<B>7.4 Sample Data Record</B><br>
+<p>
+<B>7.4.1 Output Parameter/Variables</B><br>
+Hydrologic output variables:<br>
+<TT>DOY SNOWW SOILW T ET E Q</TT>
+<P>
+Carbon output variables:<br>
+<TT>DOY GPP Rdl Rnl Rsw Rcr Rfr Rh Rm Rg NPP NEE Rtot</TT>
+<P>
+**NOTE: NEE denoted with a (-) sign indicates net C release from the stand
+to the atmosphere while a positive sign indicates net C uptake by the stand.
+<p>
+<br>
+<B>7.4.2 Variable Description/Definition</B><br>
+<PRE>DOY   = julian day (Day Of Year)
+SNOWW = Snow water equivalent of the snowcover (mm)
+SOILW = Water held in the soil layer (mm)
+T     = Transpiration from the canopy (kg/m^2 day)
+ET    = Evapotranspiration (kg/m^2 day)
+E     = Evaporation from the canopy and surface (kg/m^2 day)
+Q     = outflow (mm/day)
+GPP   = Net daily photosynthesis (mg C/m^2 day)
+Rdl   = Day-time leaf respiration (mg C/m^2 day)
+Rnl   = Night leaf respiration (mg C/m^2 day)
+Rsw   = Sapwood respiration (mg C/m^2 day)
+Rcr   = Coarse root respiration (mg C/m^2 day)
+Rfr   = Fine root respiration (mg C/m^2 day)
+Rh    = Heterotrophic respiration (mg C/m^2 day)
+Rm    = Maintenance respiration (mg C/m^2 day)
+Rg    = Growth respiration (mg C/m^2 day)
+NPP   = Net primary production (mg C/m^2 day)
+NEE   = Net ecosystem carbon exchange (mg C/m^2 day); (-) sign indicates net C
+        release to the atmosphere while a positive sign indicates net C uptake
+        by the stand. Rtot=Total respiration (mg C/m^2 day)
+<P>
+</PRE>
+<p>
+<B>7.4.3 Unit of Measurement</B><br>
+See section 7.4.2.
+<p>
+<B>7.4.4 Data Source</B><br>
+BIOME-BGC model output
+<p>
+<B>7.4.5 Data Range</B><br>
+Daily results for 1994
+<p>
+<B>7.5 Sample Data Records</B><br>
+<PRE>Meteorological data input file sample:
+
+1 0.00 -28.50 -42.00 16.40 24467
+2 0.00 -25.50 -42.40 28.70 24554
+3 0.04 -15.70 -30.70 23.40 24649
+
+Hydrologic output file:
+
+DOY SNOWW SOILW T ET E Q
+1 55.39 190.00 0.00 0.01 0.01 0.00
+2 55.78 190.00 0.00 0.01 0.01 0.00
+3 55.77 190.00 0.00 0.01 0.00 0.00
+
+Carbon output file:
+
+DOY GPP Rdl Rnl Rsw Rcr Rfr Rh Rm Rg NPP NEE Rtot
+1 11 43 92 39 10 278 0 462 0.0 -451 -451 462
+2 14 46 91 41 10 289 0 477 0.0 -463 -463 477
+3 22 53 113 48 12 338 0 564 0.0 -542 -542 564
+
+</PRE>
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 8">8. Data Organization</A></H3>
+</center>
+<p>
+<B>8.1 Data Granularity</B><br>
+Not Applicable
+<p>
+<B>8.2 Data Format(s)</B><br>
+The model input and output files are in ascii format with space separated
+columns.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 9">9. Data Manipulations</A></H3>
+</center>
+See Kimball et al. (Submitted), and Running and Hunt (1993) for detailed
+descriptions of model description, methods and processing steps.
+<p>
+<B>9.1 Formulae</B><br>
+See section 9.
+<p>
+<B>9.1.1 Derivation Techniques and Algorithms</B><br>
+See section 9.
+<p>
+<B>9.2 Data Processing Sequence</B><br>
+See section 9.
+<p>
+<B>9.2.1 Processing Steps</B><br>
+See section 9.
+<p>
+<B>9.2.2 Processing Changes</B><br>
+See section 9.
+<p>
+<B>9.3 Calculations</B><br>
+See section 9.
+<p>
+<B>9.3.1 Special Corrections/Adjustments</B><br>
+Not Applicable
+<p>
+<B>9.3.2 Calculated Variables</B><br>
+See section 7.4.1 and 7.4.2.
+<p>
+<B>9.4 Graphs and Plots</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 10">10. Errors</A></H3>
+</center>
+<p>
+<B>10.1 Sources of Error</B><br>
+BIOME-BGC is a process level model designed to be general enough to apply
+at regional to global scales. The model uses several simplifying assumptions
+regarding stand and meteorological conditions in order to facilitate
+application at regional scales. A fundamental model assumption for this
+investigation was that stand physiological conditions such as age, stand
+structure, LAI and carbon storages were spatially and temporally uniform on an
+annual basis. Soil conditions such as depth, density and moisture content were
+also assumed spatially uniform with no lateral or subsurface drainage. Stand
+conditions at the study sites were both spatially and temporally diverse and
+were composed of different age types, biomass densities and species
+compositions (BOREAS Science Team 1995). Some sites also had significant
+vegetation understories that were not explicitly modeled in this
+investigation. Evidence suggests that these vegetation types contributed
+significantly to the daily carbon budget (e.g. Black et al. submitted).
+Further discussion of potential error sources for this investigation is given
+by Kimball et al. (1996 a,b submitted).
+<p>
+<B>10.2 Quality Assessment</B><br>
+See section 10.1.
+<p>
+<B>10.2.1 Model Validation by Source</B><br>
+Model results were compared with daily carbon and water fluxes derived
+from site tower flux measurements for 1994. Model estimates of annual NPP were
+also compared with NPP estimates derived from site biomass measurements and
+allometric equations for 1994 (BOREAS Science Team 1995). Model estimates of
+SNOWW and SOILW were compared with measured data for 1994 (BOREAS Science Team
+1995). Detailed discussion of these comparisons are given by Kimball et al.
+(1996 a,b submitted).
+<p>
+<B>10.2.2 Confidence Level/Accuracy Judgement</B><br>
+See section 10.2.1.
+<p>
+<B>10.2.3 Measurement Error for Parameters</B><br>
+See section 10.1 and 10.2.1.
+<p>
+<B>10.2.4 Additional Quality Assessments</B><br>
+See section 10.1 and 10.2.1.
+<p>
+<B>10.2.5 Data Verification by Data Center</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 11">11. Notes</A></H3>
+</center>
+<p>
+<B>11.1 Limitations of the Model</B><br>
+See section 10.1 and 10.2.1.
+<p>
+<B>11.2 Known Problems with the Model</B><br>
+See section 10.1 and 10.2.1.
+<p>
+<B>11.3 Usage Guidance</B><br>
+Not Applicable
+<p>
+<B>11.4 Other Relevant Information</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 12">12. Application of the Model</A></H3>
+</center>
+These results represent research in progress. We expect our results to
+improve as additional measurement data regarding stand and soil morphology
+become available. These results are intended for comparison with other models
+and additional measurement data.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 13">13. Future Modifications and Plans</A></H3>
+</center>
+This model will be used in the context of RHESSys to generate landscape
+level estimates of daily and annual water and carbon exchange processes over
+the 1x10<sup>6</sup> km<sup>2</sup> boreas grid at a 1 km<sup>2</sup> spatial resolution.
+<br><IMG SRC="../gifs/indent.gif">Carbon allocation, growth respiration and nitrogen cycle routines will be
+activated (See Running and Hunt 1993) and model runs will be conducted over
+longer time periods (50 to several hundred years) to investigate the effects
+of inter-annual climate variations on site to regional water and carbon
+budgets.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 14">14. Software</A></H3>
+</center>
+BIOME-BGC was written in C code on a UNIX platform. To request a copy of
+the model please send email to the address in section 2.3.
+<p>
+<B>14.1 Software Description</B><br>
+See section 14.
+<p>
+<B>14.2 Software Access</B><br>
+See section 14.
+<p>
+<B>14.3 Platform Limitations</B><br>
+See section 14.
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 15">15. Data Access</A></H3>
+</center>
+<p>
+<B>15.1 Contact Information</B><br>
+See section 2.3
+<p>
+<B>15.2 Data Center Identification</B><br>
+<p>
+<B>15.3 Procedures for Obtaining Data</B><br>
+<p>
+<B>15.4 Data Center Status/Plans</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 16">16. Output Products and Availability</A></H3>
+</center>
+<p>
+<B>16.1 Tape Products</B><br>
+Not Applicable
+<p>
+<B>16.2 Film Products</B><br>
+Not Applicable
+<p>
+<B>16.3 Other Products</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 17">17. References</A></H3>
+</center>
+Amthor, J.S. 1986. Evolution and applicability of a whole plant respiration
+model. Journal of Theoretical Biology. 122: 473-490.
+<P>
+Andren, O. and K. Paustian. 1987. Barley straw decomposition in the field: a
+comparison of models. Ecology. 68(5):1190-1200.
+<P>
+Black, T.A., G. den Hartog, H.H. Neumann, P.D. Blanken, P.C. Yang, C. Russell,
+Z. Nesic, X. Lee, S. G. Chen, and R. Staebler. 1995. Annual cycles of water
+vapour and carbon dioxide fluxes in and above a boreal aspen forest. Global
+Change Biology. Submitted.
+<P>
+Bonan, G.B., and H.H. Shugart. 1989. Environmental factors and ecological
+processes in boreal forests. Annual Review of Ecology and Systematics.
+20:1-28.
+<P>
+BOREAS Science Team. 1995. Boreal Atmosphere-Ecosystem Study, Experimental Plan. Version 3.1, NASA/GSFC, Greenbelt, MD.
+<P>
+Chen, J.M. 1996. Optically-based methods for measuring seasonal variation of
+leaf area index in boreal conifer stands. Agricultural and Forest Meteorology.
+In press.
+<P>
+Cole, D.W. and M. Rapp. 1981. Elemental cycling in forest ecosystems. In
+Dynamic Principles of Forest Ecosystems. Ed. D.E. Reichle. Cambridge
+University Press, London and New York, pp 341-409.
+<P>
+Comeau, P.G., and J.P. Kimmins. 1989. Above- and below-ground biomass and
+production of lodgepole pine on sites with differing soil moisture. Canadian
+Journal of Forest Res. 19:447-454.
+<P>
+Cosby, B.J., G.M. Hornberger, R.B. Clapp, and T.R. Ginn. 1984. A statistical
+exploration of the relationships of soil moisture characteristics to the
+physical properties of soils. Water Resources Research. 20(6):682-690.
+<P>
+Edwards, N.T., H.H. Shugart, S.B. McLaughlin, W.F. Harris, and D.E. Reichle.
+1981. Carbon metabolism in terrestrial ecosystems. In InterBiol. Programme No.
+23, "Dynamic Properties of Forest Ecosystems". Ed. D.E. Reichle. Cambridge
+University Press, London and New York, pp 499-536.
+<P>
+Evans, J.R. 1989. Photosynthesis and nitrogen relationships in leaves of C3
+plants. Oecologia. 78:9-19.
+<P>
+Farquhar, G.D., S. von Caemmerer, and J.A. Berry. 1980. A biochemical model of
+photosynthetic CO2 assimilation in leaves of C3 species. Planta. 149:78-90.
+<P>
+Farquhar, G.D. and S. von Caemmerer. 1982. Modelling of photosynthetic
+response to environmental conditions. In Encyclopedia of Plant Physiology, New
+Series, Vol. 12B, "Physiological Plant Ecology II". Eds. O.L. Lange, P.S.
+Nobel, C.B. Osmond, and H. Ziegler. Springer Verlag, Berlin, Germany, pp
+549-587.
+<P>
+Farquhar, G.D. 1989. Models of integrated photosynthesis of cells and leaves.
+Phil. Trans. Roy. Soc. Lond. 323B:357-367.
+<P>
+Field, C. and H.A. Mooney. 1986. The photosynthesis-nitrogen relationship in
+wild plants. In On the Economy of Plant Form and Function. Ed. T.J. Givnish.
+Cambridge University Press, Cambridge, pp 25-55.
+<P>
+Fox, J.F. and K. Van Cleve. 1983. Relationships between cellulose
+decomposition, Jenny's k, forest-floor nitrogen, and soil temperature in
+Alaskan taiga forests. Canadian Journal of Forest Research. 13:789-794.
+<P>
+Gates, D.M. 1993. Plant-Atmosphere Relationships. Chapman and Hall, New York,
+92 p.
+<P>
+Gower, S.T., K.A. Vogt, and C.C. Grier. 1992. Carbon dynamics of Rocky
+Mountain Douglas-fir: Influence of water and nutrient availability. Ecological
+Monographs. 62:43-65.
+<P>
+Grier, C.C. and R.S. Logan. 1981. Old-growth pseudotsuga menziesii communities
+of a western oregon watershed: biomass distribution and production budgets.
+Ecological Monographs. 47:373-400.
+<P>
+Grier, C.C., K.A. Vogt, M.R. Keyes, and R.L. Edmonds. 1981. Biomass
+distribution and above- and below-ground production in young and mature Abies
+amabilis zone ecosystems of the Washington Cascades. Canadian Journal of
+Forest Research. 11:155-157.
+<P>
+Hillel, D. 1980. Fundamentals of Soil Physics. Academic Press, New York, 413
+p.
+<P>
+Hunt, R.E. and S.W. Running. 1992. Simulated dry matter yields for aspen and
+spruce stands in the North American boreal forest. Canadian Journal of Remote
+Sensing. 18(3):126-133.
+<P>
+Jarvis, P.G. and J.I.L. Morison. 1981. Stomatal control of transpiration and
+photosynthesis. In Stomatal Physiology. Eds. P.G. Jarvis and T.A. Mansfield.
+Cambridge University Press, Cambridge. pp 247-279.
+<P>
+Keyes, M.R., and C.C. Grier. 1981. Above- and below-ground net production in
+40-year-old Douglas-fir stands on high and low productivity sites. Canadian
+Journal of Forest Res. 11:599-605.
+<P>
+Kimball, J.S., M.A. White and S.W. Running. 1996. BIOME-BGC simulations of
+BOREAS stand hydrologic processes. Journal of Geophysical Research. Submitted.
+<P>
+Kinerson, R.S., C.W. Ralston, and C.G. Wells. 1977. Carbon cycling in a
+loblolly pine plantation. Oecologia. 29:1-10.
+<P>
+Leuning, R. 1990. Modeling stomatal behavior and photosynthesis of Eucalyptus
+Grandis. Australian Journal of Plant Physiology. 17:159-175.
+<P>
+Linder, S., and B. Axelsson. 1982. Changes in carbon uptake and allocation
+patterns as a result of irrigation and fertilization in a young Pinus
+sylvestris stand. In "Carbon Uptake and Allocation: Key to Management of
+Subalpine Forest Ecosystems". Ed. R.H. Waring. International Union Forest
+Research Organization (IUFRO) Workshop, Forest Research Laboratory, Oregon
+State University, Corvallis, Oregon, pp 38-44.
+<P>
+Malkonen, E. 1974. Annual primary production and nutrient cycle in some Scots
+pine stands. Commun. Inst. For. Fenn. (Helsinki), No. 84.
+<P>
+Nadelhoffer, K.J., J.D. Aber, and J.M. Melillo. 1985. Fine root production in
+relation to total net primary production along a nitrogen mineralization
+gradient in temperate forests: a new hypothesis. Ecology. 66:1377-1390.
+<P>
+Nobel, P.S. 1991. Physicochemical and Environmental Plant Physiology. Academic
+Press Inc., New York, 635 p.
+<P>
+Orchard, V.A. and F.J. Cook. 1983. Relationship between soil respiration and
+soil moisture. Soil biology and Biochemistry. 15(4):447-453.
+<P>
+Paavilainen, E. 1980. Effect of fertilization on plant biomass and nutrient
+cycle on a drained dwarf shrub pine swamp. Comm. Inst. For. Fenn. (Helsinki),
+No. 98.
+<P>
+Penning de Vries, F.W.T., A. Brunsting, H.H. Van Laar. 1974. Products,
+requirements and efficiency of biosynthesis: A quantitative approach. Journal
+of Theoretical Biology. 45:339-377.
+<P>
+Perala, D.A. and D.H. Alban. 1982. Biomass, nutrient distribution and
+litterfall in Populus, Pinus and Picea stands on two different soils in
+Minnesota. Plant and Soil. 64:177-192.
+<P>
+Rastetter, E.B., A.W. King, B.J. Cosby, G.M. Hornberger, R.V. O'Neill, and
+J.E. Hobbie. 1992. Aggregating fine-scale ecological knowledge to model
+coarser-scale attributes of ecosystems. Ecological Applications. 2:55-70.
+<P>
+Running, S.W. and J.C. Coughlan. 1988. A general model of forest ecosystem
+processes for regional applications, I. hydrologic balance, canopy gas
+exchange and primary production processes. Ecological Modelling. 42:125-154.
+<P>
+Running, S.W. and R.E. Hunt. 1993. Generalization of a forest ecosystem
+process model for other biomes, BIOME-BGC, and an application for global-scale
+models. In Scaling Physiologic Processes: Leaf to Globe. Eds. J.R. Ehleringer
+and C.B. Field. Academic Press, San Diego, CA, pp 141-158.
+<P>
+Running, S.W., R.R. Nemani, and R.D. Hungerford. 1987. Extrapolation of
+synoptic meteorological data in mountainous terrain and its use for simulating
+forest evapotranspiration and photosynthesis. Canadian Journal of Forest
+Research 17:472-483.
+<P>
+Sellers, P., F. Hall, H. Margolis, B. Kelly, D. Baldocchi, G. den Hartog, J.
+Cihlar, M.G. Ryan, B. Goodison, P. Crill, K.J. Ranson, D. Lettenmaier, and
+D.E. Wickland. 1995. The boreal ecosystem-atmosphere study (BOREAS): an
+overview and early results from the 1994 field year. Bulletin of the American
+Meteorological Society. 76(9):1549-1577.
+<P>
+Shewchuk, S.R. 1996. The surface atmospheric sciences mesonet for BOREAS.
+Journal of Geophysical Research. Submitted.
+<P>
+Sprugel, D.G., M.G. Ryan, J.R. Brooks, K.A. Vogt, and T.A. Martin. 1995.
+Respiration from the organ level to the stand. In Resource Physiology of
+Conifers, Acquisition, Allocation and Utilization. Eds. W.K. Smith and T.M.
+Hinckley. Academic Press, San Diego, pp 255-299.
+<P>
+Tetreault, J.P., B. Bernier, and J.A. Fortin. 1978. Nitrogen fertilization and
+mycorrhizae of balsam fir seedlings in natural stands. Naturaliste Canadien
+(Quebec). 105:461-466.
+<P>
+Waring, R.H. and W.H. Schlesinger. 1985. Forest Ecosystems Concepts and
+Management. Academic Press Inc., San Diego, 340 p.
+<P>
+Woodrow, I.E. and J.A. Berry. 1988. Enzymatic regulation of photosynthetic CO2
+fixation in C3 plants. Annual Reviews of Plant Physiology and Plant Molecular
+Biology. 39:533-594.
+<P>
+Wullschleger, S.D. 1993. Biochemical limitations to carbon assimilation in C3
+plants - a retrospective analysis of the A/Ci curves from 109 species. Journal
+of Experimental Botany. 44:907-920.
+<P>
+Zheng, D., E.R. Hunt and S.W. Running. 1993. A daily soil temperature model
+based on air temperature and precipitation for continental applications.
+Climate Research. 2:183-191.
+<p>
+<br>
+<B>17.1 Model Documentation</B><br>
+See Running and Coughlan (1988), Running and Hunt (1993), Hunt and
+Running (1992) and Kimball et al. (1996).
+<P>
+<B>17.2 Journal Articles and Study Reports</B><br>
+See section 17.1.
+<p>
+<B>17.3 Archive/DBMS Usage Documentation</B><br>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 18">18. Glossary of Terms</A></H3>
+</center>
+Not Applicable
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 19">19. List of Acronyms</A></H3>
+</center>
+<PRE>BOREAS  - BOReal Ecosystem-Atmosphere Study
+BORIS   - BOREAS Information System
+DAAC    - Distributed Active Archive Center
+EOS     - Earth Observing System
+EOSDIS  - EOS Data and Information System
+GSFC    - Goddard Space Flight Center
+NASA    - National Aeronautics and Space Administration
+ORNL    - Oak Ridge National Laboratory
+NSA     - BOREAS northern study area
+SSA     - BOREAS southern study area
+NOBS    - NSA old black spruce site
+NYJP    - NSA young jack pine site
+SOBS    - SSA old black spruce site
+SOJP    - SSA old jack pine site
+SOAS    - SSA old aspen site
+URL     - Uniform Resource Locator
+DOY     - julian day
+SNOWW   - Snow water equivilent of the snowcover (mm)
+SOILW   - Water held in the soil layer (mm)
+T       - Transpiration from the canopy (kg/m^2 day)
+ET      - Evapotranspiration (kg/m^2 day)
+E       - Evaporation from the canopy and surface (kg/m^2 day)
+Q       - outflow (mm/day)
+GPP     - Net daily photosynthesis (mg C/m^2 day)
+Rdl     - Day-time leaf respiration rate (mg C/m^2 day)
+Rnl     - Night-time leaf respiration rate (mg C/m^2 day)
+Rsw     - Sapwood respiration rate (mg C/m^2 day)
+Rcr     - Coarse root respiration rate (mg C/m^2 day)
+Rfr     - Fine root respiration rate (mg C/m^2 day)
+Rm      - Maintenance respiration (mg C/m^2 day)
+Rh      - Heterotrophic respiration (mg C/m^2 day)
+Rg      - Growth respiration (mg C/m^2 day)
+NPP     - Net primary production (mg C/m^2 day)
+NEE     - Net ecosystem carbon exchange (mg C/m^2 day)
+Rtot    - Total respiration (mg C/m^2 day)
+PCP     - daily precipitation (cm)
+TMAX    - maximum 24-hour air temperature (C)
+TMIN    - minimum 24-hour air temperature (C)
+SOLIN   - total daily solar radiation (kJ)
+DAYLEN  - daylength (s)
+LAI     - Leaf area index (m^2/m^2)
+SLA     - Specific leaf area (m^2/kg C)
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 20">20. Document Information</A></H3>
+</center>
+<p>
+<B>20.1 Document Revision Date</B><br>
+19-Sept-1996
+<p>
+<B>20.2 Document Review Date(s)</B><br>
+BORIS Review: <br>
+Science Review:
+<p>
+<B>20.3 Document</B><br>
+[BORIS and ORNL DAAC to fill in]
+<p>
+<B>20.4 Citation</B><br>
+Use references in Section 17.1 when citing BIOME-BGC.
+<p>
+<B>20.5 Document Curator</B><br>
+[BORIS and ORNL DAAC to fill in]
+<p>
+<B>20.6 Document URL</B><br>
+[BORIS and ORNL DAAC to fill in]
+<P>
+<br>
+<B>Keywords:</B> BIOME-BGC, carbon, water, hydrology, NPP, tower sites, modeling, productivity
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+</body>
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> July 22, 1997
+</html>

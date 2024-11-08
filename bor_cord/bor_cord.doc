@@ -1,0 +1,488 @@
+
+NOTE: This file contains both a user's guide and an installation manual
+      for the bor_cord software.
+
+                BOR_CORD  VERSION 2.0 USER GUIDE   (DRAFT)
+                J. Newcomer and F. Irani, HSTX
+                March 7, 1994
+
+
+1.0 INTRODUCTION
+----------------
+The BOR_CORD program converts coordinates between the BOREAS X, Y grid
+system, Latitude and Longitude and UTM Coordinates.  These coordinate
+conversions are performed within and between the NAD27 and NAD83 datums.
+Users may input coordinates interactively at the terminal or may use an
+input ASCII file.  Either NAD27 or NAD83 datum coordinates for UTM or
+latitude and longitude may be entered.  By definition the BOREAS X,Y grid
+values are defined only in the NAD83 datum.  Program output is to the
+terminal or to an ASCII BOR_CORD file. 
+ 
+
+2.0  OVERVIEW AND FUNCTIONALITY
+-------------------------------
+BOR_CORD, developed for the Boreal Ecosystem-Atmosphere Study (BOREAS)
+Information System (BORIS),  performs the geographic coordinate
+conversions over the BOREAS study area of 51 degrees North to 60 degrees
+North latitude and 111 degrees West to 93 degrees West longitude. 
+
+The BOREAS grid is based on the ellipsoidal version of the Albers
+Equal-Area Conic (AEAC) projection as defined within the North American
+Datum 1983 (NAD83). The origin of the grid is at 111 degrees West, 51
+degrees North and the standard parallels are set to 52.5 degrees North and
+58.5 degrees North as prescribed in 'Map Projections - A Working Manual',
+USGS Professional Paper 1395, John P. Snyder, 1987.  The projection
+equations used in this program were all taken from this manual. The
+BOR_CORD software will take input coordinates as Universal Transverse
+Mercator (UTM) northing, easting and zone; decimal degrees of latitude and
+longitude; or BOREAS (X, Y) grid coordinates. 
+
+
+3.0 Running BOR_CORD
+--------------------
+Upon program invocation, BOR_CORD users are presented with a main menu
+from which to select the type of coordinates which they intend to enter: 
+
+        Input Coordinate Selection Menu.
+        1) BOREAS X, Y
+        2) UTM Northing, Easting
+        3) Latitude, Longitude
+        4) Exit
+        Enter choice < 1 - 4 >: 2
+
+Users are then prompted for input and output ASCII file names.  If no
+input file name is given, input will be prompted for at the terminal.  If
+no output file name is given output will be directed to the terminal.
+Except when running under VAX/VMS, specification of a pre-existing output
+file name will cause the pre-existing file to be destroyed and a new file
+to be created with the same name. 
+
+Users can enter q or Q at any time to quit from an option and return to
+the main menu.  If the user enters quit, any file which had been opened
+will be closed upon returning to the main menu.  Such files can be deleted
+by the user after exiting the program or can be re-specified under
+subsequent selections from the main menu.  Note that except when running
+under VAX/VMS, any file re-opened for writing after a quit will not be
+appended to but will be over-written such that pre-existing data in that
+file will be lost. 
+
+        Enter Input Filename or RETURN for keyboard input (q = quit)
+        --> (User enters carriage return for keyboard input)
+
+        Enter Output filename or RETURN for screen output (q = quit)
+        --> UTM27.out
+
+The file name specification for input and output
+files should conform to the file naming conventions provided under the
+operating system on which BOR_CORD is being run. 
+
+ 
+        Enter datum shift file name (Default = datmshft.dat;  q = quit)
+        --> User enters carriage return 
+
+Note that the name of the datum shift file must be entered using the file
+naming conventions provided by the users operating system (see DATUM SHIFT
+FILE below). 
+
+Users are prompted for the datum of the coordinates being supplied to the
+program for conversion: 
+
+        Enter the datum for the input latitude and longitude
+        coordinates as 27 for NAD27 or 83 for NAD83. (q = quit)
+        -->27
+
+Note that which-ever datum is entered, calculations are made to convert to
+the complementary datum. 
+
+Interactive users are prompted for the coordinates differently according
+to their type: 
+
+        Boris XY:  Enter the X and Y BOREAS grid values as xxx.xx yyy.yy 
+        Lat/Long:  Enter latitude longitude in decimal degrees as yy.yy xx.xx 
+        UTM:       Enter northing  easting  zone 
+
+BOREAS Grid Coordinates are entered in decimal kilometers.  Latitude and
+longitude coordinates are specified in decimal degree units with west
+longitude designated by a negative number.  UTM northing and easting
+values are specified in decimal meters and UTM zone numbers are entered as
+integers. 
+
+If users specify an ASCII file as input, BOR_CORD processes all coordinate
+pairs until the end of the input file is reached.  Processing control then
+returns to the main menu (see Input File Formats below). 
+
+
+4.0 INPUT FILE FORMATS
+----------------------
+
+
+        4.1 Datum Shift File
+        --------------------
+        By default, the BOR_CORD program accesses datum shift
+        information contained in the ASCII text file named datmshft.dat.
+        This file name should be specified such that it can be
+        located under the naming conventions of the host operating
+        system (see BOR_CORD installation guide). 
+
+
+        4.2 Coordinate Specification Files
+        ----------------------------------
+        All input coordinate specification files are assumed to be ASCII
+        files. No special header or other ancillary information should
+        exist in any of these files. These files contain one coordinate
+        pair, plus zone number for UTM, per line. Coordinate numbers are
+        separated by blanks only.  The BOR_CORD program processes one
+        coordinate pair at a time so that an unlimited number of
+        coordinates can be placed into an input file for processing. 
+
+
+                4.2.1 BOREAS Grid XY
+                --------------------
+                The BOREAS Grid specification ASCII file format
+                consists of one pair of X Y decimal kilometer grid
+                coordinates on a line. Examples of these are: 
+
+                        0.0 0
+                        100 1000.0
+                        200 200
+                        345.67 890.123
+                        456.789 23.45
+
+
+                4.2.2 Latitude/Longitude
+                ------------------------
+                Like BORIS Grid, latitude and longitude is specified as
+                one coordinate pair per line of text.  Each coordinate
+                pair consists of a latitude value, a blank separator
+                and a longitude value.  Latitude and longitude is
+                always specified in decimal degrees.  Note that west
+                longitude is always specified as a negative number.
+                Examples are: 
+
+                        51 -110
+                        56.0 -98
+                        52 -109.0
+                        58 -96.123
+                        51.89037 -109.54819
+                
+
+                4.2.3 UTM
+                ---------
+                UTM Coordinates are specified in the same way as other
+                coordinate types except that the zone number must also
+                be specified on the line. Northings are specified
+                first, followed by eastings, followed by zone numbers.
+                Examples are: 
+
+                        5649824.9 500000.0 12
+                        5749841.1 599908.6 12
+                        6291307.2 470168.2 14
+                        6522766.7 471014.5 15
+
+
+5.0 OUTPUT 
+----------
+Output coordinates for the BOREAS grid are always given under the NAD83
+datum. Output coordinates for UTM and latitude longitude coordinates are
+given under both NAD27 and NAD83 datums. 
+
+
+6.0 ALGORITHM DESCRIPTION
+-------------------------
+Users specify input coordinates of a given type, as well as which of the
+NAD27 or NAD83 datums their input specifications represent.  BOR_CORD then
+reports all values for the same and complementary datum.  BOREAS Grid
+coordinates are only specified and reported as NAD83 coordinates.  The
+software handles conversion between NAD27 and NAD83 by applying datum
+shift values that it interpolates for latitude longitude pairs.  If users
+enter BOREAS Grid or UTM coordinates, BOR_CORD first converts these to
+latitude longitude for the same datum input, then converts these latitude
+longitude values to the complementary datum,  and finally derives the UTM
+or BOREAS Grid coordinates from the converted latitude longitude values. 
+
+The datum shift file represents a grid of datum shift values for every 5
+minutes of latitude and 5 minutes of longitude from 48 to 60 degrees north
+and from 89 to 112 degrees west.  Datum shift values above 60 degrees
+north latitude were not available at the time of BOR_CORD development. For
+this reason, northern edge coordinates are handled differently than
+interior coordinates.  For interior coordinates, the four nearest datum
+shift values surrounding the specified latitude and longitude value are
+interpolated to get a datum shift adjustment to apply. For input edge
+coordinates of 60 degrees north latitude, only the previous and following
+datum shift values along the 60 degree line of latitude are used to
+interpolate a datum shift value to be applied to the input coordinate
+pair.  North latitude values can exceed 60 degrees in some cases where UTM
+or Boreas Grid coordinates are first converted to latitude and longitude. 
+
+
+7.0 BOR_CORD MESSAGES
+---------------------
+*** Problem interpreting input ***
+*** Please re-enter response   ***
+User entered a value other than 1, 2, 3 or 4 at the main menu prompt.
+Enter a valid selection. 
+
+*** Error writing header records to output file ***
+An error occurred while attempting to write header records to the user
+specified output file.  Check file protections and other file handling
+conventions for your operating system. 
+
+*** Error reading from terminal ***  
+An error occurred while attempting to receive input from the terminal.
+Try re-entering response or see your system manager.  
+
+*** Error extracting input datum from input record ***
+User entered more than a single numeric value for the input datum. Specify
+27 if you are entering NAD27 coordinates to be converted to NAD83, or
+specify 83 if you are entering NAD83 coordinates to be converted to NAD27.
+ Do not make more than one entry for this response. 
+
+*** Invalid input datum (string)              ***
+*** Datum values need to be given as 27 or 83 ***
+User entered a value other than 27 or 83 for the input datum.  Enter the
+value 27 to convert NAD27 coordinates or 83 to convert NAD83 coordinates. 
+
+*** Error writing coordinates to output ***
+An error occurred while attempting to write specified coordinates to the
+user specified output file.  Check file protections and other file
+handling conventions for your operating system.  Also check for sufficient
+disk space. 
+
+*** End of input file reached ***
+This is an informational message.  The last record of the input coordinate
+list file was reached.  Processing continues as normal. 
+
+*** No coordinates found on input record ***
+User entered something other than a valid pair or set of coordinates
+numbers.  Enter all required coordinates as numeric characters. 
+
+*** Specified [data type] coordinate is outside ***
+*** anticipated range.  Only [data type] values ***
+*** between [min] and [max] are accepted        ***
+User entered coordinates beyond the extreme useable boundaries of the
+BOR_CORD interpolation grid. Re-enter values within the range permitted
+for the input coordinate type. 
+
+
+*** Error extracting [coordinate type] from input record ***
+User made an invalid entry on input.  Re-enter a valid set of coordinates.
+
+*** Error reading from datum shift file            ***
+*** Error extracting datum shift values from input ***
+BOR_CORD was unable to read from the datum shift file.  Check spelling and
+directory syntax as will as access permission.  See system manager. 
+
+ *** Input or calculated longitude of ___ is east of datum shift boundary. ***
+This condition should not have occurred under the original design of
+BOR_CORD for BOREAS purposes.  This message should only occur if a
+longitude value was calculated to be less than W 89 degrees longitude. 
+
+*** Input or calculated longitude of ___ is west of datum shift boundary. ***
+This condition should not have occurred under the original design of
+BOR_CORD for BOREAS purposes.  This message should only occur if a
+longitude value was calculated to be greater than W 112 degrees longitude.
+
+*** Input or calculated latitude of ___ is south of datum shift boundary. ***
+This condition should not have occurred under the original design of
+BOR_CORD for BOREAS purposes.  This message should only occur if a
+latitude value was calculated to be less than N 48 degrees latitude. 
+
+*** Input or calculated latitude of _ is north of 60.            ***
+*** Latitude shifts will be handled as if at 60 degrees          ***
+*** Note that datum shift file edge coordinates are interpolated ***
+*** differently than interior coordintes.                        ***
+A UTM northing or Boreas Grid Y coordinate was converted to a value
+greater than 60 degrees north latitude for conversion from one datum to
+another.  This message is notifying the user that the shift values applied
+to the latitude and longitude have been interpolated differently than are
+coordinates which lie within the interior of the datum shift file. 
+
+*** End of datum shift file reached ***
+BOR_CORD has calculated a byte number to access which is beyond the end of
+file for the datum shift file.  This error is not likely to occur unless
+the datum shift file has become corrupted.  Check the integrity of the
+datum shift file. 
+
+
+*** Unable to open filename for input ***
+User has specified a file name which could not be opened. Check spelling
+and directory syntax as will as access permission.  See system manager. 
+
+*** Unable to open filename for output ***
+User has specified a file name which could not be opened. Check spelling
+and directory syntax as will as access permission.  See system manager. 
+
+
+8.0 FURTHER HELP AND INQUIRIES
+------------------------------
+Further inquiries into the BOR_CORD software can be made through:
+
+        Beth McCowan
+        Code 923
+        Goddard Space Flight Center
+        Greenbelt, Maryland
+        20771
+        (301) 286-4005
+
+
+9.0 REFERENCES AND ACKNOWLEDGEMENTS
+-----------------------------------     
+The BORIS Project thanks the Geodetic Survey of Canada for providing the
+datum shift file and the associated datum shift interpolation algorithm
+that made this program possible. 
+
+Construction of the BOREAS grid and algorithms for converting from
+latitude and longitude to UTM were based on algorithms and concepts
+described in: 'Map Projections - A Working Manual', USGS Professional
+Paper 1395, John P. Snyder, 1987.  The projection equations used in this
+program were all taken from this manual. 
+
+
+BOR_CORD SYSTEM INSTALLATION GUIDE  (DRAFT)
+F. Irani and J. Newcomer, HSTX
+March 1994
+
+
+1.0 OVERVIEW
+------------
+The BOR_CORD program was developed at the NASA Goddard Space Flight Center
+(GSFC) for the Boreal Ecosystem-Atmosphere Study (BOREAS) Information
+System (BORIS). The purpose of the program is to allow users to enter
+latitude longitude, UTM and BOREAS Grid coordinates taken from either the
+NAD27 or NAD83 datum and convert these coordinates to the other coordinate
+systems and between datums.  The software is written entirely in the C
+language using the standard C Input/Output and math libraries. No
+operating system dependencies exist in the software.  Certain
+considerations must be addressed, however, depending on the hardware
+platform on which the program is built and run. 
+
+
+2.0 CANDIDATE HARDWARE PLATFORMS
+--------------------------------
+The BOR_CORD program was built and tested on several different hardware
+platforms representing four different generic processing environments:
+Macintosh, IBM Compatible PC, VAX /VMS and the UNIX operating system. More
+specifically, the system was built and tested on a Macintosh Centris 650
+and a Macintosh II ci, a VAX 6410, Gateway and WIN 386 IBM Compatible PCs
+and on Silicon Graphics IRIS (SGI) and SUN workstations. 
+
+
+3.0 C COMPILERS
+----------------
+You can adapt bor_coord.c to build under any C compiler that is compatible
+with the computer and operating system being used.  The BORIS project used
+the THINK C Version 5.0 compiler for testing on the Macintosh computer.
+The VAX/VMS VAX C Run Time Library and compiler were used for testing
+under VMS , the Borland  and Turbo C compilers were used on the PCs and
+the cc and gcc compilers were used for testing on the UNIX workstations. 
+
+
+4.0 GSC NATIONAL TRANSFORMATION DATUM SHIFT FILE
+------------------------------------------------
+The BOR_CORD application software comes with an 800K-byte ASCII datum
+shift file, with a default name of datmshft.dat from which correct datum
+shift values are interpolated for latitude and longitude coordinates. The
+name or location of this file may be changed so long as users are able to
+specify the correct name and location of the file in response to the
+BOR_CORD prompt.  Under VMS a logical name can be defined to point to the
+file as a convenience to users.  The system manager can create such a
+logical name and announce its availability to bor_cord users (see
+INSTALLATION PROCEDURE). 
+ 
+The purpose of the datum shift file is to provide a grid of datum shift
+values at 5 minute intervals of latitude and longitude to cover the
+area of interest for BOREAS investigators. The file was provided by the
+Geodetic Survey of Canada (GSC) and is being used in its ASCII form for
+compatibility with a variety of hardware platforms.  This file takes the
+form of variable length records under VAX/VMS and on IBM PC's.  On
+Macintosh and UNIX systems this is a fixed length file with line
+terminators.  Because the C function fseek is used to access calculated
+byte locations in the datum shift file it is important that the correct
+record length is defined in the bor_cord.c source code at compile time.
+This specification is performed prior to compiling the source code (see
+INSTALLATION PROCEDURE). 
+
+  
+5.0 CONFIGURATION CONSIDERATIONS
+--------------------------------
+For bor_cord, the major hardware consideration is the general
+accessibility of the application and the datum shift file to users. It is
+up to the user to determine where the datmshft.dat file will be stored and
+how to invoke the program.  The datmshft file should be placed in a
+location with the appropriate file protection settings that will allow it
+to be be accessed by the BOR_CORD software at run time.  PC and Macintosh
+users may choose to place this file in the same location as the BOR_CORD
+application.  In any case, the user must be able to type in the exact
+location and name of this file unless the default entry name of
+datmshft.dat is sufficient for the operating system to locate this file.
+Care should also be taken that this file be given read only protection. 
+
+
+6.0 GENERIC INSTALLATION PROCEDURE
+----------------------------------
+Although the means to implement specific installation steps vary between
+computers, the main objective of each step is the same for all systems.
+The following installation steps are given in terms of their desired
+objectives.  Any hardware-specific notes follow some steps. 
+
+Step 1. Create a directory or folder to hold the source code,
+        documentation, and the datum shift file and copy these from the
+        delivery media to this location. 
+
+Step 2. Modify the source code to specify the appropriate number of
+        bytes per record by commenting out or uncommenting the source
+        code lines: 
+
+           #define NRECBYTES 22 /* (VAX/VMS AND PC)  */
+           #define NRECBYTES 21 /* (Macintosh and UNIX) */
+
+Step 3. Invoke your C compiler to compile and link the source code and
+        move or copy the application, documentation and datum shift file
+        to a location that is generally accessible.  Note that the
+        software uses the C math library and math.h include files. 
+
+        - Our source would not compile under our configuration of the cc
+          compiler on the SUN, but did compile under the gcc compiler.  We
+          compiled successfully using the  cc compiler on the SGI.  The
+          problem under the SUN configuration was related to the  version
+          of include files that were existing on our SUN. The compile
+          commands used on the SGI and SUN computers were as follows: 
+
+                 SGI:    cc  bor_cord.c -o bor_cord -lm
+                         SUN:  gcc bor_cord.c -o bor_cord -lm
+
+        - Under VMS, a symbol can be defined to allow users to invoke
+          the bor_cord executable  image such as: 
+  
+          $ BOR_CORD :== RUN $DISK:[DIRECTORY1.DIRECTORYN]BOR_CORD.EXE 
+
+        BOR_CORD can also be set up as a command under VMS using the $
+        SET COMMAND feature of the VMS operating system. 
+
+
+        Likewise, under UNIX, the c shell %set path command  can be used
+        to point to the executable image location for ease of user
+        invocation. For example: 
+
+        set path=($path /usr/local/bin/bor_cor)
+
+
+        Under Macintosh environment the datmshft.dat file must co-exist
+        in the same folder or on the desk-top with the bor_cord
+        application to use the default, datmshft.dat, specification to
+        reach the datum shift file, otherwise users must specify the
+        exact location of this file e.g.: 
+
+        Enter datum shift file name (Default = datum.shft;  q = quit)
+        --> Macintosh HD:Utilities:bor_cord:datmshft.dat
+
+
+Step 4. Print the 12-14 pages of documentation and review it before
+        running the program. 
+                
+ 
+7.0 ACKNOWLEDGEMENTS 
+--------------------
+The BOREAS Information System (BORIS) project thanks the Geodetic Survey
+of Canada for the FORTRAN-77 subroutine source code and datum shift
+information files that have made this project possible. 

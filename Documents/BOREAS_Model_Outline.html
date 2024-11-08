@@ -1,0 +1,657 @@
+<html>
+<head>
+<title>BOREAS -- Standard Model Documentation Outline</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+<A NAME="Top">The BOREAS Information System</A></B>
+<hr>
+<script language="JavaScript">
+<!--
+function sampleDoc (form,section) {
+  Item=form.list.selectedIndex;
+  if (Item==1) { docName='RSS08_biome_bgc.html#Section '; }
+  docName=docName+section;
+  if (Item>0) { window.open(docName,'docWin','width=500,height=300'); }
+  form.list.selectedIndex=0;
+}
+//-->
+</script>
+<body>
+
+<center>
+<H3>BOREAS Model Documentation Outline</H3>
+</center>
+<p>
+This is a guide on how to write documentation for computer models used in BOREAS. For general style guidelines and access to sample BOREAS documents, <A HREF="Documentation.html">click here</A>.
+<p>
+<B>Note:</B> The text surrounded by square brackets ([..]) is an expanded instruction, or set of instructions, for the outline item which appears directly above it.  The text contained in the brackets should be removed from the final data set documents.
+<p>
+<hr>
+
+<center>
+<H3>Model Document Title</H3>
+[The above text is intended as a place holder for the actual title<br>
+and should be replaced by the title in actual documents.]
+</center>
+<P>
+<br>
+<H3>Summary</H3>
+[Provide an abstract about the computer model and data sets produced. This should be aimed towards helping someone to decide if he/she could use this model and data output for a research project.  You should generally describe the model processes, inputs, and outputs.]
+<P>
+<br>
+<H3>Table of Contents</H3>
+<OL>
+<B><LI></B><A HREF="#Section 1">Model Overview</A>
+<B><LI></B><A HREF="#Section 2">Investigator(s)</A>
+<B><LI></B><A HREF="#Section 3">Theory of Measurements</A>
+<B><LI></B><A HREF="#Section 4">Equipment</A>
+<B><LI></B><A HREF="#Section 5">Data Acquisition Methods</A>
+<B><LI></B><A HREF="#Section 6">Observations</A>
+<B><LI></B><A HREF="#Section 7">Data Description</A>
+<B><LI></B><A HREF="#Section 8">Data Organization</A>
+<B><LI></B><A HREF="#Section 9">Data Manipulations</A>
+<B><LI></B><A HREF="#Section 10">Errors</A>
+<B><LI></B><A HREF="#Section 11">Notes</A>
+<B><LI></B><A HREF="#Section 12">Application of the Model</A>
+<B><LI></B><A HREF="#Section 13">Future Modifications and Plans</A>
+<B><LI></B><A HREF="#Section 14">Software</A>
+<B><LI></B><A HREF="#Section 15">Data Access</A>
+<B><LI></B><A HREF="#Section 16">Output Products and Availability</A>
+<B><LI></B><A HREF="#Section 17">References</A>
+<B><LI></B><A HREF="#Section 18">Glossary of Terms</A>
+<B><LI></B><A HREF="#Section 19">List of Acronyms</A>
+<B><LI></B><A HREF="#Section 20">Document Information</A>
+</OL>
+<HR>
+<center>
+<H3><A NAME="Section 1">1. Model Overview</A></H3>
+</center>
+[This section is aimed toward the person searching for a modelling data set. Descriptions should be short and clear, acronyms should be spelled out.]
+<p>
+<B>1.1 Model  Identification</B><br>
+[Title or name for the model, generally a short descriptive phrase, e.g. BOREAS Level-3a Landsat TM Imagery: Digital counts in band sequential format with georeferencing information, or BOREAS tower flux data from the Northern Study Area Old Black Spruce site, or BOREAS photosynthetic response to CO<sub>2</sub> concentrations.]
+<p>
+<B>1.2 Model Introduction</B><br>
+[A more detailed description of the model than section 1.1.  Should be up to a few sentences describing the model, input data, output data.]
+<p>
+<B>1.3 Objective/Purpose</B><br>
+[A few paragraphs on why the study was undertaken, and what the Principal Investigator hoped to achieve by conducting it.  Be as specific as possible here in relating how this model will help or provide information to the BOREAS effort.]
+<p>
+<B>1.4 Summary of Parameters</B><br>
+[A summary of the phenomena which are being studied and their parameters, both inputs and outputs.  A full description will be given in section 7.]
+<p>
+<B>1.5 Discussion</B><br>
+[A few introductory paragraphs which describe the model, the nature of the model, the basic approach, etc.]
+<p>
+<B>1.6 Related Models</B><br>
+[Note any similar or related modeling approaches by the investigator, other investigators, or other data centers.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 2">2. Investigator(s)</A></H3>
+</center>
+<p>
+<B>2.1 Investigator(s) Name and Title</B><br>
+[Identify the Principal Investigator for this model, including general affiliation, if applicable.]
+<p>
+<B>2.2 Title of Investigation</B><br>
+[Official name of group taken from the BOREAS Experiment Plan.]
+<p>
+<B>2.3 Contact Information</B><br>
+[Identify those persons most knowledgeable about the actual coding and running of the model. In many cases this will be a person (or persons), other than the Principal Investigator, who prepared the model runs for submission to BOREAS and is sufficiently knowledgeable about the data to answer technical questions about it.  When the Principal Investigator is a primary contact, full address information should also be given here. Include name(s), address, telephone number, FAX number, E-mail address as a series of grouped lines as shown below and not in a tabular form.]
+<PRE>Contact 1
+---------
+Dr. Unknown
+Address line 1
+Address line 2
+Telephone:
+Fax:
+Email:
+
+Contact 2
+---------
+ .
+ .
+ .
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'2')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 3">3. Model Theory</A></H3>
+</center>
+[Theoretical basis for the way in which the model works. (e.g. special procedures, algorithms, etc.).  It should be around a page in length.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'3')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 4">4. Equipment:</A></H3>
+</center>
+[Ignore this section]
+Not Applicable.
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+
+<HR>
+<center>
+<H3><A NAME="Section 5">5. Data Acquisition Methods</A></H3>
+</center>
+[Identify the sources of your input data sets.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 6">6. Observations</A></H3>
+</center>
+[Use this section to record notes on the particular model runs submitted, e.g. special tuning for BOREAS, addition or disabling of specific routines, etc.]
+<p>
+<B>6.1 Data Notes</B><br>
+[Describe any preprocessing to the input data used by the model, e.g. data smoothing, or interpolation to fill in gaps.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 7">7. Data Description</A></H3>
+</center>
+[This section describes the data in the input and output data sets: what the data are, units, format, data characteristics, time steps, and grid size.]
+<p>
+<B>7.1 Spatial Characteristics</B><br>
+[Describe the actual spatial resolution and coverage of the model runs.]
+<p>
+<B>7.1.1 Spatial Coverage</B><br>
+[Indicate the total area covered by the model runs.]
+<p>
+<B>7.1.2 Spatial Coverage Map</B><br>
+[Include a geographic map or schematic showing the area over which the data were collected, if possible.]
+<p>
+<B>7.1.3 Spatial Resolution</B><br>
+[The degree to which the terrain may be resolved into constituent or elementary parts (e.g. The dimensions of each image pixel).]
+<p>
+<B>7.1.4 Projection</B><br>
+[If applicable, describe the geographic coordinate system or map projection in which the data are referenced/stored.]
+<p>
+<B>7.1.5 Grid Description</B><br>
+[If applicable, describe the grid system in which the data are referenced/stored.]
+<br>
+<p>
+<B>7.2 Temporal Characteristics</B><br>
+[Describe the actual temporal resolution and coverage of the model runs.]
+<p>
+<B>7.2.1 Temporal Coverage</B><br>
+[Describe the time period covered by the model runs, e.g. start and end dates.]
+<p>
+<B>7.2.2 Temporal Coverage Map</B><br>
+<p>
+<B>7.2.3 Temporal Resolution</B><br>
+[Describe the time steps used in the model (e.g. hourly, daily).]
+<p>
+<br>
+<B>7.3 Input Data Characteristics</B><br>
+[Describe the input data file format for the model, with items 7.3.1 through 7.3.5 (below) being represented as columns in a table.]
+<p>
+<B>Example:</B>
+<PRE>Parameter    Description                    Units       Source      Range
+---------    -----------                    -----       ------      -----
+OBS_DATE     The date the data was taken.   Julian Day  na          1 to 366
+OBS_SITE     The location the data was      na          na          NSA-OJP
+             taken (BOREAS site).
+SOIL_TEMP    Soil temperature               Degrees C   Soil Temp   -40 to 25
+                                                        Probe
+</PRE>
+It is very important to fill in as much of this information as possible. If you need extra space for an item, use footnotes at the end of the table.]
+<p>
+<br>
+<B>7.3.1 Input Parameter/Variable</B><br>
+<p>
+<B>7.3.2 Variable Description/Definition</B><br>
+<p>
+<B>7.3.3 Unit of Measurement</B><br>
+<p>
+<B>7.3.4 Data Source</B><br>
+<p>
+<B>7.3.5 Data Range</B><br>
+<p>
+<br>
+<B>7.4 Output Data Characteristics</B><br>
+[Describe the output data file format for the model, with items 7.4.1 through 7.4.5 (below) being represented as columns in a table, if applicable.]
+<p>
+<B>7.4.1 Output Parameter/Variable</B><br>
+<p>
+<B>7.4.2 Variable Description/Definition</B><br>
+<p>
+<B>7.4.3 Unit of Measurement</B><br>
+<p>
+<B>7.4.4 Data Source</B><br>
+<p>
+<B>7.4.5 Data Range</B><br>
+<p>
+<br>
+<B>7.5 Sample Data Records</B><br>
+[One or more sample records from input and output data files.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 8">8. Data Organization</A></H3>
+</center>
+   [BORIS and ORNL DAAC to fill in.]
+<p>
+<B>8.1 Data Granularity</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<p>
+<B>8.2 Data Format(s)</B><br>
+[Specify for these model runs, the smallest unit of orderable data.  In general this will be the input and output files for a given model run.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 9">9. Data Manipulations</A></H3>
+</center>
+[This section describes the steps by which the output data were produced from the inputs.]
+<p>
+<B>9.1 Formulae</B><br>
+[List key formulae used in the model, include units.]
+<p>
+<B>9.1.1 Derivation Techniques and Algorithms</B><br>
+[Describe any special techniques or algorithms used in the model.]
+<br>
+<p>
+<B>9.2 Data Processing Sequence</B><br>
+<p>
+<B>9.2.1 Processing Steps</B><br>
+[Indicate the sequence of processing steps.  Describe the logic flow.]
+<p>
+<B>9.2.2 Processing Changes</B><br>
+[For long term, repetitive, or revised models; give a history of changes in the processing sequence.]
+<br>
+<p>
+<B>9.3 Calculations</B><br>
+<p>
+<B>9.3.1 Special Corrections/Adjustments</B><br>
+[List any 'special' corrections/adjustments made to the model for these runs.]
+<p>
+<B>9.3.2 Calculated Variables</B><br>
+<br>
+<p>
+<B>9.4 Graphs and Plots</B><br>
+[Include as separate files.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 10">10. Errors</A></H3>
+</center>
+[This section describes an error analysis for the data.]
+<p>
+<B>10.1 Sources of Error</B><br>
+[Describe what factors of the instrument or environment may introduce errors in the results.]
+<p>
+<B>10.2 Quality Assessment</B><br>
+<p>
+<B>10.2.1 Model Validation by Source</B><br>
+[Describe efforts to validate the model by the submitter.]
+<p>
+<B>10.2.2 Confidence Level/Accuracy Judgement</B><br>
+[Subjective discussion of data quality.]
+<p>
+<B>10.2.3 Measurement Error for Parameters</B><br>
+[Quantitative error estimates.]
+<p>
+<B>10.2.4 Additional Quality Assessments</B><br>
+[May include visual review of plots, etc.]
+<p>
+<B>10.2.5 Data Verification by Data Center</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 11">11. Notes</A></H3>
+</center>
+<p>
+<B>11.1 Limitations of the Model</B><br>
+[Provide warnings on the use of the model, describe conditions when model assumptions may break down.]
+<p>
+<B>11.2 Known Problems with the Model</B><br>
+[List known problems and discrepancies in the model.]
+<p>
+<B>11.3 Usage Guidance</B><br>
+[Place any "Truth in Analysis" warnings here.]
+<p>
+<B>11.4 Other Relevant Information</B><br>
+[Use this section for any other information about the study (such as humorous anecdotes, lame excuses, abject apologies, miracles, etc.).]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 12">12. Application of the Model</A></H3>
+</center>
+[Provide a description of how the model and results may be used.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 13">13. Future Modifications and Plans</A></H3>
+</center>
+[Describe any planned modifications or upgrades to the model.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 14">14. Software</A></H3>
+</center>
+[Describe software that was used and is available for use by someone who may want to perform further processing of the data.]
+<p>
+<B>14.1 Software Description</B><br>
+[Give the language the model is written in, special software libraries required, general size of the model, etc.]
+<p>
+<B>14.2 Software Access</B><br>
+[If the model is available, give where it can be found.  Note if there are differences between the publicly available code and what is used in this document.]
+<p>
+<B>14.3 Platform Limitations</B><br>
+[Describe the system the model runs on, note any special functions or computer specific procedures used in the model.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 15">15. Data Access</A></H3>
+</center>
+[The information shown in the following subsections is what should appear here. BORIS or ORNL will change as necessary.]
+<P>
+<B>15.1 Contact Information</B><br>
+<PRE>Ms. Beth McCowan
+BOREAS Data Manager
+Bldg. 22. Room G87
+Code 923
+NASA GSFC
+Greenbelt, MD 20771
+(301) 286-4005
+(301) 286-0239 (fax)
+beth@ltpmail.gsfc.nasa.gov
+</PRE>
+<P>
+<br>
+<B>15.2 Data Center Identification</B><br>
+See section 15.1.
+<P>
+<B>15.3 Procedures for Obtaining Data</B><br>
+Users may place requests by letter, telephone, electronic mail, FAX, or personal visit.
+<P>
+<B>15.4 Data Center Status/Plans</B><br>
+As the BOREAS data are processed and sufficiently quality checked, they will be available from the EOSDIS ORNL DAAC (Earth Observing System Data and Information System) (Oak Ridge National Laboratory) (Distributed Active Archive Center). The BOREAS contact at ORNL is: 
+<P>
+<PRE>Merilyn Gentry
+User Services/Data Coordinator
+Oak Ridge National Laboratory DAAC
+P.O. Box 2008
+Bldg. 1507, MS-6407
+Oak Ridge, TN 37830-6407
+(423) 241-3952
+ornldaac@ornl.gov
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 16">16. Output Products and Availability</A></H3>
+</center>
+[Describe the various data and related products that are available.]
+<p>
+<B>16.1 Tape Products</B><br>
+<p>
+<B>16.2 Film Products</B><br>
+<p>
+<B>16.3 Other Products</B><br>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 17">17. References</A></H3>
+</center>
+<p>
+<B>17.1 Model Documentation</B><br>
+[List any published documentation relevant to the model, such as instruction manuals, government technical manuals, user's guides, etc.]
+<p>
+<B>17.2 Journal Articles and Study Reports</B><br>
+[List technical reports and scientific publications which concern the methods or data described in this document. Publications by the Principal Investigator or investigating group which would help a reader understand or analyze the model and its results are particularly important.  Be sure to include the standard BOREAS project description articles (listed below).]
+<p>
+Sellers, P., F. Hall. 1994. Boreal Ecosystem-Atmosphere Study: Experiment Plan. Version 1994-3.0, NASA BOREAS Report (EXPLAN 94).
+<p>
+Sellers, P., F. Hall. 1996. Boreal Ecosystem-Atmosphere Study: Experiment Plan. Version 1996-2.0, NASA BOREAS Report (EXPLAN 96).
+<p>
+Sellers, P., F. Hall, K.F. Huemmrich. 1996. Boreal Ecosystem-Atmosphere Study: 1994 Operations. NASA BOREAS Report (OPS DOC 94).
+<p>
+Sellers, P., F. Hall, K.F. Huemmrich. 1997. Boreal Ecosystem-Atmosphere Study: 1996 Operations. NASA BOREAS Report (OPS DOC 96).
+<p>
+Sellers, P., F. Hall, H. Margolis, B. Kelly, D. Baldocchi, G. den Hartog, J.
+Cihlar, M.G. Ryan, B. Goodison, P. Crill, K.J. Ranson, D. Lettenmaier, and
+D.E. Wickland. 1995. The Boreal Ecosystem-Atmosphere Study (BOREAS): an
+overview and early results from the 1994 field year. Bulletin of the American
+Meteorological Society. 76(9):1549-1577.
+<p>
+Sellers, P., F. Hall. 1997. BOREAS Overview Paper. JGR Special Issue (in press).
+<P>
+<br>
+<B>17.3 Archive/DBMS Usage Documentation</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 18">18. Glossary of Terms</A></H3>
+</center>
+[Think of this as a place to define discipline related jargon and the wealth of scientific notations/symbols that may be used in the text.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 19">19. List of Acronyms</A></H3>
+</center>
+<PRE>[Include a list of any acronyms used in the text.]
+[The following list should be included.]
+BOREAS  - BOReal Ecosystem-Atmosphere Study
+BORIS   - BOREAS Information System
+DAAC    - Distributed Active Archive Center
+EOS     - Earth Observing System
+EOSDIS  - EOS Data and Information System
+GSFC    - Goddard Space Flight Center
+NASA    - National Aeronautics and Space Administration
+NSA     - Northern Study Area (BOREAS)
+ORNL    - Oak Ridge National Laboratory
+PANP    - Prince Albert National Park
+SSA     - Southern Study Area (BOREAS)
+URL     - Uniform Resource Locator (a World Wide Web address)
+</PRE>
+<p>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+<HR>
+<center>
+<H3><A NAME="Section 20">20. Document Information</A></H3>
+</center>
+<p>
+<B>20.1 Document Revision Date</B><br>
+[Use dd-mon-yyyy format]
+<P>
+<B>20.2 Document Review Date(s)</B><br>
+[Use dd-mon-yyyy format]<br>
+BORIS Review:<br>
+Science Review:
+<P>
+<B>20.3 Document</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<P>
+<B>20.4 Citation</B><br>
+[How the Principal Investigator would like to be acknowledged when this data set is referenced or used by another investigator.  This may be a paper to cite or a list of persons to acknowledge.]
+<P>
+<B>20.5 Document Curator</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<P>
+<B>20.6 Document URL</B><br>
+[BORIS and ORNL DAAC to fill in.]
+<P>
+<B>Keywords</B><br>
+[Include a list of appropriate key words to assist in searching for
+information.]
+<P>
+<A HREF="#Top"><IMG SRC="../gifs/up.gif" Align=top border=0>Return to top of document</A>.
+<p>
+<Form Name="list">
+<Select Name="list" onChange="sampleDoc(this.form,'1')">
+<Option Selected>Select a Sample Document to View
+<Option>RSS-8 BIOME-BGC Model
+</Select>
+</Form>
+
+</body>
+
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="Documentation.html">BOREAS Documentation Page</A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> September 9, 1997
+</html>

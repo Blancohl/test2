@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>BOREAS -- "Your BOREAS Account" Mailing (10/18/94)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+The BOREAS Information System</B>
+<HR>
+</head>
+
+This is the complete text of the BORIS E-Mail that was sent to all investigators on October 18, 1994. Its contents are about how investiogators can access data through their account on the BOREAS VAX computer:
+<UL>
+<LI><A HREF="#Logging In">Logging on to Your User Account</A>
+<LI><A HREF="#FTP Connection">Making an FTP Connection to Your User Account</A>
+</OL>
+<HR>
+
+<PRE>
+         October 18, 1994
+
+To:      All BOREAS Investigators and Staff
+
+From:    Jeff Newcomer, BOREAS Information Scientist
+         [(301) 286-7858] [<A HREF="mailto:newcomer@ltpmail.gsfc.nasa.gov">newcomer@ltpmail.gsfc.nasa.gov</A>]
+
+Subject: Accessing Data from your BOREAS user account
+
+
+There are now two ways to get at the BOREAS data in its new location: 
+   1) Log onto your USER account on the BOREAS.GSFC.NASA.GOV (IP address
+      128.183.76.149) system and follow through the menu system provided
+<B>or</B>
+   2) Make an FTP connection to your USER account and then set your directory
+      accordingly.
+
+If you have any comments about these, please send them to <A HREF="mailto:beth@ltpmail.gsfc.nasa.gov">Beth McCowan
+(beth@ltpmail.gsfc.nasa.gov)</A>.
+
+<HR>
+<H4><A NAME="Logging In">Logging on to Your User Account</A></H4>
+Once you have made a telnet or DECnet connection to BOREAS, you need to enter
+your USER account name and password.  These accounts were established more
+than a year ago and the PIs were supplied with their account names and initial
+passwords around that time.  In most but not all cases, the account name was
+your last name.  If you do not remember your account or password, please
+contact <A HREF="mailto:young@boreas.gsfc.nasa.gov">Tony Young (young@boreas.gsfc.nasa.gov)</A> or <A HREF="mailto:beth@ltpmail.gsfc.nasa.gov">Beth McCowan
+(beth@ltpmail.gsfc.nasa.gov)</A>.  
+
+Once you are logged on, you will be placed into a menu with several options
+(as shown below).
+
+                BORIS DATA ACCESS AND COMMUNICATIONS
+                             MENU SYSTEM
+
+Enter one of the following at the prompt
+
+        HELP    Additional information on these commands
+
+                BORIS FUNCTIONS
+                ---------------
+        BORIS   BOREAS Anonymous FTP site
+        BULL    Read BOREAS bulletin boards
+        NAME    Directory of BOREAS personnel
+        MAIL    Send or receive email
+
+                Other Data Bases
+                ----------------
+        ANON    General Anonymous FTP site
+        FIFE    Access FIFE data base
+        CCRS    Access Canadian Global Change Data Base
+        SNF     Access Superior National Forest Data Sets
+
+        EXIT    Exit BOREAS Comm to DCL '$' prompt
+        LOGF    End session and exit BORIS
+
+BORISCOMM>
+
+
+Under the BORIS FUNCTIONS is the BORIS option which will connect you to the
+BOREAS data and software storage area.  After selecting the BORIS option, you
+will be given a menu that looks like the one below. The options here allow you to
+explore the existing directories, display available files to your screen, and
+make an FTP connection to your home machine to download files.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        The following functions are available to search for data
+        and transfer files:
+
+        TREE         Generate the downward directory tree
+        UP           Move up one directory level
+        DOWN         Move down one directory level
+
+        DIRS         List the subdirectories of this directory
+        FILES        List the files in this directory
+        VIEW         Type a file to view its contents on screen
+
+        FTP          Run FTP to transfer files to your home machine
+
+        EXIT         Exit this module to main screen
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Please type a command >:
+
+
+The current directory structure provides areas for each group (e.g., TE) and
+STAFF data sets along with subsequent sub-directories for each team (e.g.,
+TE06).  At this time, not all of the directories contain data since we have
+not necessarily received data from every group.  Our goal is to eventually
+have a file named 0_README.TXT (the first character is a zero) in all the
+directories; even the empty ones to give some overview of status information
+and directory contents.  Each of the 0_README.TXT files will have a date as
+the first record to indicate when it was last changed or updated for your
+reference.  For those directories that reference image or other 'large volume'
+data sets that cannot be kept on-line, inventory information will be provided
+for you to call or email in your orders.
+
+<HR>
+<H4><A NAME="FTP Connection">Making an FTP Connection to Your User Account</A></H4>
+Assuming that you have the appropriate FTP software, you can initiate an FTP
+connection to your user account on the BOREAS system, change your current
+default directory to the BOREAS data areas, and pull files to your system.
+First you must start up an FTP connection to BOREAS.GSFC.NASA.GOV.  Once
+you have the connection:
+
+1) Enter USER followed by your USER account name;
+2) Enter your account password at the prompt;  At this point you should be
+   logged into your top level directory on thE BOREAS system.
+3) Enter cd BOREAS_DATA:[BOREAS] to change your current directory to the
+   BOREAS data and software storage area;
+4) From this point you can move around the directories and gather the files
+   you desire with the basic FTP command set.
+</PRE>
+<p>
+View "<A HREF="BOREAS_VAX_Help_11-7-94.html#FTP">Making an FTP Connection Part 2</A>".
+
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="BORIS_Mailings.html">BORIS Mailings Page</A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> December 21, 1995
+</html>

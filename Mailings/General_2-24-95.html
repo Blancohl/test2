@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>BOREAS -- "General Information" Mailing (2/24/95)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+The BOREAS Information System</B>
+<HR>
+</head>
+
+This is the complete text of the BORIS E-Mail that was sent to all investigators on February 24, 1995. Its contents are mostly general information and updates:
+<UL>
+<LI><A HREF="#BOREAS Data">Current BOREAS Data Holdings</A>
+<LI><A HREF="#EMail Aliases">E-Mail Aliases For the Science Teams</A>
+</OL>
+
+<HR>
+<PRE>
+         February 24, 1995
+
+To:      All BOREAS Investigators and Staff
+
+From:    Jeff Newcomer, BOREAS Information Scientist
+         [(301) 286-7858] [<A HREF="mailto:newcomer@ltpmail.gsfc.nasa.gov">newcomer@ltpmail.gsfc.nasa.gov</A>]
+
+Subject: General Information and E-mail Lists and Help Information
+
+<HR>
+<H4><A NAME="BOREAS Data">Current BOREAS Data Holdings</A> (Feb 24, 1995)</H4>
+The data holdings on the system are growing and access to the data seems to be
+going pretty smoothly.  January was apparently a slow month with 29 logins, 42
+data transfers, and 643.91 Kbytes of data transfered.  February so far has 
+shown much more activity with 90 logins, 200 transfers, and 42.85 Mbytes
+transfered.  We have responded to several account creation and update requests
+and worked with trouble areas to get over any humps that you may have had.
+Please continue to contact <A HREF="mailto:beth@ltpmail.gsfc.nasa.gov">Beth McCowan</A> with your questions on data access 
+and availability.
+
+<HR>
+<H4><A NAME="EMail Aliases">E-Mail Aliases For the Science Teams</A></H4>
+Thanks to all of you who tolerated our E-mail list testing last week and for 
+the feedback we received.  I received about 100 messages this past week from 
+the tests and have incorporated the changes.  In performing the updates, I
+noticed that several of you are included in multiple mail group lists.  This 
+is not a problem, but this may result in you getting duplicate mailings at times.
+
+The two purposes of this is letter are to notify you that the E-mail groups are
+ready for your use and to provide you with some help information in using them.
+I am sure that some further address revisions are needed, but we will update
+them as they become known.  If you have a system change, please let us know as
+soon as possible so we can keep the lists current.  The E-mail groups that have
+been established include:
+
+<A HREF="mailto:AFM@boreas.gsfc.nasa.gov">AFM</A> - Addresses for all known BOREAS AFM participants
+<A HREF="mailto:HYD@boreas.gsfc.nasa.gov">HYD</A> - Addresses for all known BOREAS HYD participants
+<A HREF="mailto:RSS@boreas.gsfc.nasa.gov">RSS</A> - Addresses for all known BOREAS RSS participants
+<A HREF="mailto:TE@boreas.gsfc.nasa.gov">TE</A>  - Addresses for all known BOREAS TE participants
+<A HREF="mailto:TF@boreas.gsfc.nasa.gov">TF</A>  - Addresses for all known BOREAS TF participants
+<A HREF="mailto:TGB@boreas.gsfc.nasa.gov">TGB</A> - Addresses for all known BOREAS TGB participants
+
+<A HREF="mailto:BOREAS_STAFF@boreas.gsfc.nasa.gov">BOREAS_STAFF</A> - Addresses for all GSFC BOREAS staff personnel
+<A HREF="mailto:BORIS_STAFF@boreas.gsfc.nasa.gov">BORIS_STAFF</A>  - Addresses for all GSFC BORIS staff personnel
+
+These groups can be augmented and updated as needed.  One that we thought of but
+have not implemented is an address list for all team and staff personnel.  If
+you think this should be set up, please let us know.  An example mail session
+follows.
+
+
+You can access the mail facility by entering 'MAIL' at the prompt in the main
+BORIS menu as shown below or from the DCL '$' prompt that appears when you exit
+the main menu.
+
+           BORIS DATA ACCESS AND COMMUNICATIONS SYSTEM
+
+Enter one of the following at the prompt
+
+                BORIS FUNCTIONS
+                ---------------
+        BORIS   Access to BOREAS Data and Software
+        BULL    Read BOREAS bulletin boards
+        HELP    Additional information on the commands
+        NAME    Directory of BOREAS personnel
+        MAIL    Send or receive email
+
+                Other Data Bases
+                ----------------
+        ANON    General Anonymous FTP site
+        FIFE    Access FIFE data base
+        CCRS    Access Canadian Global Change Data Base
+        SNF     Access Superior National Forest Data Sets
+
+        EXIT    Exit BOREAS Comm to DCL '$' prompt
+        LOGF    End session and exit BOREAS
+
+BORISCOMM> MAIL
+
+
+
+
+BORIS ELECTRONIC MAIL SYSTEM
+
+Some basic MAIL commands are listed below on the left
+Type the command at the prompt
+
+HELP -- Detailed help on all MAIL commands
+HELP GETTING_STARTED -- A MAIL tutorial
+
+DIR -- List the messages in the current folder
+DIR/FOLDER -- List your folders
+READ n --  Read message number n in the current folder
+SEND  -- Write and send a message
+FORWARD  -- Forward current message to another person or address.
+REPLY  --  Reply to message that was just read.
+MOVE -- Move messages to a new or existing folder.
+DELETE  --  Delete messages from folder.
+
+PRESS THE \ KEY OR ENTER 'EXIT' TO EXIT MAIL
+%DCL-S-SPAWNED, process NEWCO_BMAIL spawned
+%DCL-S-ATTACHED, terminal now attached to process NEWCO_BMAIL
+
+MAIL>
+
+If you enter the \ here, do not enter an additional carriage return.  The \ is
+interpreted immediately and sends you to the main menu.
+
+
+
+<B>Sending a message to an existing mailing group is as follows:</B>
+
+Enter SEND at the mail prompt.
+Enter one of the mail group names at the To: prompt (TF in this case).
+Enter your Subject at the Subj: prompt
+Enter your message.
+Enter Control-Z to end and send message.
+
+MAIL> SEND
+To:     TF
+Subj:   EXAMPLE MESSAGE
+Enter your message below. Press CTRL/Z when complete, or CTRL/C to quit:
+
+This is an example of sending a message using the established mail lists.
+
+Jeff Newcomer
+
+EXIT (from entering Control-Z)
+
+MAIL>
+
+
+
+<B>Sending a message to one or more people not in an established email group.</B>
+The trick here is specifying the proper syntax of Internet addresses to the VAX
+system which uses DECNet as a base.  Note that each internet address needs to be
+preceded by the SMTP% characters and the address itself must be enclosed in a
+pair of double quotation marks "" as shown.
+
+Enter SEND at the mail prompt.
+Enter the email address(es).
+Enter your Subject at the SUBJECT prompt
+Enter your message.
+Enter Control-Z to end and send message.
+
+MAIL> SEND
+To:     SMTP%"newcomer@ltpmail.gsfc.nasa.gov", SMTP%"fred@ltpmail.gsfc.nasa.gov"
+Subj:   EXAMPLE MESSAGE
+Enter your message below. Press CTRL/Z when complete, or CTRL/C to quit:
+
+This is an example of sending a message to a list of individuals.
+
+Jeff Newcomer
+
+EXIT (from entering Control-Z)
+
+MAIL>
+
+
+
+<B>Sending an existing file.</B>
+The trick here is to specify the name of the file in the SEND command as shown.
+Note that when you send an existing file, the mail system does not prompt you
+to enter a message of your own after the SUBJECT line.
+
+Enter SEND 'filename' at the mail prompt.
+Enter the email address(es) or email group name.
+Enter your Subject at the SUBJECT prompt
+
+MAIL> SEND TEST.MSG
+To:     smtp%"newcomer@ltpmail.gsfc.nasa.gov"
+Subj:   Example of sending a file via mail
+
+MAIL>
+
+
+To leave the mail subsystem and get back to the main menu, enter EXIT or \.
+
+</PRE>
+
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="BORIS_Mailings.html">BORIS Mailings Page</A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> January 3, 1996
+</html>

@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>BOREAS -- "BOREAS VAX Help" Mailing (11/7/94)</title>
+<B><A HREF="../BOREAS_Home.html">
+<IMG Align=middle SRC="../gifs/BOREAS_logo_sm.gif"></A>
+The BOREAS Information System</B>
+<HR>
+</head>
+
+This is the complete text of the BORIS E-Mail that was sent to all investigators on November 7, 1994. Its contents are all about using the BOREAS VAX computer system:
+<UL>
+<LI><A HREF="#Password">Changing Your Password</A>
+<LI><A HREF="#BOREAS Menu">Getting Back Into the BOREAS Menu</A>
+<LI><A HREF="#Terminal Type">Setting Your Terminal Type</A>
+<LI><A HREF="#Dir Syntax">Directory Syntax and Changes on BOREAS</A>
+<LI><A HREF="#Text Editor">Using the Text Editor</A>
+<li><A HREF="#FTP">Making an FTP Connection to Your User Account</A>
+</UL>
+<HR>
+
+<PRE>
+         November 7, 1994
+
+To:      All BOREAS Investigators and Staff
+
+From:    Jeff Newcomer, BOREAS Information Scientist
+         [(301) 286-7858] [<A HREF="mailto:newcomer@ltpmail.gsfc.nasa.gov">newcomer@ltpmail.gsfc.nasa.gov</A>]
+
+Subject: Basic Help Information for Accessing and Using the BOREAS System
+
+Hopefully all of you received the mailing on October 18 regarding access to the
+preliminary BOREAS data on the BOREAS system at GSFC.  Based on questions from
+several of you, we have prepared the following help information to assist you with
+retrieving data from the system and using other basic system functions.  If you
+need further information that is not available on-line, please contact <A HREF="mailto:beth@ltpmail.gsfc.nasa.gov">Beth
+McCowan</A>.
+
+When you do a direct login to your account on BOREAS, you are presented with a
+menu of possible commands.  These comands and the ones that follow allow you to
+access the on-line BOREAS data, get help information, send email, access other
+data bases, and exit.  Basic help information is available on each of these
+commands.  Some further information to help you follows.
+
+<HR>
+<H4><A NAME="Password">Changing Your Password</A></H4>
+In order to change your password, you need to enter 'EXIT' from the main menu.
+This places you at the operating system '$' prompt.
+
+The command to change your password is SET PASSWORD.  When changing your password
+you will see the following series of prompts:
+$SET PASSWORD
+OLD PASSWORD:
+NEW PASSWORD:
+VERIFICATION:
+The password entries will not be displayed to the terminal screen.
+
+If you ever forget your password, please contact Beth McCowan for assistance.
+
+<HR>
+<H4><A NAME="BOREAS Menu">Getting Back Into the BOREAS Menu</A></H4>
+To get back into the menu system from the operating system '$' prompt,
+enter 'BOREAS'.
+
+<HR>
+<H4><A NAME="Terminal Type">Setting Your Terminal Type</A></H4>
+Based on the keyboard mapping done between your terminal and the BOREAS system,
+you may need to set the terminal type to properly use all the available features.
+In order to change your terminal type, you will need to EXIT from the main menu
+and then enter 'SET TERMINAL' at the operating system '$' prompt along with the
+proper qualifiers.  Entering 'SHOW TERMINAL' will cause the operating system to
+display how it is currently perceiving your terminal.  Detailed help on the SET
+TERMINAL command is available from the operating system by entering 'HELP SET
+TERMINAL' at the '$' prompt.  Your basic configuration should include:
+
+a) Width: 80 characters per line
+b) Device_Type: VT 100 or VT200 Series
+c) Page: 24 lines per page
+d) Parity: None
+<HR>
+
+<H4><A NAME="Dir Syntax">Directory Syntax and Changes on BOREAS</A></H4>
+On BOREAS, the syntax for directories is: disk:[dir10.subdir11.subdir12...].
+
+At the operating system $ prompt, the command to change your current directory
+is SET DEFAULT followed by the directory name.  If your current directory was
+DISK1:[DIR1] and you wanted to move to a directory on another disk device, the
+command would be SET DEFAULT DISK2:[DIR2.SUBDIR2].  If you wanted instead to
+move down the directory structure under DISK1:[DIR1] to the directory
+DISK1:[DIR1.SUBDIR2.DATA], you would enter SET DEFAULT [.SUBDIR2.DATA].
+
+To display your currently active directory, enter SHOW DEFAULT.
+
+<HR>
+<H4><A NAME="Text Editor">Using the BOREAS/VAX Text Editor</A></H4>
+To invoke the text editor, you need to enter the command ED or EDIT followed
+by a file name.  If the file exists, the first set of lines in the file will
+be displayed to the screen.  If the file does not exist, you will see a screen
+that looks like this:
+
+___________________________________________________
+|[EOB]                                             |
+|                                                  |
+|                                                  |
+|                                                  |
+|                                                  |
+|                                                  |
+|                                                  |
+|Input file does not exist                         |
+|__________________________________________________|
+
+Once in the editor, the arrow keys move the cursor in the expected directions.
+Most of the functionality though is obtained through use of the keypad keys as
+follows:
+
+                                          ___________________________________
+                                         |        |        | FNDNXT | DEL L  |
+                                         |  GOLD  |  HELP  |        |        |
+                                         |        |        |        |        |
+                                         |        |        |  FIND  | UNDO L |
+                                         |________|________|________|________|
+                                         |  PAGE  |  SECT  | APPEND | DEL W  |
+DELETE      Delete character             |        |        |        |        |
+CTRL/R      Refresh screen               | COMMAND|  FILL  | REPLACE| UNDO W |
+CTRL/W      Refresh screen               |________|________|________|________|
+CTRL/Z      Exit to line mode            | ADVANCE| BACKUP |  CUT   | DEL C  |
+                                         |        |        |        |        |
+                                         | BOTTOM |  TOP   | PASTE  | UNDO C |
+                                         |________|________|________|________|
+                                         |  WORD  |  EOL   |  CHAR  |        |
+                                         |        |        |        |        |
+                                         |CHNGCASE| DEL EOL| SPECINS|  ENTER |
+                                         |________|________|________|        |
+                                         |                 |        |        |
+                                         |      LINE       | SELECT |        |
+                                         |                 |        |  SUBS  |
+                                         |    OPEN LINE    | RESET  |        |
+                                         |_________________|________|________|
+
+
+Pressing the HELP key will give you more detailed help on each key. 
+Pressing a key will cause the editor to carry out the instruction on the top
+of the key.
+Pressing the GOLD key followed by a key will cause the editor to carry out
+the instruction on the bottom of the key.
+
+<HR>
+<H4><A NAME="FTP">Making an FTP Connection to Your User Account</A></H4>
+Assuming that you have the appropriate FTP software, you can initiate an FTP 
+connection to your user account on the BOREAS system, change your current
+default directory to the BOREAS data areas, and pull files to your system.
+The following is an example (with explanations) of an FTP session:
+
+$ Ftp BOREAS.Gsfc.Nasa.Gov (INITIATE AN FTP SESSION TO BOREAS.GSFC.NASA.GOV)
+BOREAS.GSFC.NASA.GOV MultiNet FTP user process 3.2(106)
+Connection opened (Assuming 8-bit connections)
+(BOREAS.GSFC.NASA.GOV MultiNet FTP Server Process 3.3(14) at Mon 7-Nov-94 1:47PM-EST
+
+BOREAS.GSFC.NASA.GOV>user newcomer (ESTABLISH A USER ACCOUNT LOGIN)
+(User name (newcomer) ok. Password, please.
+Password:      (PASSWORD ENTERED BUT NOT DISPLAYED)
+(User NEWCOMER logged into BORIS_OPS:[NEWCOMER] at Mon 7-Nov-94 1:47PM-EST, job 202001ae.
+
+BOREAS.GSFC.NASA.GOV>cd BOREAS_DATA:[boreas.data]  (SET CURRENT DIRECTORY)
+(Connected to BOREAS_DATA:[BOREAS.DATA].
+
+BOREAS.GSFC.NASA.GOV>ls [...]*.dir (DISPLAY ALL DIRECTORIES BELOW THIS POINT)
+[BOREAS.DATA]AFM.DIR
+[BOREAS.DATA]HYD.DIR
+[BOREAS.DATA]MODEL_DATA.DIR
+[BOREAS.DATA]RSS.DIR
+[BOREAS.DATA]STAFF.DIR
+[BOREAS.DATA]TE.DIR
+[BOREAS.DATA]TF.DIR
+[BOREAS.DATA]TGB.DIR
+[BOREAS.DATA.AFM]AFM01.DIR
+.
+.
+[BOREAS.DATA.HYD]HYD01.DIR
+.
+.
+[BOREAS.DATA.RSS]RSS01.DIR
+.
+.
+[BOREAS.DATA.STAFF]AES_MET.DIR
+[BOREAS.DATA.STAFF]AIRCRAFT.DIR
+.
+.
+[BOREAS.DATA.TE]TE01.DIR
+.
+.
+[BOREAS.DATA.TGB]TGB01.DIR
+.
+.
+(Transfer completed.
+
+BOREAS.GSFC.NASA.GOV>CD [.AFM.AFM07.IFC1]
+(MOVE CURRENT DIRECTORY TO BOREAS_DATA:[BOREAS.DATA.AFM.AFM07.IFC1] FROM BOREAS_DATA:[BOREAS.DATA] )
+(Connected to BOREAS_DATA:[BOREAS.DATA.AFM.AFM07.IFC1].
+
+
+BOREAS.GSFC.NASA.GOV>LS  (LIST FILES IN THE DIRECTORY)
+(List started.
+0_readme.txt
+ff_01jun94_15jun94.csv
+ff_16jun94_30jun94.csv
+ff_16may94_31may94.csv
+ll_01jun94_15jun94.csv
+ll_16jun94_30jun94.csv
+ll_16may94_31may94.csv
+.
+.
+.
+(Transfer completed.
+
+BOREAS.GSFC.NASA.GOV>ASCII   (SET DATA TRANSFER MODE TO ASCII)
+Type: Ascii (Non-Print), Structure: VMS, Mode: Stream
+
+BOREAS.GSFC.NASA.GOV>GET ll_16may94_31may94.csv
+  To local file: JEFF.TEST
+(BRING FILE ll_16may94_31may94.csv to local file JEFF.TEST)
+(VMS retrieve of BOREAS_DATA:[BOREAS.DATA.AFM.AFM07.IFC1]LL_16MAY94_31MAY94.CSV;1 started.
+(Transfer completed.  339484 (8) bytes transferred.
+
+BOREAS.GSFC.NASA.GOV>EXIT (EXIT THE FTP SESSION)
+(QUIT command received. Goodbye.
+</PRE>
+
+<HR>
+<A HREF="mailto:landis@ltpmail.gsfc.nasa.gov">E-Mail a comment on this page to the curator <IMG Align=absmiddle SRC="../gifs/Letter_sm.gif"></A><br>
+Return to the <A HREF="BORIS_Mailings.html">BORIS Mailings Page</A><br>
+Return to the <A HREF="../BOREAS_Home.html">BOREAS Home Page</A><br>
+<b>Last Updated:</b> December 21, 1995
+</html>
